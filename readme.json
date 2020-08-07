@@ -1,0 +1,161 @@
+{
+	"base": {
+		"web": ["https://ut.zblog.fun/"],
+		"json": [
+			"https://storage.live.com/items/8C3AB972E7E69B18!261:/readme.json?authkey=!ABUvGb11LmBPPS0",
+			"https://github.com/2010TK7/UTMP/raw/master/readme.json"
+		],
+		"date": "2020/08/07 09:35 UTC+8",
+		"qqgroup": 432227027,
+		"jq": "https://jq.qq.com/?_wv=1027&k=5SP5eTI"
+	},
+	"DF": {
+		"name": "Undertale: Don't Forget",
+		"author": "RickyG",
+		"gamemakerserver": [
+			"https://gamemakerserver.com/en/games/4113/",
+			"https://gamemakerserver.com/en/games/3149/"
+		],
+		"gamejolt": "https://gamejolt.com/games/dontforget/150752",
+		"download": {
+			"Don't Forget v2.4.2": {
+				"version": "2.4.2",
+				"date": "May 28, 2020 4:00:52 AM",
+				"description": "This is the official release of v2.4.2 for PC! This version focuses specifically on the Multiplayer mode, as it has been completely redone! Story Mode is not available in this version any more, but it WILL return in v3.0 once it is fully complete. There's plenty of content to explore, so I hope you enjoy it!",
+				"filename": "dontforget-v2.4.2-windows.zip",
+				"gamejolt": "https://gamejolt.com/games/dontforget/150752/download/build/844584",
+				"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!258:/dontforget-v2.4.2-windows.zip?authkey=!AJSw-5Wl5lpdCeI",
+				"size": 171983138,
+				"crc32": "193a5f18",
+				"md5": "13947db6d1434f5885927818d0ad387c",
+				"sha1": "70102ba19b6522a448a394dce093b47cf91186b3"
+			},
+			"Don't Forget v2.4.2 (Android)": {
+				"version": "2.4.2",
+				"date": "May 28, 2020 4:00:47 AM",
+				"description": "This is the Android port of DF v2.4.2! It's an APK file, so just install it directly onto your Android phone/tablet and start playing!",
+				"filename": "dontforget-v2.4.2-android.apk",
+				"gamejolt": "https://gamejolt.com/games/dontforget/150752/download/build/844591",
+				"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!259:/dontforget-v2.4.2-android.apk?authkey=!AGKGmCosJoC-dP4",
+				"size": 195933869,
+				"crc32": "f7cfb523",
+				"md5": "8032bd76297aac1dc0906d0023e86177",
+				"sha1": "cec3df326fc26fb60201dbbab226f400ed0c3c19"
+			},
+			"Don't Forget: Classic": {
+				"version": "15.1.0",
+				"date": "Dec 2, 2019 7:29:13 AM",
+				"description": "This is the official classic version of DF Multiplayer! It is no longer being updated or supported, but it's still playable!",
+				"filename": "don-t-forget-classic-multiplayer.exe",
+				"gamejolt": "https://gamejolt.com/games/dontforget/150752/download/build/766068",
+				"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!257:/don-t-forget-classic-multiplayer.exe?authkey=!AE_2kFfrjqJfUSc",
+				"size": 107438080,
+				"crc32": "a6ed7f88",
+				"md5": "82e8a086e1a1f01e13699f77371e9edc",
+				"sha1": "5aecfda2f60bff403b4440b9f5a430685e169203"
+			}
+		},
+		"soundtrack": {
+			"songs": 26,
+			"filename": "soundtrack-5e92842385d9b.zip",
+			"gamejolt": "https://gamejolt.com/games/dontforget/150752/download/soundtrack",
+			"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!256:/soundtrack-5e92842385d9b.zip?authkey=!AGScTYj0W9SUD6w",
+			"size": 56351514,
+			"crc32": "3f433911",
+			"md5": "9dd6bf81019ff7005a8d3041d67aa9ed",
+			"sha1": "0e7d46f8411575fd8ed064925de3d7d4826abdad"
+		}
+	},
+	"MST": {
+		"name": "MYSTERYTALE Online",
+		"author": "afanguy",
+		"gamemakerserver": ["https://gamemakerserver.com/en/games/5863/"],
+		"gamejolt": "https://gamejolt.com/games/mysterytale-online/242286",
+		"download": {
+			"MYSTERYTALE Online": {
+				"version": "0.12.1",
+				"date": "May 7, 2020 4:34:45 AM",
+				"filename": "mysterytale-online-0.12.1.exe",
+				"gamejolt": "https://gamejolt.com/games/mysterytale-online/242286/download/build/833687",
+				"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!254:/mysterytale-online-0.12.1.exe?authkey=!ALc6TjS31oSjeZY",
+				"size": 87319552,
+				"crc32": "df1af85d",
+				"md5": "6db1b4062a0b8654d2e2afc98a3d2d01",
+				"sha1": "f55cc6d82b116efaf880844c13aa7f37e4bd7c30"
+			},
+			"Woodmantale Online 3D (April Fools 2020)": {
+				"version": "0.0.0",
+				"date": "Apr 2, 2020 2:51:44 AM",
+				"filename": "mysterytale-online-3d.exe",
+				"gamejolt": "https://gamejolt.com/games/mysterytale-online/242286/download/build/812320",
+				"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!260:/mysterytale-online-3d.exe?authkey=!ALjObUMyZrSar8Y",
+				"size": 31703040,
+				"crc32": "f0b42d4a",
+				"md5": "997652a9476ca6b3f28cbaf18c6d2ea2",
+				"sha1": "9a5961f45eaf4e9e79a8e253992f9576bdcb822d"
+			},
+			"WoodmanTale Online (April Fools 2018)": {
+				"version": "7.7.7",
+				"date": "Apr 1, 2018 7:47:44 AM",
+				"description": "nice >:]",
+				"filename": "mysterytale-online-demo-1.exe",
+				"gamejolt": "https://gamejolt.com/games/mysterytale-online/242286/download/build/561317",
+				"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!253:/mysterytale-online-demo-1.exe?authkey=!AB3Oxf-OcbMTV0Q",
+				"size": 6845440,
+				"crc32": "4f97305b",
+				"md5": "e9373843d10f9423bb13b37813007d19",
+				"sha1": "86568965a404ecffe5c51f475dfcacc1e2a7b0f0"
+			}
+		},
+		"soundtrack": {
+			"songs": 16,
+			"filename": "soundtrack-5b4b568462ff1.zip",
+			"gamejolt": "https://gamejolt.com/games/mysterytale-online/242286/download/soundtrack",
+			"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!255:/soundtrack-5b4b568462ff1.zip?authkey=!AF6wdi-VE6Xr9n4",
+			"size": 28756197,
+			"crc32": "59c688df",
+			"md5": "727bb2fe3188db9c210a7db50e913af5",
+			"sha1": "c5cbc9bfe75b0538654c80cf55108d81ba2cdcbd"
+		}
+	},
+	"MV": {
+		"name": "Undertale: Multiverse Online",
+		"author": "WolfCoderz",
+		"gamemakerserver": ["https://gamemakerserver.com/en/games/5889/"],
+		"gamejolt": "https://gamejolt.com/games/undertalemultiverse/423051",
+		"download": {
+			"Undertale: Multiverse": {
+				"version": "0.3.11",
+				"date": "Jul 26, 2020 3:01:05 PM",
+				"filename": "utmv-v0.3.11-protected.exe",
+				"gamejolt": "https://gamejolt.com/games/undertalemultiverse/423051/download/build/875820",
+				"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!281:/utmv-v0.3.11-protected.exe?authkey=!AFTvbmAc5kLa1Ng",
+				"size": 35537408,
+				"crc32": "ce549ad2",
+				"md5": "3969ebb0b07bdf040ccdd94160a176d3",
+				"sha1": "8b9ef8a36b160b93cbc4df9eb8af4a91c1ffa7e1"
+			},
+			"Undertale: Multiverse Mobile": {
+				"version": "0.3.11",
+				"date": "Jul 26, 2020 3:01:22 PM",
+				"filename": "utmv-mobile-v0.3.11.apk",
+				"gamejolt": "https://gamejolt.com/games/undertalemultiverse/423051/download/build/875808",
+				"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!282:/utmv-mobile-v0.3.11.apk?authkey=!AIeuLj_xT3cNQYQ",
+				"size": 40422022,
+				"crc32": "9c435f25",
+				"md5": "8c7f1111ab70e0a22bef46fdb2a39c7a",
+				"sha1": "92a28808e07ef37d9009c65e89ee21ad3b3c2cb5"
+			}
+		},
+		"soundtrack": {
+			"songs": 5,
+			"filename": "soundtrack-5ef08605f1aa6.zip",
+			"gamejolt": "https://gamejolt.com/games/undertalemultiverse/423051/download/soundtrack",
+			"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!280:/soundtrack-5ef08605f1aa6.zip?authkey=!ABSs4cvK39DFZ2U",
+			"size": 10726222,
+			"crc32": "2d780eb0",
+			"md5": "4227f9a6693b17ac3f5c675bd638d4be",
+			"sha1": "51161c9943f630645c7364eaa48e0287f1414391"
+		}
+	}
+}
