@@ -5,9 +5,23 @@
 			"https://github.com/2010TK7/UTMP/raw/master/readme.json",
 			"https://storage.live.com/items/8C3AB972E7E69B18!261:/readme.json?authkey=!ABUvGb11LmBPPS0"
 		],
-		"date": "2020/08/07 09:52 UTC+8",
-		"qqgroup": 432227027,
-		"jq": "https://jq.qq.com/?_wv=1027&k=5SP5eTI"
+		"date": "2020/08/08 13:36 UTC+8",
+		"help": {
+			"gamemakerserver": {
+				"register": "https://gamemakerserver.com/en/register/",
+				"recovery": "https://gamemakerserver.com/en/accountrecovery/",
+				"friends": "https://gamemakerserver.com/en/account/friends/"
+			},
+			"DFC": [
+				"https://github.com/jht3QAQ/DF-",
+				"https://qgc.qq.com/316745266",
+				"https://steamcommunity.com/sharedfiles/filedetails/?id=1225865780",
+				"https://steamcommunity.com/sharedfiles/filedetails/?id=1227166765",
+				"https://jht3.gitbook.io/"
+			]
+		},
+		"qqgroup": [432227027],
+		"jq": ["https://jq.qq.com/?_wv=1027&k=5SP5eTI"]
 	},
 	"DF": {
 		"name": "Undertale: Don't Forget",
