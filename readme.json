@@ -5,7 +5,7 @@
 			"https://github.com/2010TK7/UTMP/raw/master/readme.json",
 			"https://storage.live.com/items/8C3AB972E7E69B18!261:/readme.json?authkey=!ABUvGb11LmBPPS0"
 		],
-		"date": "2020/08/10 17:54 UTC+8",
+		"date": "2020/08/18 11:11 UTC+8",
 		"help": {
 			"gamemakerserver": {
 				"register": "https://gamemakerserver.com/en/register/",
@@ -32,29 +32,29 @@
 		],
 		"gamejolt": "https://gamejolt.com/games/dontforget/150752",
 		"download": {
-			"Don't Forget v2.4.2": {
-				"version": "2.4.2",
-				"date": "May 28, 2020 4:00:52 AM",
-				"description": "This is the official release of v2.4.2 for PC! This version focuses specifically on the Multiplayer mode, as it has been completely redone! Story Mode is not available in this version any more, but it WILL return in v3.0 once it is fully complete. There's plenty of content to explore, so I hope you enjoy it!",
-				"filename": "dontforget-v2.4.2-windows.zip",
-				"gamejolt": "https://gamejolt.com/games/dontforget/150752/download/build/844584",
+			"Don't Forget v2.4.3": {
+				"version": "2.4.3",
+				"date": "Aug 18, 2020 7:11:47 AM",
+				"description": "This is the official release of v2.4.3 for PC! This version focuses specifically on the Multiplayer mode, as it has been completely redone! Story Mode is not available in this version any more, but it WILL return once it is fully complete. There's plenty of content to explore in Multiplayer, so I hope you enjoy it!",
+				"filename": "dontforget-v2.4.3-windows.zip",
+				"gamejolt": "https://gamejolt.com/games/dontforget/150752/download/build/887216",
 				"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!258:/dontforget-v2.4.2-windows.zip?authkey=!AJSw-5Wl5lpdCeI",
-				"size": 171983138,
-				"crc32": "193a5f18",
-				"md5": "13947db6d1434f5885927818d0ad387c",
-				"sha1": "70102ba19b6522a448a394dce093b47cf91186b3"
+				"size": 171955028,
+				"crc32": "dd2970ee",
+				"md5": "a656847a364a6cceafb95ad1e363aa32",
+				"sha1": "595b4f47fc0c5cfdab662248e94f80e2f5b84959"
 			},
-			"Don't Forget v2.4.2 (Android)": {
-				"version": "2.4.2",
-				"date": "May 28, 2020 4:00:47 AM",
-				"description": "This is the Android port of DF v2.4.2! It's an APK file, so just install it directly onto your Android phone/tablet and start playing!",
-				"filename": "dontforget-v2.4.2-android.apk",
-				"gamejolt": "https://gamejolt.com/games/dontforget/150752/download/build/844591",
+			"Don't Forget v2.4.3 (Android)": {
+				"version": "2.4.3",
+				"date": "Aug 18, 2020 7:12:33 AM",
+				"description": "This is the Android port of DF v2.4.3! It's an APK file, so just install it directly onto your Android phone/tablet and start playing!",
+				"filename": "dontforget-v2.4.3-android.apk",
+				"gamejolt": "https://gamejolt.com/games/dontforget/150752/download/build/887287",
 				"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!259:/dontforget-v2.4.2-android.apk?authkey=!AGKGmCosJoC-dP4",
-				"size": 195933869,
-				"crc32": "f7cfb523",
-				"md5": "8032bd76297aac1dc0906d0023e86177",
-				"sha1": "cec3df326fc26fb60201dbbab226f400ed0c3c19"
+				"size": 196835178,
+				"crc32": "46b08705",
+				"md5": "175ef6103b6c8b0fe691ecdaff8b6ec6",
+				"sha1": "93a4a46373c70ffa1d16f3188d3767ab6c5520c0"
 			},
 			"Don't Forget: Classic": {
 				"version": "15.1.0",
@@ -70,14 +70,14 @@
 			}
 		},
 		"soundtrack": {
-			"songs": 26,
-			"filename": "soundtrack-5e92842385d9b.zip",
+			"songs": 31,
+			"filename": "soundtrack-5f3b17f4b8454.zip",
 			"gamejolt": "https://gamejolt.com/games/dontforget/150752/download/soundtrack",
 			"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!256:/soundtrack-5e92842385d9b.zip?authkey=!AGScTYj0W9SUD6w",
-			"size": 56351514,
-			"crc32": "3f433911",
-			"md5": "9dd6bf81019ff7005a8d3041d67aa9ed",
-			"sha1": "0e7d46f8411575fd8ed064925de3d7d4826abdad"
+			"size": 67204778,
+			"crc32": "7ab498d2",
+			"md5": "d314a8432f7c92d5e8ff596003db7b5c",
+			"sha1": "9ee680c4e450e2138e093417aa38c623f0a389b9"
 		}
 	},
 	"MST": {
