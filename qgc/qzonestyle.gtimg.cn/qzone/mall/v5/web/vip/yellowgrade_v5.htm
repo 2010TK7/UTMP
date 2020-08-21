@@ -1,0 +1,175 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-cn" lang="zh-cn">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta http-equiv="Content-Language" content="gb2312" />
+<meta name="robots" content="all" />
+<meta name="author" content="Tencent-ISRD" />
+<meta name="Copyright" content="Tencent" />
+<meta name="Description" content="Qzone精彩由你而来" />
+<meta name="Keywords" content="Qzone,QQ空间,Blog,博客,网络日志,播客,腾讯,QQ,Tencent" />
+<title>Qzone精彩由你而来</title>
+<link rel="stylesheet" rev="stylesheet" href="../../../../../../imgcache.qq.com/qzone_v5/gb_d3f_out.css" tppabs="https://imgcache.qq.com/qzone_v5/gb_d3f_out.css" type="text/css" media="screen"/>
+<link rel="stylesheet" rev="stylesheet" href="../../../../../../imgcache.qq.com/qzone_v5/app/app_vip/css/style_vip.css" tppabs="https://imgcache.qq.com/qzone_v5/app/app_vip/css/style_vip.css" type="text/css" media="screen"/>
+<link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon" />
+<script type="text/javascript">
+	document.domain = 'https://qzonestyle.gtimg.cn/qzone/mall/v5/web/vip/qq.com';
+</script>
+<script type="text/javascript" src="../../../../../../imgcache.qq.com/qzone/qzfl/qzfl-1.js" tppabs="https://imgcache.qq.com/qzone/qzfl/qzfl.js" charset="utf-8"></script>
+<script type="text/javascript" src="../../../../../../imgcache.qq.com/qzone/qzfl/appclientlib.js" tppabs="https://imgcache.qq.com/qzone/qzfl/appclientlib.js" charset="utf-8"></script>
+<script type="text/javascript">
+var qzoneInfo = QZONE.FP.getQzoneConfig();
+	document.write('<link rel="stylesheet" rev="stylesheet" href="../../../../../../imgcache.qq.com/qzonestyle/qzone_client_v5/css/'+qzoneInfo.styleId+'/color_out.css"/*tpa=https://imgcache.qq.com/qzonestyle/qzone_client_v5/css/'+qzoneInfo.styleId+'/color_out.css*/ type="text/css" media="screen"/>');
+</script>
+</head>
+<body>
+<div class="gb_cont_noleft">
+  <div class="gb_cont_m">
+    <div class="bg_mode">
+      <div class="box_ml bor">
+        <div class="mode_gb">
+		  <div class="mode_gb_title style_mode_gb_title" style="height:auto">
+			<div class="bg_mode_gb_title">
+			  <h3><img src="../../../../../../imgcache.qq.com/ac/b-1.gif" tppabs="https://imgcache.qq.com/ac/b.gif" alt="icon" class="icon_title" />黄钻身份详情</h3>
+			</div>
+		  </div>
+		  <div class="mode_gb_cont">
+			<div class="mode_menu_tag2">
+			  <ul id="ulDiv">
+			    <li class="nowtag"><a href="javascript:;" onclick="option_onclick(this.parentNode, 0)">首&nbsp;&nbsp;&nbsp;页</a></li>
+		        <li id="pullulateLi"><a href="javascript:;" onclick="option_onclick(this.parentNode, 1)">成长体系</a></li>
+		        <li id="propertyLi" style="display:none"><a href="javascript:;" onclick="option_onclick(this.parentNode, 2)">专属物品</a></li>
+			  </ul>
+			</div>
+			<iframe id="mIframe" name="mIframe" width="100%" marginWidth="0" marginHeight="0" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+		  </div>
+	    </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+	var qzoneInfo = QZONE.FP.getQzoneConfig();
+	var mIframe;
+	var interval;
+	var g_iStore = [];
+	var homepage = 'https://qzonestyle.gtimg.cn/qzone/mall/v5/web/vip/master.html';
+	var $ = function(id){ return document.getElementById(id); }
+
+	QZONE.pageEvents.pageBaseInit();
+	QZONE.pageEvents.onloadRegister(function(){
+		init();
+	});
+
+	function MallExCallbackPK(obj)
+	{
+		if(obj) {
+			if(QZFL.lang.isString(obj.bitmap)) {
+				obj.bitmap = obj.bitmap.split("");
+			}
+			var nowtime = parseInt(obj.now);
+			if(isNaN(nowtime) || nowtime <= 0){
+				obj.upgradeDate = "";
+			}
+			else{
+				var tmpDate= new Date(nowtime*1000 + obj.leftday * 86400000); 
+				obj.upgradeDate=tmpDate.getFullYear() + "年" +(tmpDate.getMonth() + 1) +"月" + tmpDate.getDate()+"日";
+			}
+			//alert(obj.ownerinfo.upgradeDate);
+			//top.QZONE.allTips.setDiamondInfo(obj.ownerinfo);//把黄钻信息传给前台
+			top.g_JData["yellowInfo"] = {ownerinfo:[obj]};
+			setTimeout(initCallBack, 0);
+		}
+
+		return;
+	}
+
+	function initMasterEnter()
+	{
+		var isNf = top.QZONE.FrontPage.isUserVIPExpress()?1:0;
+		var g_vipStatus = top.QZONE.FrontPage.getVipStatus();		//0为非黄钻，1为黄钻
+		if (top.g_iUin != 0 && top.g_iUin == top.g_iLoginUin) {
+			if (g_vipStatus == 0) {
+				location = 'https://qzonestyle.gtimg.cn/qzone/vas/app/vip/index_normal.html#' + location.search.replace(/^\?/, '');
+			} else {
+				location = 'https://qzonestyle.gtimg.cn/qzone/vas/app/vip/index_vip.html#' + location.search.replace(/^\?/, '');
+			}
+			return;
+		}
+		//这里拉主人态的信息
+		var g_tk = QZONE.FP.getACSRFToken();
+		MallExUrl = "//vip.qzone.qq.com/fcg-bin/v2/fcg_get_mall_ex?g_tk=" + g_tk + "&uin="+top.g_iUin+"&vip="+g_vipStatus+"&nf="+isNf+"&mode=1&sds="+Math.random();
+		//top.loadJsonData("VipTimeOverTips",MallExUrl,MallExCallbackPK,void(0),false,null,"_Callback");
+		var g = new QZFL.JSONGetter(MallExUrl, null, null, 'gb2312');
+		g.onSuccess = function(o){MallExCallbackPK(o.data)};
+		g.onError = function() {};
+		g.send('_Callback');
+	}
+	function initCallBack()
+	{
+		if(top.g_iUin != 0 && top.g_iUin == top.g_iLoginUin){
+			homepage = 'https://qzonestyle.gtimg.cn/qzone/mall/v5/web/vip/master.html';
+			$('propertyLi').style.display = 'block';
+		} else {
+			if(0 == top.g_iLoginUin){
+				homepage = 'https://qzonestyle.gtimg.cn/qzone/mall/v5/web/vip/guest.html';
+			}else{
+				homepage = 'https://qzonestyle.gtimg.cn/qzone/mall/v5/web/vip/guest_logined.html';
+			}	
+			$('propertyLi').style.display = 'none';
+		}
+		mIframe = $('mIframe');
+		if(getParameter('type') == 'growing'){
+			pullulateLi();
+			mIframe.src='growing.html'/*tpa=https://qzonestyle.gtimg.cn/qzone/mall/v5/web/vip/growing.html*/;
+		} else {			
+			mIframe.src = homepage;
+		}		
+	}
+	function init(){
+		initMasterEnter();
+	}
+
+	
+	//选项卡单击事件
+	function option_onclick(li, type){
+		var liList = $('ulDiv').childNodes;
+		for(var i=0; i<liList.length; i++){
+			liList[i].className='';			
+		}
+		li.className='nowtag';		
+		switch(type){
+			case 1:
+				mIframe.src='growing.html'/*tpa=https://qzonestyle.gtimg.cn/qzone/mall/v5/web/vip/growing.html*/;
+				break;
+			case 2:
+				mIframe.src='article.html'/*tpa=https://qzonestyle.gtimg.cn/qzone/mall/v5/web/vip/article.html*/;
+				break;
+			case 3:
+				mIframe.src='https://qzonestyle.gtimg.cn/qzone/mall/v5/web/vip/guest_logined.html';
+				break;
+			case 4:
+				mIframe.src='https://qzonestyle.gtimg.cn/qzone/mall/v5/web/vip/guest.html';
+				break;
+			default:
+				mIframe.src=homepage;
+		}	
+	}
+
+	function pullulateLi(){
+		var liList = $('ulDiv').childNodes;
+		for(var i=0; i<liList.length; i++){
+			liList[i].className='';			
+		}
+		$('pullulateLi').className='nowtag';	
+	}
+
+	function getParameter(name){
+		var r = new RegExp("(\\?|#|&)"+name+"=([^&]*)(&|$)")
+		var m = location.href.match(r)
+		if(!m || m=="") m = top.location.href.match(r)
+		return (!m?"":m[2]);
+	}
+</script>
+</body>
+</html>

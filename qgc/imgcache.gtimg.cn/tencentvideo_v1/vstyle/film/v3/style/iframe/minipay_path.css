@@ -1,0 +1,56 @@
+.hollywood_sel_item a.radio-box:link,.hollywood_sel_item a.radio-box:visited{height:auto;padding-bottom:4px;text-align:center}
+.hollywood_sel_item .selected a.radio-box:link,.hollywood_sel_item .selected a.radio-box:visited,.hollywood_sel_item .selected a.radio-box:active,.hollywood_sel_item .selected a.radio-box:hover{height:auto;padding-bottom:4px}
+.hollywood_sel_item a.radio-box:hover{height:auto;padding-bottom:4px}
+.hollywood_pay{color:#f60}
+.hollywood_sel_item .selected a.radio-box:link .hollywood_pay,.hollywood_sel_item .selected a.radio-box:visited .hollywood_pay,.hollywood_sel_item .selected a.radio-box:active .hollywood_pay,.hollywood_sel_item .selected a.radio-box:hover .hollywood_pay{color:#f60}
+.help-block,.help-normal{padding-top:3px}
+.form-horizontal .control-group{margin-bottom:9px}
+.one_month{position:relative;top:9px}
+.icon_help_tips,.icon_help_tips em{display:inline-block;font-size:12px;line-height:18px;font-weight:400;color:#fefb23;height:18px;background:url(img/minipay_path/minipay_icon.png?d=0324&max_age=31104000) no-repeat 9999em 9999em}
+.icon_help_tips{padding:0 0 0 2px;background-position:0 -105px}
+.icon_help_tips em{padding-right:9px;background-position:right -125px}
+.radio-box .tvp_icon{position:absolute;top:-5px;right:-3px}
+.tvp_icon{display:inline-block;font-size:0;line-height:0;height:12px;width:26px;background:url(img/minipay_path/tvp_icon.png?d=0324&max_age=31104000) 9999px 9999px no-repeat}
+.tvp_icon_01{background-position:0 0}
+.tvp_icon_02{background-position:0 -15px}
+.tvp_icon_03{background-position:0 -30px}
+.tvp_icon_04{background-position:0 -45px}
+.tvp_icon_05{background-position:0 -60px;width:44px}
+.tvp_icon_06{background-position:0 -75px;width:44px}
+.tvp_icon_07{background-position:0 -90px;width:37px}
+.tvp_icon_08{background-position:0 -105px;width:50px}
+.tvp_icon_09{background-position:0 -120px;width:50px}
+.tvp_icon_10{background-position:0 -135px;width:48px}
+.mod_result_act{padding:50px 45px;background:#fff}
+.mod_result_act .result_wrap{height:130px;border-bottom:1px solid #d1d1d1}
+.mod_result_act .result_success{text-align:center;margin-bottom:15px}
+.mod_result_act .result_success .icon_success{display:inline-block;width:36px;height:36px;background:url(img/minipay_path/minipay_icon.png?d=0324&max_age=31104000) 9999px 9999px no-repeat;background-position:-40px 0;vertical-align:top;margin-right:20px}
+.mod_result_act .result_success .txt{display:inline-block;font-size:18px;line-height:36px;color:#000}
+.mod_result_act .result_btn{text-align:center}
+.mod_result_act .result_btn .btn_open,.mod_result_act .result_btn .btn_open em{display:inline-block;background:url(img/minipay_path/minipay_icon.png?d=0324&max_age=31104000) 9999px 9999px no-repeat;font-size:12px;line-height:30px;color:#fff}
+.mod_result_act .result_btn .btn_open{padding-left:8px;background-position:0 -40px}
+.mod_result_act .result_btn .btn_open em{padding:0 18px 0 10px;background-position:right -70px}
+.mod_result_act .act_wrap{position:relative;padding-top:60px}
+.mod_result_act .act_list{position:relative;width:580px;overflow:hidden}
+.mod_result_act .act_list_inner{width:20000px}
+.mod_result_act .act_list .act_item{float:left;width:580px}
+.mod_result_act .act_list .act_qr{float:left;width:133px;height:117px;padding:15px 0 0 42px;margin-left:45px;background-repeat:no-repeat}
+.mod_result_act .act_list .act_qr img{display:block;width:90px;height:90px}
+.mod_result_act .act_list .act_info{float:left;width:320px}
+.mod_result_act .act_list .act_info .tit{font-size:27px;line-height:50px;color:#000;text-align:right;font-weight:700}
+.mod_result_act .act_list .act_info .txt_org{color:#fe4702}
+.mod_result_act .act_list .act_info .txt{font-size:16px;line-height:28px;color:#a3a3a3;text-align:right}
+.mod_result_act .act_page{position:absolute;width:100%;height:22px;top:80px}
+.mod_result_act .act_page .btn_page{position:absolute;height:88px;width:22px;border-radius:5px}
+.mod_result_act .act_page .btn_pre{left:-22px}
+.mod_result_act .act_page .btn_next{right:-22px}
+.mod_result_act .act_page .btn_page:hover{background:#c7c7c7}
+.mod_result_act .act_page .btn_page .icon_page{display:block;margin:35px auto 0;width:12px;height:21px;background:url(img/minipay_path/minipay_icon.png?d=0324&max_age=31104000) 9999px 9999px no-repeat}
+.mod_result_act .act_page .btn_page .icon_pre{background-position:0 -165px}
+.mod_result_act .act_page .btn_page .icon_next{background-position:-20px -165px}
+.mod_result_act .act_page .btn_page:hover .icon_pre{background-position:-40px -165px}
+.mod_result_act .act_page .btn_page:hover .icon_next{background-position:-60px -165px}
+.mod_change_link{position:relative;height:20px;padding-top:15px}
+.mod_change_link .change_link{position:absolute;top:15px;right:30px;font-family:\5B8B\4F53,Tahoma,Verdana,Arial;font-size:12px;line-height:20px;color:#808080;text-decoration:none}
+.mod_change_link .change_link .name{color:#4ab218;margin:0 4px}
+#CssGaga{content:"160324165154,jag,334"}

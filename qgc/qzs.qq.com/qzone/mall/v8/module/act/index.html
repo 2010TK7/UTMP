@@ -1,0 +1,142 @@
+<!doctype html>
+<html class="os_win7">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+	<meta charset="UTF-8">
+	<title>QQ空间</title>
+	<meta content="黄钻,QZONE,QQ空间,腾讯网,腾讯,QQ,Tencent" name="Keywords">
+	<meta name="description" content="" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi" />
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+	<script>
+	(function(){
+		var d = location.host,
+			arr = d.split('.'),
+			nd = [arr[arr.length -2], arr[arr.length -1]].join('.');
+		document.domain = d;
+	})();
+	</script>
+     <script>
+         var ua = navigator.userAgent;
+         var ipad = ua.match(/(iPad).*OS\s([\d_]+)/),
+             isIphone = !ipad && ua.match(/(iPhone\sOS)\s([\d_]+)/),
+             isAndroid = ua.match(/(Android)\s+([\d.]+)/),
+             isPhone = isIphone || isAndroid;
+          if(isPhone){
+              var overTimeout = setTimeout(function () {
+                  document.getElementById('wrap-loading').innerHTML = '抱歉，加载失败，请尝试刷新页面！或者在电脑上打开。';
+              }, 15000);
+          }
+
+         function filterXSS(cont) {
+             cont = cont.replace(/&/g, '&amp;');	//这里过滤&是为了让用户输入HTML实体时能展示成实体
+             cont = cont.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+             cont = cont.replace(/\'/g, '&#39;').replace(/\"/g, '&quot;');
+             return cont;
+         }
+         function getParams(str) {
+             str = str || location.search;
+             var ret = {},
+                     seg = str.replace(/[\?\#]/g, '&').split('&'),
+                     len = seg.length, i = 0, s;
+             for (; i < len; i++) {
+                 if (!seg[i]) {
+                     continue;
+                 }
+                 s = seg[i].split('=');
+                 ret[s[0]] = filterXSS(decodeURIComponent(s[1]));
+             }
+             return ret;
+         }
+
+         var params = getParams(location.hash),
+			actName = params.act,g_uin;
+         if (!actName) {//优先取hash，再取search的值
+             params = getParams(location.search);
+             actName = params.act;
+         }
+
+
+         var mobileAct = {"http://qzs.qq.com/qzone/mall/v8/module/act/midautumn.2013":true,"xiaomi.vip2013":true,"xiaomi.vip201309":true,'xiaomi.vip201402':true,'xiaomi.vip201402_bee':true,'xiaomi.vip201403':true};
+         //暂时只有中秋活动有手机登录态，没有uin的情况下，需要补足一个
+         if(isPhone&&mobileAct[actName]&&params.sid&&!params.B_UID){
+             var userinfo_Callback = function (o) {
+                 g_uin = o.data.uin;
+             }
+             document.write(['<script src="http://vip.qzone.qq.com/fcg-bin/fcg_get_vipinfo_mobile?callbackFun=userinfo&src=mobile&callback=userinfo_Callback&sid=', encodeURIComponent(params.sid), '" ><\/script>'].join(""));
+         }
+    </script>
+	<link rel="Shortcut Icon" href="http://qzonestyle.gtimg.cn/qzone_v6/img/favicon.ico?max_age=31536000" type="image/x-icon" />
+</head>
+<body>
+<!--[if lt IE 9]><script>window.VER_JQUERY = '1.9.1';</script><![endif]-->
+<!--[if gte IE 9]><!--><script>window.VER_JQUERY = '1.9.1';</script><!--<![endif]-->
+<script>
+    if (isPhone) {
+        document.write('<style> .ui-loading{display:inline-block;position:relative;width:40px;height:20px;vertical-align:middle;margin:-4px 2px 0 -42px}.ui-loading.white i{background:#fff}.ui-loading i{position:absolute;left:7px;top:4px;display:block;width:5px;height:12px;background:#ccc}.ui-loading i.t2{left:15px}.ui-loading i.t3{left:23px}.ui-loading i{-webkit-animation:loading-spin 1s infinite linear}.ui-loading i.t2{-webkit-animation-name:loading-spin-one}.ui-loading i.t3{-webkit-animation-name:loading-spin-two}@-webkit-keyframes loading-spin{0%{opacity:0}30%{opacity:1;-webkit-transform:scale(1,1.2)}60%{opacity:0;-webkit-transform:scale(1)}100%{opacity:0}}@-webkit-keyframes loading-spin-one{0%{opacity:0}20%{opacity:0}50%{opacity:1;-webkit-transform:scale(1,1.2)}80%{opacity:0;-webkit-transform:scale(1)}100%{opacity:0}}@-webkit-keyframes loading-spin-two{0%{opacity:0}40%{opacity:0}70%{opacity:1;-webkit-transform:scale(1,1.2)}100%{opacity:0;-webkit-transform:scale(1)}}.wrap-loading{width:100%;height:300px;display:-webkit-box;display:box;-webkit-box-orient:vertical;flex-direction:column;flex-pack:center;justify-content:center;-webkit-box-flex:1;-webkit-box-align:center;-webkit-box-pack:center;color:#888} </style>');
+        document.write(
+                ['<div id="wrap-loading" class="wrap-loading">',
+                    '<span class="ui-loading"><i class="t1"></i><i class="t2"></i><i class="t3"></i></span>正在加载中…',
+                    '</div>'].join("")
+        );
+    };
+
+	;(function () {
+		var V = {
+			sea:'1.3.1',
+			jq:VER_JQUERY
+		};
+		var CDN = 'http://qzonestyle.gtimg.cn/',
+			JQ = CDN+'/ac/lib/jquery/'+V.jq+'/jquery.js';
+		var loadjs = function (r,id,u,l,a,o) {
+			o = document;
+			u = o.createElement('script')
+			if(id) {u.id = id}
+			u.src = r
+			l = o.getElementsByTagName('head')[0]
+			a = o.getElementsByTagName('base')[0]
+			a ? l.insertBefore(u, a) : l.appendChild(u)
+		};
+		var sea = function (m, o, d, c,u, l, a, r) {
+			if(m[d]) return
+			function f(n, t) { return function() { r.push(n, arguments); return t } }
+			m[d] = a = { args: (r = []), config: f(0, a), use: f(1, a) }
+			m.define = f(2)
+			loadjs(c+'/ac/lib/sea/'+V.sea+'/sea.js',d + 'node')
+		};
+		sea(window,document,'seajs',CDN);
+
+		seajs.config({
+			charset: 'utf-8',
+			alias: {
+				'http://qzs.qq.com/qzone/mall/v8/module/act/mall.v8':CDN + '/qzone/mall/v8/',
+				'cssBase': CDN,
+				'jquery': JQ
+			},
+			map: [
+				[/^.+\/lib\/jquery\.js/,JQ]
+			]
+		});
+
+
+		if(location.host == 'http://qzs.qq.com/qzone/mall/v8/module/act/8.qzone.com'){
+			actName = actName || 'qzone8yearEmotion';
+		}
+		if(actName) {
+			seajs.use(['lib/jquery','mall.v8/lib/mall.js-_=140215.js'/*tpa=http://qzs.qq.com/qzone/mall/v8/module/act/mall.v8/lib/mall.js?_=140215.js*/,'mall.v8/module/act/'+actName+'/index.js?_=140215.js'],function ($,MALL,IDX) {
+				if(isPhone){
+					clearTimeout(overTimeout);
+					document.getElementById('wrap-loading').style.display = 'none';
+				}
+
+                var report = actName;
+				if(MALL.browser.isMobile) {
+					report = actName+'/mobile';
+				}
+				MALL.stat.reportPV('http://qzs.qq.com/qzone/mall/v8/module/act/mall.qzone.qq.com','v8/module/act/'+report+"/"http://qzs.qq.com/qzone/mall/v8/module/act/+(params.ref?params.ref:""));
+			});
+		}
+	})();
+</script>
+</body>
+</html>

@@ -1,0 +1,700 @@
+if (typeof sid == "undefined") {
+	var sid;
+	if (typeof getUrlParam == "function") {
+		sid = getUrlParam("sid");
+
+	}
+}
+
+sid = (sid == "23" ? "1" : sid)//超级QQ跳到会员
+
+// 27/8/2012 add by leonlchen 加入信用卡积分渠道
+var channels = {
+	"qdqb": "<i class=\"icon_c_qdqb\"></i>Q点Q币",
+	"qqcard": "QQ卡",
+	"tenpay": "<i class=\"icon_c_tenpay\"></i>财付通<em class=\"discount\">95折 </em><span class=\"wd_con in_text\">快捷支付 | 财付通余额</span>",
+	"bank":"<i class=\"icon_c_qqcard\"></i>银行卡<span class=\"in_text wd_con\">储蓄卡 | 信用卡</span>",
+	"168": "固定电话",
+	"adsl": "宽带用户",
+	"mobile": "移动手机",
+	"unicom": "联通手机",
+	"ctc": "小灵通/CDMA",
+	"phonecard": "手机充值卡",
+	"qqvip": "QQ会员特别通道<i>5折</i>", 
+	"ddn": "嘟嘟牛上网卡",
+	"phs": "小灵通",
+	"cdma": "电信手机（CDMA）",
+	//"credit": "信用卡积分",
+	"custom": "自定义开通",
+	"scard":"刷卡支付",
+	"uniphone":"手机<font style='font-size:12px;color:#999;font-weight:normal'>含手机话费卡</font>",
+	"creditcard":"信用卡积分"
+};
+var menus = {
+	"1": {
+		"self": ["qdqb", "tenpay","bank","uniphone","qqcard","168", "adsl", "scard", /*"credit",*/"ddn","creditcard"],
+		"send": ["qdqb", "tenpay","bank", "qqcard", "phonecard"/*"credit",*/]
+	},
+	"2": {
+		"self": ["qdqb", "tenpay", "bank","uniphone","qqcard","168", "adsl",  "scard","ddn","creditcard"],
+		"send": ["qdqb", "tenpay", "bank","qqcard", "phonecard"]
+	},
+	"3": {
+		"self": ["qdqb", "tenpay", "bank","uniphone","qqcard","168","adsl","scard","ddn","creditcard"],
+		"send": ["qdqb", "tenpay", "bank","qqcard", "phonecard"]
+	},
+	"7": {
+		"self": ["qdqb", "tenpay", "bank","uniphone","qqcard","168", "adsl", "scard", "ddn","creditcard"],
+		"send": ["qdqb", "tenpay", "bank","qqcard", "phonecard"]
+	},
+	"4": {
+		"self": ["qdqb", "tenpay","bank","uniphone","qqcard","168", "adsl", "scard"/*,"creditcard"*/],
+		"send": ["qdqb", "tenpay", "bank","qqcard", "phonecard"]
+	},
+	"15": {
+		"self": ["qdqb", "tenpay","bank", "qqcard", "phonecard", "scard","creditcard"],
+		"send": ["qdqb", "tenpay","bank", "qqcard", "phonecard"]
+	},
+	"16": {
+		"self": ["qdqb", "tenpay","bank", "qqcard", /*"mobile",*/ "phonecard", "adsl", "scard","creditcard"],
+		"send": ["qdqb", "tenpay","bank", "qqcard"]
+	},
+	"6": {
+		"self": ["qdqb", "tenpay","bank", "qqcard", "168", "adsl", "mobile", "phonecard", "scard","creditcard"],
+		"send": ["qdqb", "tenpay","bank", "qqcard", "phonecard"]
+	},
+	"20": {
+		"self": ["qdqb", "tenpay","bank", "qqcard", "scard", "phonecard"/*, "adsl" ,"creditcard"*/],
+		"send": ["qdqb", "tenpay","bank", "qqcard", "phonecard"]
+	},
+	"21": {
+		"self": ["qdqb","tenpay","bank", "qqcard", "scard","creditcard"],
+		"send": ["qdqb", "tenpay","bank", "qqcard"]
+	},
+	"18": {
+		"self": ["qdqb", "tenpay","bank", "qqcard", "phonecard", "scard", "creditcard"],
+		"send": ["qdqb", "tenpay","bank", "qqcard", "phonecard"]
+	},
+	"8": {
+		"self": ["qdqb", "tenpay","bank", "qqcard", "scard", "creditcard"/*, "phonecard","mobile", "adsl"*/],
+		"send": ["qdqb", "tenpay","bank", "qqcard"]
+	},
+	"5": {
+		"self": ["qdqb", "tenpay","bank", "qqcard", "adsl", "phonecard", "scard","creditcard"],
+		"send": ["qdqb", "tenpay","bank", "qqcard", "phonecard"]
+	},
+	"19": {
+		"self": ["qdqb", "tenpay","bank", "qqcard", "mobile", "scard","creditcard"],
+		"send": ["qdqb", "tenpay","bank", "qqcard"]
+	},
+	"23": {
+		"self": ["qdqb","tenpay","bank", "uniphone","qqcard","168", "adsl", "scard","creditcard"],
+		"send": ["qdqb", "tenpay","bank", "qqcard"]
+	},
+	"24": {
+		"self": ["qdqb", "tenpay","bank", "qqcard", "phonecard", "scard","creditcard"],
+		"send": ["qdqb", "tenpay","bank", "qqcard", "phonecard"]
+	},
+	"25": {
+		"self": ["qdqb", "qqcard", "mobile", "unicom", "scard","creditcard"],
+		"send": ["qdqb", "qqcard"]
+	},
+	"26": {
+		"self": ["qdqb", "tenpay","bank", "qqcard","scard","creditcard"],
+		"send": ["qdqb", "tenpay","bank", "qqcard"]
+	},
+	"27": {
+		"self": ["qdqb", "tenpay", "bank" ,"qqcard", "uniphone"/*, "scard","creditcard"*/],
+		"send": ["qdqb", "qqcard", "phonecard"]
+	},
+	"28": {
+		"self": ["qdqb", "tenpay","bank", "qqcard","phonecard","mobile","scard","creditcard"],
+		"send": ["qdqb", "tenpay","bank", "qqcard"]
+	},
+	"29": {
+		"self": ["qdqb", "tenpay","bank", "qqcard","phonecard", "scard","creditcard"],
+		"send": ["qdqb","tenpay","bank", "qqcard","phonecard"]
+	},
+	"30": {
+		"self": ["qdqb", "tenpay","bank", "qqcard","scard","creditcard"],
+		"send": ["qdqb", "tenpay","bank", "qqcard"]
+	},
+	"31": {
+		"self": ["qdqb", "tenpay","bank", "qqcard","scard","creditcard"],
+		"send": ["qdqb","tenpay","bank", "qqcard"]
+	},
+	"32": {
+		"self": ["qdqb","tenpay","bank", "qqcard","mobile", "scard"/*,"creditcard"*/],
+		"send": ["qdqb", "tenpay","bank", "qqcard"]
+	},
+	"33": {
+		"self": ["qdqb", "tenpay", "bank", "custom"],
+		"send": ["qdqb", "tenpay", "bank"]
+	},
+	"34": {
+		"self": ["qdqb", "tenpay","bank", "qqcard","scard","creditcard"],
+		"send": ["qdqb", "tenpay","bank", "qqcard"]
+	},
+	"35":{
+		"self": ["qdqb", "tenpay","bank", "qqcard", "scard","creditcard"],
+		"send": ["qdqb", "tenpay","bank", "qqcard"]
+	},
+	"36":{
+		"self": ["qdqb", "tenpay","bank", "qqcard", "scard"/*,"creditcard"*/],
+		"send": ["qdqb", "tenpay","bank", "qqcard"]
+	},
+	"37":{
+		"self": ["qdqb", "tenpay","bank", "qqcard", "scard","creditcard"],
+		"send": ["qdqb", "tenpay","bank", "qqcard"]
+	},
+	"38":{
+		"self": ["qdqb", "tenpay","bank", "qqcard", "scard"/*,"creditcard"*/],
+		"send": ["qdqb", "tenpay","bank", "qqcard"]
+	},
+	"39":{
+		"self": ["qdqb", "tenpay", "bank", "qqcard", "scard"],
+		"send": ["qdqb", "tenpay","bank", "qqcard"]
+	}, 
+	"40":{
+		"self": ["qdqb", "tenpay", "bank", "qqcard", "scard"],
+		"send": ["qdqb", "tenpay","bank", "qqcard"]
+	},
+	"41":{
+		"self": ["qdqb", "tenpay", "bank", "qqcard", "scard"],
+		"send": ["qdqb", "tenpay","bank", "qqcard"]
+	},
+	"42":{
+		"self": ["qdqb", "tenpay", "bank", "qqcard", "scard"],
+		"send": ["qdqb", "tenpay","bank", "qqcard"]
+	}
+};
+var services = {
+	"33": ["qqpacket", "QQ钻皇", "http://king.qq.com/", "50", "qqpacket", "QQ钻皇", 1, 1, "king"],    
+	"1": ["ltmclub", "QQ会员", "http://vip.qq.com/", "10", "ltmclub", "QQ会员官网", 1, 1, "qqvip"],
+	"2": ["xxjzgw", "黄钻贵族", "https://vip.qzone.qq.com/", "10", "xxjzgw", "QQ空间官网", 1, 1, "qzone"],
+	"4": ["xxqgame", "蓝钻贵族", "http://gamevip.qq.com/?ADTAG=IED.PAY.QQGAME.INDEX", "10", "xxqgame", "<span class='key_ora font_weight'>蓝钻官网</span>", 1, 1, "qqgame"],
+	"3": ["xxqqf", "红钻贵族", "http://show.qq.com/", "10", "xxqqf", "QQ秀官网", 1, 1, "qqshow"],
+	"7": ["xxzxyy", "绿钻贵族", "http://music.qq.com/", "10", "xxzxyy", "QQ音乐官网", 1, 1, "music"],
+	"15": ["dnfhz", "DNF黑钻", "http://dnf.qq.com/", "20", "dnfhz", "DNF官网", 1, 1, "dnf"],
+	"16": ["qqfczz", "飞车紫钻", "http://speed.qq.com/", '10', "qqfczz", "QQ飞车官网", 1, 1, "speed"],
+	"6": ["petvip", "粉钻贵族", "http://pet.qq.com/", '10', "petvip", "QQ宠物官网", 1, 1, "pet"],
+	"20": ["qqxwzz", "炫舞紫钻", "http://x5.qq.com/", "20", "qqxwzz", "QQ炫舞官网", 1, 1, "x5"],
+	//"21": ["xxvip", "寻仙VIP", "http://xx.qq.com/", "20", "xxvip", "寻仙官网", 1, 1, "xx"],
+	"18": ["cfclub", "CF会员", "http://cf.qq.com/", "30", "cfclub", "穿越火线官网", 1, 1, "cf"],
+	"8": ["qqr2by", "音速紫钻", "http://r2.qq.com/", "10", "qqr2by", "QQ音速官网", 1, 1, "r2"],
+	"5": ["xxqqt", "QQ堂紫钻", "http://qqtang.qq.com/", "10", "xxqqt", "QQ堂官网", 1, 1, "qqtang"],
+	"19": ["qqbookby", "读书VIP", "http://book.qq.com/lianzaiindex/all/vip1_index_1.htm", "10", "qqbookby", "腾讯读书官网", 0, 1, "book"],
+	"23": ["xxsqqm", "超级QQ", "http://vip.qq.com/", "10", "xxsqqm", "超级QQ官网", 1, 1, "qqvip"],//超级QQ跳到会员
+	"24": ["avavip", "AVA精英", "http://ava.qq.com/index.shtml", "30", "avavip", "战地之王官网", 1, 1, "ava"],
+	//"25": ["ltqqx", "QQ行", "http://qqx.qq.com/", "2", "ltqqx", "", 0, 1, "qqx"],
+	"27": ["mzyff", "魔钻", "http://mz.qq.com/", "10", "mzyff", "", 0, 1, "mz"],
+	"28": ["mhvip", "漫画VIP", "http://mycomic.qq.com/", "10", "mhvip", "腾讯动漫官网", 0, 0, "mh"],
+	"29": ["xyvip", "西游VIP", "http://qqxy.qq.com/", "20", "xyvip", "QQ西游官网", 0, 1, "qqxy"],
+	"32": ["nbavip", "NBA会员", "http://nbavip.qq.com/", "10", "nbavip", "NBA会员", 0, 1, "nbavip"],
+	"34": ["qsbyqz", "读书VIP", "http://qbook.qq.com/", "10", "qsbyqz", "腾讯读书官网", 0, 0, "ebook"],
+	"38": ["xxzxgp", "蓝钻豪华版", "http://gamevip.qq.com/?ADTAG=IED.PAY.QQGAME.INDEX", "15", "xxzxgj", "<span class='key_ora font_weight'>蓝钻官网</span>", 1, 1, "qqgp"]
+   // "35": ["xinz", "心钻", "", "10", "xinz", "心钻官网", 0, 0, "xinz"]
+	,"36": ["czjrby", "NBA2KOL全明星", "http://nba2k.qq.com/", "20", "czjrby", "NBA2KOL全明星官网",0,1,"nba2k"]
+	//,"37": ["-hsvipat", "幻世VIP", "http://hxsj.qq.com/", "30", "hsvipat", "幻世VIP官网",0,0,"hsvip"]
+	,"39": ["txsp", "腾讯视频VIP", "http://film.qq.com/", "20", "txsp", "腾讯视频VIP官网",1,1,"txsp"]
+	,"40": ["dsyqby", "读书VIP-原创", "http://yc.qq.com/", "6", "dsyqby", "腾讯读书官网",0,0,"dsyqby"]
+	,"41": ["xsby", "读书VIP-图书", "http://book.qq.com/", "6", "xsby", "腾讯读书官网",0,0,"xsby"]
+	,"42": ["xxjzghh", "黄钻豪华版", "https://vip.qzone.qq.com/", "15", "xxjzghh", "QQ空间官网", 1,1, "qzonelux"]
+};
+var IS_RIGHT_BAR = services[sid] && services[sid][7];
+var IS_RIGHT_PIC = $.inArray(sid, [1, 2, 3, 4, 5, 6, 7, 8, 15, 16, 18, 19, 20, 23, 24, 25, 27, 29, 32, 33, 34, 36, 38,39, 42]) > -1;
+var IS_SPE_LOGO = $.inArray(sid, [1,2,3,4,5, 6,7, 8, 15, 16, 18, 19,20,23,24,28,29,32,33, 38, 39, 42]) > -1;
+var IS_SPE_CSS = $.inArray(sid, [5, 6, 8, 15, 16, 18, 20]) > -1;
+var F_RIGHT_LIST = ["25", "34", "36"], F_RIGHT_ORDER = ["33","42","38","1","2","4","3","7","39","15","16","6","20","18","8","5","19","23","36","24","27","28","29","32"/*,"40","41"*/];
+var IS_UNI_PHONE =$.inArray(sid, [1, 2, 3, 4, 7]) > -1; 
+if (IS_SPE_CSS) {
+	document.write("<link rel=\"stylesheet\" type=\"text/css\" href=\"//imgcache.qq.com/bossweb/pay/css/special/" + services[sid][0] + ".css\" />");
+}
+function Menu(SID, CH, CM, AID){
+	this.sid = SID;
+	this.ch = CH;
+	this.cm = CM;
+	this.aid = AID
+	this.curentMenu = new Array();
+	this.curentService = new Array();
+	this.curentURL = "";
+	this.cmCookieName = "";
+}
+
+Menu.prototype = {
+	_init: function(){
+		setTopMenu("4");
+		this.verify();
+		$("#toask").attr("href", "/service/ask_v2.shtml?sid=" + this.sid + "&cm="+_mcache.cm+ "&aid=" + this.aid);
+		this.createSList();
+	},
+	verify: function(){
+		if (typeof menus[this.sid] == "undefined") {
+			location.href = "https://imgcache.qq.com/404.shtml";
+			return;
+		}
+		if (this.aid) {
+			/*if (this.sid != "7") 
+				this.aid = this.aid.indexOf("v2") > -1 ? this.aid : this.aid + "_v2";*/
+			var cookieName = "pay_" + services[this.sid][0].toUpperCase() + "_aid";
+			document.cookie = cookieName + "=" + this.aid + ";path=/;domain=pay.qq.com"
+		}
+		if (typeof channels[this.cm] == "undefined") {
+			/*if (this.sid == "2"||this.sid == "39") {
+				this.cm = "qdqb";
+			}
+			else {*/
+				//付费渠道记忆
+				var __sid = this.sid;
+				try{
+					this.cm = (function(){
+						var __tmp_cm = 'bank';
+						LIB.gray('02456',{succ:function(){
+							if (LIB.cookie.get('__pay_service_cm').split('|').length==3 && LIB.cookie.get('__pay_service_cm').split('|')[2]==LIB.cookie.get('uin')) {
+								__tmp_cm = LIB.cookie.get('__pay_service_cm').split('|')[0]||__tmp_cm;
+								_mcache.subcm = (((__tmp_cm=='tenpay'||__tmp_cm=='bank')&&LIB.cookie.get('__pay_service_cm').split('|').length==3)?LIB.cookie.get('__pay_service_cm').split('|')[1]:'');
+								try{
+									LIB.cookie.get('__pay_service_cm').split('|')[0]&&LIB.log('//upayportal.qq.com/cgi-bin/action_report.fcg?sessionid='+(+new Date()+LIB.cookie.get("uin").substring(1)*1)+'&uin='+LIB.cookie.get("uin").substring(1)*1+'&action=service.pv.cm_succ'+'&service='+services[__sid][0]);
+								}catch(e){};	
+							}else {
+								__tmp_cm = 'bank';_mcache.subcm='';
+							}
+						},err:function(){__tmp_cm = 'bank';_mcache.subcm='';}});
+						return __tmp_cm;
+					})();
+				}catch(e){
+					this.cm = 'bank';
+				};
+			/*}*/
+		}	
+		//cache global m.cm
+		_mcache.cm = this.cm;
+		if (typeof menus[this.sid][this.ch] == "undefined") {
+			if (this.ch == "ask") {
+				location.href = "https://imgcache.qq.com/service/ask_v2.shtml?sid=" + this.sid + "&cm="+_mcache.cm+ "&aid=" + this.aid;
+				return;
+			}
+			else {
+				this.ch = "self";
+			}
+		}
+		this.createMenu();
+	},
+	createMenu: function(){
+		this.curentMenu = menus[this.sid][this.ch];
+		this.curentService = services[this.sid];
+		var menu = this;
+		var curentMenu = menu.curentMenu;
+		var service = menu.curentService;
+		var str = new Array();
+		str = $.map(curentMenu, function(cm){
+			var ss = "href=\"javascript:void(0);\" onclick=\"m.jumpCM('" + cm + "');\"", _phoneArr=["mobile","unicom","cdma","phs","ctc","uniphone"];
+			/*avoid phone channels
+			if ((_mcache.mobile_black||("function"== typeof getUrlParam && "mobile"==getUrlParam("customize"))) && $.inArray(cm, _phoneArr) >= 0) {
+				return "";
+			}*/
+			if(cm=="qdqb"){
+				return "<li mm=\""+cm+"\"><div class=\"spe_v\"><a " + ss + "><span class=\"wd_con\">"+channels[cm]+"</span></a></div></li>";
+			}else if(cm=="tenpay"){
+				if(menu.sid == 20){
+					return "<li mm=\""+cm+"\"><div class=\"spe\"><a " + ss + "><span class=\"wd_con\"><i class=\"icon_c_tenpay\"></i>财付通<span class=\"wd_con in_text\">快捷支付 | 财付通余额</span></span></a></div></li>";
+				}else
+				 return "<li mm=\""+cm+"\"><div class=\"spe\"><a " + ss + "><span class=\"wd_con\">"+channels[cm]+"</span></a></div></li>";
+
+			}else if(cm=="bank"){
+				if(menu.sid == 20){
+					return "<li mm=\""+cm+"\"><div class=\"spe\"><a " + ss + "><span class=\"wd_con\"><i class=\"icon_c_qqcard\"></i>银行卡<span class=\"in_text wd_con\">储蓄卡 | 信用卡</span></span></a></div></li>";
+				}else
+					return "<li mm=\""+cm+"\"><div class=\"spe\"><a " + ss + "><span class=\"wd_con\">"+channels[cm]+"</span></a></div></li>";
+			}else if(cm=="ddn"){
+				return "<li style=\"display:none;\" id=\"li_ddn\"  mm=\""+cm+"\"><a " + ss + "><span class=\"wd_con\">" + channels[cm] + "</span></a></li>";
+			}/*else if (cm=="custom") {
+				return "<li style=\"display:none;\" id=\"li_custom\"><a " + ss + "><span class=\"wd_con\">" + channels[cm] + "</span></a></li>";
+			}*/else if(cm=="mobile"){
+				if(menu.sid == "19"){
+					return "<li mm=\""+cm+"\"><a " + ss + "><span class=\"wd_con\">" + "手机" + "</span></a></li>";
+				}
+			}
+			return "<li mm=\""+cm+"\"><a " + ss + "><span class=\"wd_con\">" + channels[cm] + "</span></a></li>";
+		});
+		str = str.join("\n");
+		$("#cmlist").html(str);
+	   /* if (this.ch == "self" && this.sid != "33") {
+			$("#choosetype").show();
+		}
+		else {
+			$("#choosetype").hide();
+		}*/
+		$("a[mode]").removeClass("li_active");
+		$("a[mode='" + this.ch + "']").addClass("li_active");
+		this.doSpecial();
+		//this.jumpCM(this.cm);
+		this.jumpCM(_mcache.cm);
+	},
+	createSList: function(){
+		var menu = this;
+		var str = [];
+		var ss = "";
+		/*$.each(services, function(sid, service){
+			if ($.inArray(sid, F_RIGHT_LIST) > -1) {
+				return;
+			}
+			var s = service[0];
+			str.push("<li sid='" + sid + "'><a class=\"li_" + s + "\"></a><a href='#' onclick=\"m.jumpSID('" + sid + "')\">" + service[1] + "</a></li>")
+		});*/
+		try{
+			for(var i=0,l=F_RIGHT_ORDER.length;i<l;++i){
+				str.push("<li sid='" + F_RIGHT_ORDER[i] + "'><a href='#' onclick=\"m.jumpSID('" + F_RIGHT_ORDER[i] + "')\">" + "<i class=\"li_" + services[F_RIGHT_ORDER[i]][0] + "\"></i>" + services[F_RIGHT_ORDER[i]][1] + "</a></li>");
+			}
+		}catch(e){window.console && console.log(e);}
+		$("#servicelist").html(str.join(""));
+		$("li[service='site']").html("<a href='" + services[menu.sid][2] + "' target='_blank'>" + services[menu.sid][5] + "&nbsp;&nbsp;</a>");
+	},
+	recomm: function(){
+		var menu = this;
+		menu.cm = "bank";
+		var sid = menu.sid;
+		menu.createMenu();
+	},
+	jumpCH: function(CH){
+		this.ch = CH;
+		if (typeof menus[this.sid][this.ch] == "undefined") {
+			if (this.ch == "ask") {
+				if (typeof pgvSendClick != "undefined") {
+					var hot = "PAYSER.v2." + this.ch.toUpperCase() + "." + services[this.sid][0].toUpperCase();
+					pgvSendClick({
+						hottag: hot
+					});
+				}
+				location.href = "https://imgcache.qq.com/service/ask_v2.shtml?sid=" + this.sid + "&cm="+_mcache.cm+ "&aid=" + this.aid;
+				return;
+			}
+			else {
+				this.ch = "self";
+			}
+		}
+		if (($.inArray(_mcache.cm, menus[this.sid][this.ch]) < 0)) {
+			_mcache.cm = "qdqb";
+		}
+		this.createMenu();
+	},
+	jumpCM: function(CM, ext, extval){
+		this.cm = CM;
+		var curentMenu = this.curentMenu;
+		if ($.inArray(CM, curentMenu) < 0) {
+			if ($.inArray("tenpay", curentMenu) > -1) {
+				this.cm = "tenpay";
+			}
+			else {
+				this.cm = "qdqb";
+			}
+		}
+		//cache global m.cm
+		_mcache.cm = this.cm;
+		$("#toask").attr("href", "/service/ask_v2.shtml?sid=" + this.sid + "&cm="+_mcache.cm+ "&aid=" + this.aid);
+		if ((typeof EXT == "undefined") || (typeof extval == "undefined")) {
+			EXT = "";
+		}
+		else {
+			EXT = "&" + ext + "=" + extval;
+		}
+		if (typeof pgvSendClick != "undefined") {
+			var hot = "PAYSER.v2." + this.cm.toUpperCase() + "." + this.ch.toUpperCase() + "." + services[this.sid][0].toUpperCase();
+			pgvSendClick({
+				hottag: hot
+			});
+		}
+		if( this.cm == "tenpay") {
+			this.curentURL = "/service/" + this.ch + "/" + this.curentService[0] + "/" + this.cm + "_v2.shtml?sid=" + this.sid + (_mcache.subcm?'&banksel='+_mcache.subcm:'') + EXT;	
+		} else if (this.cm == "bank") {
+			this.curentURL = "/service/" + this.ch + "/" + this.curentService[0] + "/" + this.cm + ".shtml?sid=" + this.sid  + (_mcache.subcm?'&banksel='+_mcache.subcm:'') + EXT;
+		} else if(this.cm == "creditcard"){
+			this.curentURL = "/service/" + this.ch + "/public/" + this.cm + ".shtml?sid=" + this.sid  + "&cm=" + this.cm+ EXT;	
+		} else {
+			this.curentURL = "/service/" + this.ch + "/" + this.curentService[0] + "/" + this.cm + ".shtml?sid=" + this.sid  + "&cm=" + this.cm+ EXT;	
+		}
+	   $("li[mm]").removeClass("current");
+		$("li[mm='" + this.cm + "']").addClass("current");
+
+		if(this.cm=="scard"){
+		   $("a[mode='send']").parent().hide();
+		   // $("#toask").hide();
+		}else{
+			$("a[mode='send']").parent().show();
+		}
+		var menu = this;
+		setTimeout(function(){
+			menu.loadFrame(menu.curentURL);
+		}, 1);
+		//handler goods_desc for inner_service_v2.0.shtml
+		$('#goods_desc').hide();
+	},
+	jumpSID: function(SID){
+		if (typeof services[SID] == "undefined") {
+			window.location.href = "https://imgcache.qq.com/404.shtml";
+			return;
+		}
+		var url = "/service/service.shtml?sid=" + SID + "&ch=" + this.ch + "&cm=" + this.cm;
+		if (typeof services[SID][8] != "undefined")
+			url = "/" + services[SID][8] + "/index.shtml?ch=" + this.ch;
+		location.href = url;
+	},
+	loadFrame: function(URL){
+		var menu = this;
+		$("#frameset").hide();
+		$("#divLoading").show();
+		$("#frameset").attr("src", URL);
+		$("#frameset").load(function(){
+			menu.setFrameAutoHandler();
+		});
+	},
+	setFrameAutoHandler: function(){
+		$("#divLoading").hide();
+		$("#frameset").show();
+		if (this.cm != "qdqb" && this.cm != "ddn") {
+			this.reSetFrame();
+		}
+	},
+	reSetFrame: function(){
+		var obj = document.getElementById("frameset");
+		obj.height = 0;
+		var fdh = 700;
+		try {
+			fdh = (obj.Document ? obj.Document.body.scrollHeight : obj.contentDocument.body.offsetHeight);
+		} 
+		catch (e) {
+			fdh = 700;
+		}
+		obj.height = (fdh > 678 ? fdh + 60 : 678);
+		try {
+			var firstInput = $("#frameset").contents().find(":input[type='text'][value='']:enabled:visible")[0];
+			if (firstInput) 
+				firstInput.select();
+		} 
+		catch (e) {
+		}
+	},
+	doSpecial: function(){
+		//处理下线业务跳转
+		if (this.curentService === undefined) {
+			location.href = 'https://imgcache.qq.com/ipay/out_of_date.shtml';
+		} else {
+			var code = this.curentService[0];
+			if (IS_RIGHT_BAR) {
+				$("#main_ctrl").attr("class", "main_600 ")
+				if (IS_SPE_LOGO || IS_RIGHT_PIC) {
+					$.get("/include/special/" + code + ".html", function(text){
+						m.html("right_bar", text);
+						$("#right_bar").show();
+					});
+				}
+			}
+			if (IS_SPE_LOGO) {
+					$("#logo_sub").html("<img src=\"//imgcache.qq.com/bossweb/pay/logo/" + code + "logo.png\" />").show();
+			}
+			if (this.sid == 2) {
+				var flag = $("#flag").val();
+				var uin = $('#loginUin').val();
+				var url = "http://vip.qzone.com/develop?login=qq";
+				$("#querystate>a").attr({
+					"href": url,
+					"target": "_blank"
+				});
+			}
+			else
+				if (this.sid == 1) {
+					$("#querystate>a").attr({
+						"href": "http://vip.qq.com/my/index.html",
+						"target": "_blank"
+					});
+				}
+			if (this.sid == "25") {
+				$("a[mode='send']").parent().hide();
+				$("#toask").hide();
+			}
+			if (this.sid == "28" || this.sid == "31" || this.sid == "38" || this.sid == "42") {
+				$("#toask").hide();
+			}
+			if (this.sid < 4 || this.sid == 7) {
+				this.showDDN();
+			}
+			if (getUrlParam("custom")) {
+				$("#li_custom").show();
+			}		
+		   //---------------------------
+		}
+	},
+	showDDN: function(){
+		var self = this;
+		var url = "http://qq.dodonew.com:8080/dodonew/interface/CheckDodonew.jsp";
+		var html_doc = document.getElementsByTagName('head')[0];
+		js = document.createElement('script');
+		js.setAttribute('type', 'text/javascript');
+		js.setAttribute('src', url);
+		html_doc.appendChild(js);
+		js.onreadystatechange = function(){
+			if (js.readyState == 'complete' || js.readyState == 'loaded') {
+				if (typeof(ddnPayment) != 'undefined' && ddnPayment) {
+					$("#li_ddn").show();
+				}
+				else {
+					if (self.cm == "ddn") {
+						self.jumpCM("bank");
+					}
+				}
+			}
+		}
+		js.onload = function(){
+			if (typeof(ddnPayment) != 'undefined' && ddnPayment) {
+				$("#li_ddn").show();
+			}
+			else {
+				if (self.cm == "ddn") {
+					self.jumpCM("bank");
+				}
+			}
+		}
+	},
+	html: function(id, str){
+		var pattern = /script/i;
+		var elem = document.getElementById(id);
+		if (!elem) return;
+		if (pattern.test(str)) {
+			str = str.replace(/\r\n/g, '');
+			var htmlPool;
+			var scriptPool = [];
+			var filePool = [];
+			var regFile = /<script[^>]*src=[\'\"](.*?)[\'\"][^>]*>(.*?)<\/script>/gi;
+			var regCode = /<script[^>]*>(.*?)<\/script>/gi;
+			str = str.replace(regFile, function(match){
+				var file = match.match(/src=[\'\"](.*?)[\'\"]/i);
+				filePool.push(file[1]);
+				return ''
+			});
+			str = str.replace(regCode, function(match){
+				var code = match.match(/<script[^>]*>(.*?)<\/script>/i);
+				scriptPool.push(code[1]);
+				return ''
+			});
+			htmlPool = str;
+			var create = function(src, code, hdl){
+				var head = document.getElementsByTagName("head")[0];
+				var script = document.createElement("script");
+				script.type = "text/javascript";
+				src ? script.src = src : 0;
+				code ? script.text = code : 0;
+				if (hdl) {
+					var IEback = function(){
+						if (script.readyState == "complete" || script.readyState == "loaded") {
+							hdl();
+							script.onload = script.onreadystatechange = new Function();
+							clearTimeout(timeHDL);
+						}
+					};
+					var FFback = function(){
+						script.readyState = "complete";
+						IEback();
+					};
+					var error = function(){
+						FFback();
+						head.removeChild(script);
+					}
+					var timeHDL = setTimeout(function(){
+						if (script.readyState != "complete") {
+							error();
+						}
+					}, 5000);
+					script.onreadystatechange = IEback;
+					script.onload = FFback;
+				}
+				head.appendChild(script);
+			}
+			var HDL = function(){
+				HDL.count--;
+				if (HDL.count < 1) {
+					each(scriptPool, function(code){
+						create(null, code, null);
+					});
+				}
+			};
+			HDL.count = filePool.length;
+			var each = function(arr, fn){
+				for (var i = 0; i < arr.length; i++) {
+					fn(arr[i]);
+				}
+			}
+			elem.innerHTML = htmlPool;
+			each(filePool, function(src){
+				create(src, null, HDL);
+			});
+		}
+		else {
+			elem.innerHTML = str;
+		}
+	}
+}
+var m, _mcache={_sImg:new Image(),_eImg:new Image(),_wImg:new Image()};
+$(function(){
+	if (typeof sid == "undefined") {
+		sid = getUrlParam("sid");
+	}
+	ch = getUrlParam("ch");
+	cm = getUrlParam("cm");
+	aid = getUrlParam("aid");
+	PageShow = {
+		"acct": "qdqb",
+		"bank": "tenpay",
+		"phone": "168",
+		"qqcard": "qqcard",
+		"mobile": "mobile",
+		"unicom": "unicom",
+		"phs": "ctc",
+		"vnet": "adsl",
+		"ddn": "ddn",
+		"card": "phonecard",
+		"creditcard": "creditcard"
+	}
+	pageShow = getUrlParam("pageshow");
+	if (typeof PageShow[pageShow] != "undefined") {
+		cm = PageShow[pageShow];
+	}
+	m = new Menu(sid, ch, cm, aid);
+	m._init();
+	$("a").click(function(){
+		this.blur();
+	});
+	$("a[mode]").click(function(){
+		this.blur();
+		m.jumpCH($(this).attr("mode"));
+	});
+	$("#showswitch").hover(function(){
+		$(this).addClass("nav_switch_active");
+	}, function(){
+		$(this).removeClass("nav_switch_active");
+	});
+	$("#choose").click(function(){
+		$("a[mm]").removeClass("li_active");
+		m.loadFrame("/choose/" + services[m.sid][0] + ".shtml");
+	});
+	/*var _cookie=function(name){
+	var ret=document.cookie.match(new RegExp("(?:^|;\\s)"+name+"=(.*?)(?:;\\s|$)"));
+		return ret?ret[1]:"";
+	},_phoneArr=["mobile","unicom","cdma","phs","ctc"];
+	_cookie("uin")?(function(){
+		$.ajax({
+			dataType:"json",
+			type:"POST",
+			url:"https://imgcache.qq.com/cgi-bin/account/ajax_query.cgi",
+			data:"cmd=101&uin="+_cookie("uin").substring(1)*1,
+			success:function(result){
+				if (result.resultcode == 0&& result.resultinfo.result == 1) {
+					window._mcache && (function(){_mcache.mobile_black = true})(); 
+					$("li[mm]").each(function(i){
+						$.inArray(this.getAttribute("mm"), _phoneArr)>=0?$(this).hide():0;
+					});
+				}
+			},
+			error:function(){}
+		});
+	})():0;*/
+});

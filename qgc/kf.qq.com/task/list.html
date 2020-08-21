@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+    var _speedMark = new Date();
+</script>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="Keywords"  content="è…¾è®¯å®¢æœ,qqå®¢æœ,è…¾è®¯æ¸¸æˆå®¢æœ,qqæ¸¸æˆå®¢æœ,è…¾è®¯å®¢æœç”µè¯,è…¾è®¯åœ¨çº¿å®¢æœ, qqåœ¨çº¿å®¢æœ,qqäººå·¥å®¢æœ,è…¾è®¯äººå·¥å®¢æœ, å¾®ä¿¡å®¢æœ,ç‹è€…è£è€€,å¾®ä¿¡,LOL,è‹±é›„è”ç›Ÿ,DNF,CF,ç©¿è¶Šç«çº¿,å¾®ä¿¡å…¬ä¼—å·,å¾®ä¿¡å…¬ä¼—å¹³å°"/>
+<meta http-equiv="Content-Language" content="zh-cn"/>
+<meta name="robots" content="all"/>
+<meta name="author" content="Tencent-OUI"/>
+<meta name="Copyright" content="Tencent"/>
+<meta name="description"  content="è…¾è®¯å®¢æœæˆç«‹äº2002å¹´ï¼Œæ‰¿æ¥äº†è…¾è®¯é›†å›¢çš„æ‰€æœ‰ä¸šåŠ¡çš„æµ·é‡ç”¨æˆ·æœåŠ¡ï¼Œä¸€ç›´ä»¥æ¥è‡´åŠ›äºä¾æ‰˜å…ˆè¿›çš„äº’è”ç½‘æŠ€æœ¯ï¼Œè‡´åŠ›äºé€šè¿‡å»ºè®¾å¤šå…ƒåŒ–ç‰¹è‰²æ¸ é“ï¼Œæ™ºèƒ½åŒ–è§£å†³ç”¨æˆ·é—®é¢˜ï¼ŒåŒæ—¶ä¼ é€’ç”¨æˆ·å¿ƒå£°ï¼ŒåŠ©åŠ›äº§å“ä¼˜åŒ–ä½“éªŒï¼Œæˆä¸ºä¸šç•Œé¢†å…ˆçš„äº’è”ç½‘å®¢æœå›¢é˜Ÿã€‚"/>
+<script type="text/javascript">
+    var KF = {};
+    var _speedMark = new Date();
+</script>
+<script type="text/javascript" src="../../js.aq.qq.com/js/aq_common.js" tppabs="https://js.aq.qq.com/js/aq_common.js"></script>
+<link rel="stylesheet" type="text/css" href="../../imgcache.qq.com/bossweb/service/v7/css/main.css" tppabs="https://imgcache.qq.com/bossweb/service/v7/css/main.css">
+<link rel="stylesheet" type="text/css" href="../../imgcache.qq.com/bossweb/service/kf-ui/pc-login/css/style-m-login.css" tppabs="https://imgcache.qq.com/bossweb/service/kf-ui/pc-login/css/style-m-login.css">
+
+<!--<link rel="stylesheet" type="text/css" href="/pc_ui/kf_pc_v7/dist/css/main.css">-->
+<title>æœåŠ¡è®°å½•</title>
+</head>
+<body>
+<div id="login_div"  style="position: fixed; width:650px; height:580px;z-index: 99999; top: 50%; left: 50%; display: none;" align="center">
+    <!-- <div class="mask"></div>    
+    <div class="modal" style="width:750px;height:450px;transform:none;-webkit-transform:none;left: 0;right: 0;top: 0;position: absolute;">
+        <i class="login-font icon-close" style="top: 13px;right: 10px;text-indent: 10em;" id="loginClose"></i>
+        <iframe id="login_frame" name="login_frame" frameborder="0" scrolling="auto" width="100%" height="100%" src=""></iframe>
+    </div>  -->
+    <div class="mod-login">
+        <div class="login-mask"></div>
+        <div class="login-dialog">
+            <div class="m-login">
+                <i class="login-font icon-login__close" id="loginClose"></i>
+                <iframe id="login_frame" name="login_frame" frameborder="0" scrolling="auto" width="100%" height="100%" src=""></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="header bills-header"  >
+    <div class="container" >
+        <div class="logo">
+            <a href="javascript:if(confirm('https://kf.qq.com/index.html  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://kf.qq.com/index.html'" tppabs="https://kf.qq.com/index.html"><i class="logo_img"></i></a>
+        </div>
+        <div class="searchHide" id="hidesearch" style="display: none">
+            <input type="text" class="search" id="kf_search_key" SearchSuggest="true" accesskey="/" autocomplete="off"  />
+            <input id="kf_search_key_hidden" type="hidden"/>
+            <button class="iconfont icon-search" id="kf_search_key_btn"></button>
+            <div class="search_key_suggest" id="kf_search_key_suggest" style="display: none">
+            </div>
+        </div>
+        <div class="member">
+            <p class="warn" id="announce_id"></p>
+            <div class="photo">
+                <button class="loginBtn" style="display: none">ç™»å½•</button>
+                <div id="uinPhoto" tabindex="0" style="display:none">
+                    <img src="../../imgcache.qq.com/bossweb/service/v7/images/photo.png" tppabs="https://imgcache.qq.com/bossweb/service/v7/images/photo.png" >
+                </div>
+                <div class="loginBox" id="loginTitle" style="display: none">
+                    <p>è¯·æ‚¨ç™»å½•è´¦æˆ·ï¼</p>
+                    <p>è®©æˆ‘ä»¬ä¸ºæ‚¨æä¾›æ›´å¤šè´´å¿ƒæœåŠ¡</p>
+                    <a href="javascript:void(0)" id="notLogin">éšä¾¿é€›é€›</a>
+                </div>
+                <div class="bills-loginBox" id="loginOut" style="display: none">
+                </div>
+            </div>
+        </div>
+        <div class="questionNaire" id="question_naire" style="display: none">
+            <i class="line"></i>
+            <i class="line"></i>
+            <a href="javascript:if(confirm('https://wj.qq.com/s2/2276058/094a/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÓòÍâµ½Ò»¸öÍâ²¿ÓòµÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://wj.qq.com/s2/2276058/094a/'" tppabs="https://wj.qq.com/s2/2276058/094a/" class="question-board" target="view_window"></a>
+        </div>
+    </div>
+</div>
+
+    <!-- å†…å®¹éƒ¨åˆ†begin -->
+    <div class="main">
+        <div class="container">
+            <div class="container-panel">
+                <div class="panel-tt">
+                    <ul>
+                        <li id="goto_home">é¦–é¡µ</li>
+                        <li>æˆ‘çš„æœåŠ¡è®°å½•</li>
+                    </ul>
+                </div>
+                <div class="panel-bd bill-panel-bd">
+                    <div class="record-list">
+                        <dl id="recordlist">
+                            <dt>
+                                <ul>
+                                    <li></li>
+                                    <li>æé—®ç¼–å·</li>
+                                    <li>é—®é¢˜ç±»å‹</li>
+                                    <li>æé—®æ—¶é—´</li>
+                                    <li>ç­”å¤/é¢„è®¡ç­”å¤æ—¶é—´</li>
+                                    <li>å½“å‰è¿›åº¦</li>
+                                </ul>
+                            </dt>
+                            <div class="record-none" id="recort_none" style="display: none">
+                                <i class="iconfont icon-record"></i>
+                                <p>æ‚¨è¿‘æœŸæœªæäº¤è¿‡é—®é¢˜å’¨è¯¢å®¢æœ</p>
+                            </div>
+
+                        </dl>
+                    </div>
+                    <p class="append-tip" id="tips_icon" style="display: none"><i class="icon-billtip" ></i><span>ä¸ºäº†ä¿æŠ¤æ‚¨çš„éšç§ï¼Œæ­¤å¤„ä»…å¯æŸ¥çœ‹è¿‘3æœˆæ‚¨å‘å®¢æœæé—®çš„è®°å½•è¯¦æƒ…ã€‚ç”µè¯ã€åœ¨çº¿ç­‰æœåŠ¡ä¿¡æ¯ä¸åšå±•ç¤ºï¼Œä¸ä¾¿ä¹‹å¤„è¿˜è¯·è°…è§£ã€‚</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- å†…å®¹éƒ¨åˆ†end -->
+
+<!--æµ®å±‚begin-->
+<!-- <div class="layer-new">
+  <div class="layer-box">
+    <div class="box-img">
+      <i class="code-img"></i>
+    </div>
+    <div class="box-txt">
+      <p>å…³æ³¨å¾®ä¿¡å…¬ä¼—å·</p>
+      <p>å‘è…¾è®¯å®¢æœæé—®</p>
+    </div>
+  </div>
+</div> -->
+<!--æµ®å±‚end-->
+<!--å°¾éƒ¨begin-->
+
+<div class="footer-new">
+  <div class="container">
+    <div class="topArea">
+      <ul class="helpList" id="right_service">
+        <li>
+          <i class="icon-serve"></i>
+          <div class="service-txt">
+            <h3>è…¾è®¯æœåŠ¡çƒ­çº¿</h3>
+            <p>0755-83765566</p>
+          </div>
+        </li>
+        <li>
+          <i class="icon-money"></i>
+          <div class="service-txt">
+            <h3>è´¢ä»˜é€šã€æ‰‹Qé’±åŒ…ä¸“çº¿</h3>
+            <p>0755-86013860</p>
+          </div>
+        </li>
+        <li>
+          <i class="icon-weipay"></i>
+          <div class="service-txt">
+            <h3>å¾®ä¿¡æ”¯ä»˜ã€ç†è´¢é€šä¸“çº¿</h3>
+            <p>95017</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="bottomArea">
+      <ul class="copyrightList">
+        <li><a href="javascript:if(confirm('https://www.tencent.com/zh-cn/index.html  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÓòÍâµ½Ò»¸öÍâ²¿ÓòµÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.tencent.com/zh-cn/index.html'" tppabs="https://www.tencent.com/zh-cn/index.html" target="view_window">å…³äºè…¾è®¯</a></li>
+        <li><a href="javascript:if(confirm('https://www.tencent.com/en-us/index.html  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.tencent.com/en-us/index.html'" tppabs="https://www.tencent.com/en-us/index.html" target="view_window">about Tencent</a></li>
+        <li><a href="javascript:if(confirm('https://www.qq.com/contract.shtml  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÓòÍâµ½Ò»¸öÍâ²¿ÓòµÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.qq.com/contract.shtml'" tppabs="https://www.qq.com/contract.shtml" target="view_window">æœåŠ¡æ¡æ¬¾</a></li>
+      </ul>
+      <p id="copyright" ></p>
+    </div>
+  </div>
+</div>
+<!--å°¾éƒ¨end-->
+<script type="text/javascript" src="../../imgcache.qq.com/bossweb/service/js/jquery-1.9.1.min.js" tppabs="https://imgcache.qq.com/bossweb/service/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../static/js/includepingjs.js" tppabs="https://kf.qq.com/static/js/includepingjs.js"></script>
+<script src="../static/lib/util.js" tppabs="https://kf.qq.com/static/lib/util.js" type="text/javascript"></script>
+<script type="text/javascript" src="../static/layer/layer.js" tppabs="https://kf.qq.com/static/layer/layer.js"></script>
+<script type="text/javascript" src="../static/js/kf_pc_ping.js" tppabs="https://kf.qq.com/static/js/kf_pc_ping.js"></script>
+<script type="text/javascript" src="../static/js/reportSceneIdPc.js" tppabs="https://kf.qq.com/static/js/reportSceneIdPc.js"></script>
+<script type="text/javascript" src="../../imgcache.qq.com/bossweb/unikf/js/md5.js" tppabs="https://imgcache.qq.com/bossweb/unikf/js/md5.js"></script>
+<script type="text/javascript" src="../js/xmlDeal.js" tppabs="https://kf.qq.com/js/xmlDeal.js"></script>
+<script type="text/javascript" src="../js/ajaxDeal.js" tppabs="https://kf.qq.com/js/ajaxDeal.js"></script>
+<script type="text/javascript" src="../static/lib/sea.js" tppabs="https://kf.qq.com/static/lib/sea.js"></script>
+<!-- <script type="text/javascript" src="/static/module/kf_login_new.js"></script> -->
+<script type="text/javascript">
+    seajs.config({
+        paths: {
+            'module': '/static/module/',
+            'js': '/static/js/'
+        }
+    });
+    document.domain = 'https://kf.qq.com/task/qq.com';
+    seajs.use("module/kf_search_new",function(a){
+        $(document).ready(function(){
+            a.init();
+        })
+    });
+    seajs.use("module/kf_right_menu",function(b){
+        $(document).ready(function(){
+            b.gotop();
+        })
+    });
+    seajs.use("module/kf_announce_new",function(b){
+        $(document).ready(function(){
+            b.announce();
+        })
+    });
+    //  var imcStr  = '';
+    //     imcStr += '<li><i class="icon-consult"></i>';
+    //     imcStr += '<div class="service-txt"><h3>QQåœ¨çº¿å®¢æœ</h3>';
+    //     imcStr += '<p id="onlineBtn">æˆ‘è¦å’¨è¯¢<i class="icon-consult-arrow"></i></p></div></li>';
+    // $("#right_service").append(imcStr);
+    // $("#onlineBtn").click(function(){
+    //     var hotname = '';
+    //         var toolname = $("#toolname").val();
+    //         if(toolname){
+    //             hotname = 'KFPC.TOOLS.'+toolname+'.GOTOIMC';
+    //         }else{
+    //             hotname = 'KFPC.TOOLS.GOTOIMC';
+    //         }
+
+    //     Pc_ping.kf_tagClick(hotname);
+    //     window.open('http://crm2.qq.com/page/portalpage/wpa.php?uin=40012345&f=1&ty=1&ap=000011|f:kfxdall');
+    // });
+   </script>
+<script type="text/javascript">
+seajs.use("/static/module/task",function(a){
+    $(document).ready(function(){
+        a.init('list');
+    })
+});
+
+</script>
+</body>
+</html>

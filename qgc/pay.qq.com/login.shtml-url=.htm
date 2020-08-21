@@ -1,0 +1,112 @@
+<!DOCTYPE html >
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Language" content="utf-8" />
+  <meta name="robots" content="all" />
+  <meta name="author" content="Tencent" />
+  <meta name="copyright" content="Tencent" />
+  <meta name="description" content="æè¿°ä¿¡æ¯" />
+  <meta name="keywords" content="QQå……å€¼ä¸­å¿ƒï¼ŒQç‚¹\Qå¸å……å€¼ï¼ŒQç‚¹\Qå¸æŸ¥è¯¢" />
+  <title>è…¾è®¯å……å€¼ä¸­å¿ƒ</title>
+  <link href="../imgcache.qq.com/bossweb/pay/pay_v4/css/skin.css" tppabs="https://imgcache.qq.com/bossweb/pay/pay_v4/css/skin.css" rel="stylesheet" type="text/css" />
+  <script type="text/javascript" src="../imgcache.qq.com/bossweb/pay/js/jquery.js-v=20120823001&max_age=31536000" tppabs="https://imgcache.qq.com/bossweb/pay/js/jquery.js?v=20120823001&max_age=31536000"></script>
+  <script type="text/javascript" src="js/web3/common.js" tppabs="https://pay.qq.com/js/web3/common.js"></script>
+</head>
+<body>
+<map class="top_menu">
+    <div class="menu">
+        <div class="txt_left">
+            <a target="_blank" href="app/mobile.shtml.htm" tppabs="https://pay.qq.com/app/mobile.shtml">æ‰‹æœºç‰ˆ</a>Â·
+            <a target="_blank" href="javascript:if(confirm('https://www.tenpay.com/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÓòÍâµ½Ò»¸öÍâ²¿ÓòµÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.tenpay.com/'" tppabs="https://www.tenpay.com/">è´¢ä»˜é€š</a>Â·
+            <a target="_blank" href="javascript:if(confirm('https://jifen.qq.com/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÓòÍâµ½Ò»¸öÍâ²¿ÓòµÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://jifen.qq.com/'" tppabs="https://jifen.qq.com/">QQç§¯åˆ†</a>
+        </div>
+        ï»¿ï»¿<span><span class="STYLE1">æ¬¢è¿å…‰ä¸´ï¼</span><input type="hidden" name="flag" id="flag" value="0" /><a id="login" href="javascript:openLogin();">ç™»å½•</a>
+    <script type="text/javascript">var LOGIN_UIN="";(function(){ var c = window.location.href.replace(/[;<>\(\)\'\"]/g,""); var l  = document.getElementById("login");l.onclick=function(){openLogin && openLogin(c)}; l.href ="javascript:void 0;";})();</script> </span>
+        <span id='login_backup' style='display:none'>
+            <span>æ‚¨å¥½ï¼</span> <a href="javascript:void(0);" onclick="LOGIN.init('//pay.qq.com/')">ç™»å½•</a>
+        </span>
+        <script type="text/javascript">
+            (function(){
+                var Id = function(id){
+                    return document.getElementById(id);
+                };
+                if (Id('flag') && Id('flag').value == '1') {
+                    Id('logout').previousSibling.previousSibling.className = 'login-user';
+                }
+            })();
+        </script>
+    </div>
+</map>
+<script type="text/javascript" src="js/web3/top.js-v=20121130001" tppabs="https://pay.qq.com/js/web3/top.js?v=20121130001">
+</script>
+<div class="header">
+   <div class="header-layer cf">
+       <h1 class="logo"><a href="index.shtml-aid=pay.header.logo.home&ADTAG=pay.header.logo.home.htm" tppabs="https://pay.qq.com/index.shtml?aid=pay.header.logo.home&ADTAG=pay.header.logo.home"><img src="../imgcache.qq.com/bossweb/pay/pay_v4/images/public/logo.png" tppabs="https://imgcache.qq.com/bossweb/pay/pay_v4/images/public/logo.png" alt="è…¾è®¯å……å€¼ä¸­å¿ƒ"></a></h1>
+        <div class="nav">
+            <ul>
+                <li id='menu_1'><a href="index.shtml.htm" tppabs="https://pay.qq.com/index.shtml" title="é¦–é¡µ"><i class="title_index"></i></a></li>
+                <li id='menu_2'><a href="javascript:if(confirm('https://pay.qq.com/ipay/index.shtml?c=qqacct_save  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://pay.qq.com/ipay/index.shtml?c=qqacct_save'" tppabs="https://pay.qq.com/ipay/index.shtml?c=qqacct_save" title="Qå¸å……å€¼"><i class="title_pay"></i></a></li>
+                <li id='menu_3'><a href="paygame/index.shtml.htm" tppabs="https://pay.qq.com/paygame/index.shtml" title="æ¸¸æˆå……å€¼"><i class="title_paygame"></i></a></li>
+				<li id='menu_4'><a href="service/index.shtml.htm" tppabs="https://pay.qq.com/service/index.shtml" title="æœåŠ¡å¼€é€š"><i class="title_openby"></i></a></li>
+                <li id='menu_5' style="position:relative"><a href="javascript:if(confirm('https://my.pay.qq.com/account/index.shtml  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÓòÍâµ½Ò»¸öÍâ²¿ÓòµÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://my.pay.qq.com/account/index.shtml'" tppabs="https://my.pay.qq.com/account/index.shtml" title="æˆ‘çš„å¸æˆ·" id="nav-myaccount"><i class="title_acc"></i></a><span id="hint-user" title="æ±Ÿæ¹–æ•‘æ€¥"></span></li>
+            </ul>
+        </div>
+   </div>
+</div>
+<div id="divBlank" class="black"></div>
+<div id="firefox_bg" style="display:none; clear:both; background:#000; width:100%; height:100%; position:absolute; top:0; left:0; zIndex:1000; opacity:0.3; MozOpacity:0.3; KhtmlOpacity:0.3; filter:Alpha(opacity=30);"></div>
+<div id="ptLogin_Div" style="z-index: 1001; display:none; position:absolute;" align="center">
+    <iframe id="ptLogin_Frame" frameborder="0" scrolling="no" width="100%" height="100%" src="" onload="ptlogin2_onResize(374, 330);">
+    </iframe>
+</div>
+<script type="text/javascript" src="js/notice.js" tppabs="https://pay.qq.com/js/notice.js"></script>
+
+<script type="text/javascript">
+document.domain = 'https://pay.qq.com/qq.com';
+document.getElementById('login')?document.getElementById('login').style.display = 'none':0;
+  var url= unescape(getUrlParam("url"));
+  if(url == ""){url = "https://pay.qq.com/"; location.href=url;}
+  if(document.getElementById("flag").value == 1)
+  {
+    if (!CheckUrlCredit(url)){url="https://pay.qq.com/"};
+    location.href = url;
+  }
+</script>
+<div class="login-wrap">
+	<div class="main cf">
+		<div class="box-pic">
+			<img src="../imgcache.qq.com/bossweb/pay/pay_v4/pic/paylogin-bg.jpg" tppabs="https://imgcache.qq.com/bossweb/pay/pay_v4/pic/paylogin-bg.jpg">
+        </div>
+		<div class="box-login" id="forresult">
+			<div id="divLoading" align="center" style="margin-top:40px; margin-left:100px;"><img src="images/public/loading.gif" tppabs="https://pay.qq.com/images/public/loading.gif" border="0">ç™»å½•åŠ è½½ä¸­ï¼Œè¯·ç¨å€™...</div>
+			<iframe id="frameLogin" src="" width="422px" height="370px" scrolling="no" frameborder="0" allowTransparency="true"  align="center" border="0" onload="document.getElementById('divLoading').style.display='none'; this.style.visible='visible';"></iframe>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+
+<div id="footer" class="footer">
+    <p>Copyright Â© 1998 - 2020 Tencent. All Rights Reserved <br />
+     	è…¾è®¯å…¬å¸ <a class="clink" target="_blank" href="../www.tencent.com/zh-cn/statement.html" tppabs="http://www.tencent.com/zh-cn/le/copyrightstatement.shtml">ç‰ˆæƒæ‰€æœ‰</a> <a class="clink" target="_blank" href="javascript:if(confirm('http://www.qq.com/contract.shtml  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÓòÍâµ½Ò»¸öÍâ²¿ÓòµÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://www.qq.com/contract.shtml'" tppabs="http://www.qq.com/contract.shtml">æœåŠ¡æ¡æ¬¾</a>
+	</p>
+</div>
+<script type="text/javascript">
+var frm_Login = document.getElementById("frameLogin");
+if ( frm_Login )
+{
+  frm_Login.style.visible = "hidden";
+  frm_Login.style.display = "block";
+  frm_Login.src = "../xui.ptlogin2.qq.com/cgi-bin/xlogin"/*tpa=https://xui.ptlogin2.qq.com/cgi-bin/xlogin*/
+  + "?appid=11000101"
+  + "&f_url=loginerroralert"
+  + "&link_target=blank"
+  + "&ep=" + escape("https://pay.qq.com/cgi-bin/login/qqacctlogin.cgi")
+  + "&s_url=" + escape(url)
+  + "&qlogin_jumpname=payjump&style=12&qlogin_param=url%3D" + escape(escape(url));
+}
+</script>
+<script type="text/javascript" src="../tajs.qq.com/stats-sId=14602590" tppabs="https://tajs.qq.com/stats?sId=14602590" charset="utf-8"></script>
+<script type="text/javascript" src="../pingjs.qq.com/tcss.ping.https.js" tppabs="https://pingjs.qq.com/tcss.ping.https.js"></script>
+</body>
+</html>

@@ -1,0 +1,423 @@
+document.write('<script src="../com/service_conf.js"/*tpa=http://imgcache.qq.com/bossweb/pay/js/com/service_conf.js*/></script>');
+var cfg = {
+	"LTMCLUB" : {
+		cname : "QQ会员",
+		tq : ["红色昵称", "排名靠前", "QQ等级加速"],
+		cls : "red",
+		dir : "qqvip",
+		type : 0
+	},
+	"XXJZGW" : {
+		cname : "黄钻贵族",
+		tq : ["空间装扮", "农场礼包", "超大相册"],
+		cls : "yellow",
+		dir : "qzone",
+		type : 0
+	},
+	"XXQQF" : {
+		cname : "红钻贵族",
+		tq : ["QQ秀免费穿", "QQ秀免费送", "免费送鲜花"],
+		cls : "red",
+		dir : "qqshow",
+		type : 0
+	},
+	"XXQGAME" : {
+		cname : "蓝钻贵族",
+		tq : ["QQ游戏踢人", "经验加成", "礼包任领"],
+		cls : "blue",
+		dir : "qqgame",
+		type : 0
+	},
+	"XXZXYY" : {
+		cname : "绿钻贵族",
+		tq : ["下载高品质音乐", "空间背景音乐免费用", "上传本地音乐"],
+		cls : "green",
+		dir : "music",
+		type : 0
+	},
+	"DNFHZ" : {
+		cname : "DNF黑钻",
+		tq : ["疲劳上限增加", "通关经验奖励", "通关翻牌奖励"],
+		cls : "blue",
+		dir : "dnf",
+		type : 0
+	},
+	"QQFCZZ" : {
+		cname : "飞车紫钻",
+		tq : ["经验加成", "专属道具与任务", "疯狂折扣"],
+		cls : "blue",
+		dir : "speed",
+		type : 0
+	},
+	"PETVIP" : {
+		cname : "粉钻贵族",
+		tq : ["QQ宠物免费喂养", "乐斗卷轴大礼包", "TNT等8折购买"],
+		cls : "blue",
+		dir : "pet",
+		type : 0
+	},
+	"QQXWZZ" : {
+		cname : "炫舞紫钻",
+		tq : ["踢人防踢功能", "对局经验独享加成", "礼包免费送"],
+		cls : "blue",
+		dir : "x5",
+		type : 0
+	},
+	"XXVIP" : {
+		cname : "寻仙VIP",
+		tq : ["自动回红、蓝", "8%经验加成,专属场景", "独享任务"],
+		cls : "blue",
+		dir : "xx",
+		type : 0
+	},
+	"CFCLUB" : {
+		cname : "CF会员",
+		tq : ["经验+25%", "道具特权/防踢/踢人", "中途退场无惩罚"],
+		cls : "blue",
+		dir : "cf",
+		type : 0
+	},
+	"QQR2BY" : {
+		cname : "音速紫钻",
+		tq : ["踢人特权", "防踢特权", "疯狂折扣"],
+		cls : "blue",
+		dir : "r2",
+		type : 0
+	},
+	"XXQQT" : {
+		cname : "QQ堂紫钻",
+		tq : ["VIP角色独享", "道具独享", "防踢"],
+		cls : "blue",
+		dir : "qqtang",
+		type : 0
+	},
+	"QQBOOKBY" : {
+		cname : "读书VIP",
+		tq : ["包月库图书免费看", "按条消费打八折", "大神新书限时免费阅读"],
+		cls : "blue",
+		dir : "book",
+		type : 0
+	},
+	"XXSQQM" : {
+		cname : "超级QQ",
+		tq : ["QQ等级加速", "随时移动在线", "超100项特权"],
+		cls : "blue",
+		dir : "mq",
+		type : 0
+	},
+	"AVAVIP" : {
+		cname : "AVA精英",
+		tq : ["VIP标识", "经验/游戏币额外加成", "防踢/特殊踢人"],
+		cls : "blue",
+		dir : "ava",
+		type : 0
+	},
+	"MZYFF" : {
+		cname : "魔钻",
+		tq : ["商城购物八折", "游戏礼包领取", "尊贵图标展示"],
+		cls : "blue",
+		dir : "mz",
+		type : 0
+	},
+	"MHVIP" : {
+		cname : "漫画VIP",
+		tq : ["在线阅读", "VIP漫画", "海量漫画"],
+		cls : "blue",
+		dir : "mh",
+		type : 0
+	},
+	"XYVIP" : {
+		cname : "西游VIP",
+		tq : ["运镖获益双倍", "经验获取速度+5%", "专属神赐加成"],
+		cls : "blue",
+		dir : "qqxy",
+		type : 0
+	},
+	"NBAVIP" : {
+		cname : "NBA会员",
+		tq : ["尊享官方活动", "赛事现场观战", "游戏礼包"],
+		cls : "blue",
+		dir : "nbavip",
+		type : 0
+	},
+	"LKWG" : {
+		cname : "洛克王国VIP",
+		tq : ["每周大礼包", "专属稀有宠物", "全地图飞行"],
+		cls : "blue",
+		dir : "roco",
+		type : 0
+	},
+	"CFDQ" : {
+		cname : "CF点券",
+		tq : ["M4A1-S王者兵器", "猎狐者、灵狐者", "超值礼包"],
+		tq_paygame : "三亿鼠标的枪战梦想",
+		cls : "blue",
+		dir : "cf",
+		type : 1
+	},
+	"DNFDQ" : {
+		cname : "DNF点券",
+		tq : ["强力萌宠", "稀有装扮", "超多道具"],
+		tq_paygame : "横版格斗网游的先行者",
+		cls : "blue",
+		dir : "dnf",
+		type : 1
+	},
+	"LOLDQ" : {
+		cname : "英雄联盟点券",
+		tq : ["全新英雄对战网游", "购买英雄", "全新英雄皮肤"],
+		tq_paygame : "DotA经典玩法的延伸",
+		cls : "blue",
+		dir : "lol",
+		type : 1
+	},
+	"QXZB" : {
+		cname : "七雄争霸元宝",
+		tq : ["购买游戏道具", "武将高级修炼", "建筑科技快速升级"],
+		tq_paygame : "七雄争霸，赢得天下",
+		cls : "blue",
+		dir : "7",
+		type : 1
+	},
+	"XXXY" : {
+		cname : "寻仙仙玉",
+		tq : ["购买超炫多人骑宠", "生产技能迅速升级", "宝石礼包强化装备"],
+		tq_paygame : "传统神话美术片网游大作",
+		cls : "blue",
+		dir : "xx",
+		type : 1
+	},
+	"LSZT" : {
+		cname : "绿色征途",
+		tq : ["购买游戏道具", "公平的绿色游戏", "新技能新玩法"],
+		tq_paygame : "最给力最低碳的绿色网游",
+		cls : "blue",
+		dir : "qqzt",
+		type : 1
+	},
+	"QQXXYB" : {
+		cname : "QQ仙侠传元宝",
+		tq : ["购买游戏道具", "兑换离线经验", "购买游戏内仙侠秀"],
+		tq_paygame : "新世界，心征程",
+		cls : "blue",
+		dir : "xxz",
+		type : 1
+	},
+	"QQKDC" : {
+		cname : "飞车点券",
+		tq : ["精品赛车和赛车改装", "购买游戏时尚套装", "享受可爱宠物加成"],
+		tq_paygame : "最好玩时尚火爆的赛车游戏",
+		cls : "blue",
+		dir : "speed",
+		type : 1
+	},
+	"WCBYDQ" : {
+		cname : "王朝霸域黄金",
+		tq : ["","",""],
+		tq_paygame : "等待天下之王者",
+		cls : "blue",
+		dir : "wcby",
+		type : 1
+	}
+};
+var Id = function(id) {
+	return document.getElementById(id) || "";
+};
+var accuAd = {
+	data : {
+		list : [],
+		serlist : [],
+		gamelist : []
+	},
+	adsTop5 : {
+		ser : ["ltmclub", "xxjzgw", "xxqgame", "xxqqf", "xxsqqm"],
+		games : ["cfdq", "dnfdq", "loldq", "qxzb", "xxxy"]
+	},
+	banner : {
+		mark : "mk" + parseInt(Math.random() * 100),
+		num : 2,
+		type : "wegt",
+		sort : "",
+		wh : ["", ""],
+		wrap : "wrap1",
+		jsonp : true,
+		callback : 'accuAd.callback'
+	},
+	markHdl : {
+		words : function() {
+			var str1 = ["推荐业务："], str2 = ["推荐业务："];
+			var s = accuAd.data.serlist, g = accuAd.data.gamelist;
+			for(var i = 0; i < 5; i++) {
+				var dir = codeConf[s[i].servicecode].dir;
+				str1.push("<a href=\"/" + dir + "/index.shtml?aid=pay1.index." + s[i].servicecode + "&ADTAG=PAY1.INDEX.OPENSERVICE." + dir.toUpperCase() + "\" class=\"space\">" + codeConf[s[i].servicecode].name + "</a>");
+			}
+			str1.push("<a href='https://imgcache.qq.com/service/index.shtml'>更多&gt;&gt;</a>");
+			for(var i = 0; i < 4; i++) {
+				var dir = codeConf[g[i].servicecode].dir;
+				str2.push("<a href=\"/paygame/" + dir + "/index.shtml?aid=pay1.index." + g[i].servicecode + "&ADTAG=PAY1.INDEX.CHONGZHI." + dir.toUpperCase() + "\" class=\"space\">" + codeConf[g[i].servicecode].name + "</a>");
+			}
+			str2.push("<a href='https://imgcache.qq.com/paygame/index.shtml'>更多&gt;&gt;</a>");
+			Id("serviceAd").innerHTML = str1.join(" ");
+			Id("gameAd").innerHTML = str2.join(" ");
+		},
+		extend : function(name, fn) {
+			accuAd.markHdl[name] = fn;
+		}
+	},
+	getAds : function(b) {
+		for(var i in b) {
+			accuAd.banner[i] = b[i];
+		}
+		if(accuAd.getCookie("uin") && accuAd.getCookie("skey")) {
+			if(accuAd.getCookie("newaccuads")) {
+				var res = decodeURIComponent(accuAd.getCookie("newaccuads"));
+				var d = accuAd.strToObj(res);
+				if(d.resultcode == 0) {
+					accuAd.groupAds(d);
+				}
+				accuAd.filledAds();
+				accuAd.markHdl[accuAd.banner.sort]();
+				return;
+			}
+			// var head = document.getElementsByTagName("head")[0];
+			// var ad = document.createElement("script");
+			// ad.type = "text/javascript";
+			// ad.src = 'http://pay.qq.com/cgi-bin/account/recommend_advertisement.cgi?loc=61&algorithm=158&func=' + accuAd.banner.callback + "&r=" + Math.random();
+			// head.appendChild(ad);
+		} else {
+			accuAd.filledAds();
+			accuAd.markHdl[accuAd.banner.sort]();
+		}
+	},
+	callback : function(res) {
+		var d = res;
+		if(d.resultcode == 0) {
+			accuAd.groupAds(d);
+			accuAd.filledAds();
+			accuAd.setCookie("newaccuads", accuAd.objToStr(d), 24);
+			accuAd.markHdl[accuAd.banner.sort]();
+		} else {
+			accuAd.filledAds();
+			accuAd.markHdl[accuAd.banner.sort]();
+		}
+	},
+	getCookie : function(name) {
+		var ret = document.cookie.match(new RegExp("(?:^|;\\s)" + name + "=(.*?)(?:;\\s|$)"));
+		return ret ? ret[1] : "";
+	},
+	setCookie : function(name, value, hours) {
+		var _cdate = new Date(), domain = "https://imgcache.qq.com/bossweb/pay/js/ad/pay.qq.com";
+		_cdate.setTime(_cdate.getTime() + hours * 3600 * 1000);
+		document.cookie = name + "=" + value + "; path=/; domain=" + domain + "; expires=" + _cdate.toUTCString();
+	},
+	objToStr : function(obj) {
+		var list = obj.resultinfo.list, arr = [], strjoin = "";
+		for(var i = 0; i < list.length; i++) {
+			arr.push(list[i].weight + "$" + list[i].servicecode);
+		}
+		return arr.join("*");
+	},
+	strToObj : function(str) {
+		var c = {}, res = str;
+		c.resultcode = 0;
+		c.resultinfo = {};
+		c.resultinfo.list = [];
+		var t1 = res.split("*");
+		for(var i = 0; i < t1.length; i++) {
+			var t2 = t1[i].split("$");
+			var tObj = {};
+			tObj.weight = t2[0];
+			tObj.servicecode = t2[1];
+			c.resultinfo.list.push(tObj);
+		}
+		return c;
+	},
+	groupAds : function(res) {
+		if(res.resultcode == 0) {
+			var list = res.resultinfo.list;
+			accuAd.data.list = list;
+			var d = accuAd.data;
+			for(var i = 0, j = list.length; i < j; i++) {
+				var code = list[i]["servicecode"].replace(/-/g, "").toLowerCase();
+				code = SUB_CODE_CONF[code] ? SUB_CODE_CONF[code] : code;
+				list[i]["servicecode"] = code;
+				if(!codeConf[code])
+					continue;
+				codeConf[code].price ? (function() {
+					list[i]["type"] = 0;
+					d.serlist.push(list[i]);
+				})() : (function() {
+					list[i]["type"] = 1;
+					d.gamelist.push(list[i]);
+				})();
+			}
+		}
+	},
+	filledAds : function() {
+		var d = {
+			s : [accuAd.data.serlist, accuAd.adsTop5.ser],
+			g : [accuAd.data.gamelist, accuAd.adsTop5.games]
+		};
+		for(var v in d) {
+			var arr = d[v];
+			var l = arr[0].length, n = arr[1].length;
+			if(l < n) {
+				for(var i = 0; i < n; i++) {
+					var c = 0;
+					if(arr[0].length < n) {
+						for(var j = 0; j < l; j++) {
+							if(arr[1][i] != arr[0][j].servicecode) {
+								c++;
+							}
+						}
+						if(c == l || l == 0) {
+							var o = {
+								weight : 1,
+								servicecode : arr[1][i]
+							}
+							arr[0].push(o);
+						}
+					}
+				}
+				v == "s" ? accuAd.data.samelist = arr[0] : accuAd.data.gamelist = arr[0];
+			}
+		}
+	},
+	showTemp : function() {
+		var wrap = document.getElementById(accuAd.banner.wrap), tmp = wrap.innerHTML, html = "", arr = [];
+		var hdl = function(i, v) {
+			var hash = {
+				"code" : i,
+				"logo" : v.type * 1 ? ("game_" + i.toLowerCase()) : i.toLowerCase(),
+				"cname" : v.cname,
+				"tq" : "<li>" + v.tq.join("</li><li>") + "</li>",
+				"tq_paygame" : v.tq_paygame,
+				"buttoname" : v.type * 1 ? "充值" : "开通"
+			};
+			var t = tmp;
+			for(var i in hash) {
+				t = t.replace(new RegExp("@" + i + "@", "g"), hash[i]);
+			}
+			return t;
+		};
+		for(var i in cfg) {
+			arr.length < accuAd.banner.num && function() {
+				arr.push(hdl(i, cfg[i], arr.length));
+			}();
+		};
+		wrap.innerHTML = arr.join("");
+	},
+	open : function(code, notJump) {
+		var url = "http://pay.qq.com/", type = ["open", "charge"], ret, mark = accuAd.banner.mark;
+		if(cfg[code].type) {
+			url += "/paygame/" + cfg[code].dir + "/index.shtml?aid=pay." + mark + "." + type[1] + "." + code + "&ADTAG=pay." + mark + "." + type[1] + "." + code;
+		} else {
+			url += "/" + cfg[code].dir + "/index.shtml?aid=pay." + mark + "." + type[0] + "." + code + "&ADTAG=pay." + mark + "." + type[0] + "." + code;
+		}
+		if(notJump) {
+			window.top.location.href = url;
+		} else {
+			window.open(url);
+		}
+	}
+}; 

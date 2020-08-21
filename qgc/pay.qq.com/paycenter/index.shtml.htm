@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="utf-8" />
+<meta name="robots" content="all" />
+<meta name="author" content="Tencent" />
+<meta name="copyright" content="Tencent" />
+<meta name="Description" content=" QQ,è…¾è®¯,å……å€¼ä¸­å¿ƒ,å¸æˆ·å……å€¼,æ¸¸æˆå……å€¼,æ”¯ä»˜ä¸­å¿ƒ,QQåŒ…æœˆ,åŒ…æœˆæ”¯ä»˜,å¸æˆ·ç®¡ç†,Qç‚¹å……å€¼,Qå¸å……å€¼,Qç‚¹æŸ¥è¯¢,Qå¸æŸ¥è¯¢,QQä¼šå‘˜,é»„é’»,çº¢é’»,ç»¿é’»,è“é’»,é»‘é’»,ç´«é’»,ç²‰é’»,QQå¡,è´¢ä»˜é€š,å®½å¸¦,æ‰‹æœºå……å€¼å¡" />
+<meta name="Keywords" content=" QQ,è…¾è®¯,å……å€¼ä¸­å¿ƒ,å¸æˆ·å……å€¼,æ¸¸æˆå……å€¼,æ”¯ä»˜ä¸­å¿ƒ,QQåŒ…æœˆ,åŒ…æœˆæ”¯ä»˜,å¸æˆ·ç®¡ç†,Qç‚¹å……å€¼,Qå¸å……å€¼,Qç‚¹æŸ¥è¯¢,Qå¸æŸ¥è¯¢,QQä¼šå‘˜,é»„é’»,çº¢é’»,ç»¿é’»,è“é’»,é»‘é’»,ç´«é’»,ç²‰é’»,QQå¡,è´¢ä»˜é€š,å®½å¸¦,æ‰‹æœºå……å€¼å¡" />
+<title>å¸æˆ·å……å€¼ - è…¾è®¯å……å€¼ä¸­å¿ƒ</title>
+<script type="text/javascript">var startStepMark=[]; startStepMark[0] = new Date();</script>
+<link rel="stylesheet" type="text/css" href="../../imgcache.qq.com/bossweb/pay/css/outframe.css-v=20120801001.css" tppabs="https://imgcache.qq.com/bossweb/pay/css/outframe.css?v=20120801001" />
+<script language="javascript" src="../../imgcache.qq.com/bossweb/pay/js/jquery.js" tppabs="https://imgcache.qq.com/bossweb/pay/js/jquery.js" type="text/javascript" ></script>
+<script type="text/javascript" src="../../imgcache.qq.com/bossweb/pay/js/service/lib/lib.js" tppabs="https://imgcache.qq.com/bossweb/pay/js/service/lib/lib.js"></script>
+<script language="javascript" src="../js/web3/paycenter.js-v=20130819001" tppabs="https://pay.qq.com/js/web3/paycenter.js?v=20130819001" type="text/javascript" ></script>
+<script language="javascript" src="../js/web3/common.js" tppabs="https://pay.qq.com/js/web3/common.js" type="text/javascript"></script>
+</head>
+<body>
+<map class="top_menu">
+    <div class="menu">
+        <div class="txt_left">
+            <a target="_blank" href="../app/mobile.shtml.htm" tppabs="https://pay.qq.com/app/mobile.shtml">æ‰‹æœºç‰ˆ</a>Â·
+            <a target="_blank" href="javascript:if(confirm('https://www.tenpay.com/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÓòÍâµ½Ò»¸öÍâ²¿ÓòµÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://www.tenpay.com/'" tppabs="https://www.tenpay.com/">è´¢ä»˜é€š</a>Â·
+            <a target="_blank" href="javascript:if(confirm('https://jifen.qq.com/  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÓòÍâµ½Ò»¸öÍâ²¿ÓòµÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://jifen.qq.com/'" tppabs="https://jifen.qq.com/">QQç§¯åˆ†</a>
+        </div>
+        ï»¿ï»¿<span><span class="STYLE1">æ¬¢è¿å…‰ä¸´ï¼</span><input type="hidden" name="flag" id="flag" value="0" /><a id="login" href="javascript:openLogin();">ç™»å½•</a>
+    <script type="text/javascript">var LOGIN_UIN="";(function(){ var c = window.location.href.replace(/[;<>\(\)\'\"]/g,""); var l  = document.getElementById("login");l.onclick=function(){openLogin && openLogin(c)}; l.href ="javascript:void 0;";})();</script> </span>
+        <span id='login_backup' style='display:none'>
+            <span>æ‚¨å¥½ï¼</span> <a href="javascript:void(0);" onclick="LOGIN.init('//pay.qq.com/')">ç™»å½•</a>
+        </span>
+        <script type="text/javascript">
+            (function(){
+                var Id = function(id){
+                    return document.getElementById(id);
+                };
+                if (Id('flag') && Id('flag').value == '1') {
+                    Id('logout').previousSibling.previousSibling.className = 'login-user';
+                }
+            })();
+        </script>
+    </div>
+</map>
+<script type="text/javascript" src="../js/web3/top.js-v=20121130001" tppabs="https://pay.qq.com/js/web3/top.js?v=20121130001">
+</script>
+<div class="header">
+   <div class="header-layer cf">
+       <h1 class="logo"><a href="../index.shtml-aid=pay.header.logo.home&ADTAG=pay.header.logo.home.htm" tppabs="https://pay.qq.com/index.shtml?aid=pay.header.logo.home&ADTAG=pay.header.logo.home"><img src="../../imgcache.qq.com/bossweb/pay/pay_v4/images/public/logo.png" tppabs="https://imgcache.qq.com/bossweb/pay/pay_v4/images/public/logo.png" alt="è…¾è®¯å……å€¼ä¸­å¿ƒ"></a></h1>
+        <div class="nav">
+            <ul>
+                <li id='menu_1'><a href="../index.shtml.htm" tppabs="https://pay.qq.com/index.shtml" title="é¦–é¡µ"><i class="title_index"></i></a></li>
+                <li id='menu_2'><a href="javascript:if(confirm('https://pay.qq.com/ipay/index.shtml?c=qqacct_save  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://pay.qq.com/ipay/index.shtml?c=qqacct_save'" tppabs="https://pay.qq.com/ipay/index.shtml?c=qqacct_save" title="Qå¸å……å€¼"><i class="title_pay"></i></a></li>
+                <li id='menu_3'><a href="javascript:if(confirm('https://pay.qq.com/paygame/index.shtml  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://pay.qq.com/paygame/index.shtml'" tppabs="https://pay.qq.com/paygame/index.shtml" title="æ¸¸æˆå……å€¼"><i class="title_paygame"></i></a></li>
+				<li id='menu_4'><a href="javascript:if(confirm('https://pay.qq.com/service/index.shtml  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://pay.qq.com/service/index.shtml'" tppabs="https://pay.qq.com/service/index.shtml" title="æœåŠ¡å¼€é€š"><i class="title_openby"></i></a></li>
+                <li id='menu_5' style="position:relative"><a href="javascript:if(confirm('https://my.pay.qq.com/account/index.shtml  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÓòÍâµ½Ò»¸öÍâ²¿ÓòµÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://my.pay.qq.com/account/index.shtml'" tppabs="https://my.pay.qq.com/account/index.shtml" title="æˆ‘çš„å¸æˆ·" id="nav-myaccount"><i class="title_acc"></i></a><span id="hint-user" title="æ±Ÿæ¹–æ•‘æ€¥"></span></li>
+            </ul>
+        </div>
+   </div>
+</div>
+<div id="divBlank" class="black"></div>
+<div id="firefox_bg" style="display:none; clear:both; background:#000; width:100%; height:100%; position:absolute; top:0; left:0; zIndex:1000; opacity:0.3; MozOpacity:0.3; KhtmlOpacity:0.3; filter:Alpha(opacity=30);"></div>
+<div id="ptLogin_Div" style="z-index: 1001; display:none; position:absolute;" align="center">
+    <iframe id="ptLogin_Frame" frameborder="0" scrolling="no" width="100%" height="100%" src="" onload="ptlogin2_onResize(374, 330);">
+    </iframe>
+</div>
+<script type="text/javascript" src="../js/notice.js" tppabs="https://pay.qq.com/js/notice.js"></script>
+
+<script type="text/javascript">
+(function(){
+	//(!~~document.getElementById("flag").value)&&(location.href = 'https://pay.qq.com/login.shtml?url='+escape(location.href));
+	var _uin = LIB.cookie.get('uin'), _ipay_gray = _uin.substr(_uin.length-2,1), c='qqacct_save', _aid=LIB.getUrlParam('aid'), _flag = LIB.getUrlParam('from'), _dc = LIB.getUrlParam('cm');
+	location.href = 'https://pay.qq.com/ipay/index.shtml?n=60&c='+c+'&ch=qqcard,qqwallet,weixin,kj'+(_aid?'&aid='+_aid:'')+(_dc?'&dc='+_dc:'');
+	(_flag!='ipay' && (!~~document.getElementById("flag").value || LIB.cookie.get('skey'))) && (function(){
+		//TODO: to match dc channel values
+		if (_dc=='tenpay') {
+			if (_aid.indexOf('tenpay')>=0){
+				_dc = 'cft';
+			} else if (_aid.indexOf('kj')>=0) {
+				_dc = 'kj';
+			} else {
+				_dc = '';
+			}
+		} else if (_dc=='mobile') {
+			_dc = 'uniphone';
+		} else if (_dc !=='qqcard' && _dc !=='bank' && _dc!=='phonecard') {
+			_dc = '';
+		}
+
+		//_ipay_gray = parseInt(_ipay_gray, 10);
+        //if (_ipay_gray >= 0 && _ipay_gray <= 5) {
+            //location.href = 'https://pay.qq.com/v2/buy.php?n=60&c='+c+'&ch=qqcard,kj,weixin'+(_aid?'&aid='+_aid:'')+(_dc?'&dc='+_dc:'');
+        //} else {
+		    //location.href = 'https://pay.qq.com/ipay/index.shtml?n=60&c='+c+'&ch=qqcard,kj,weixin'+(_aid?'&aid='+_aid:'')+(_dc?'&dc='+_dc:'');
+        //}
+	})();
+})();
+</script>
+<div class="container">
+<div class="secNav" role="main">
+	<div class="secNav_menu" role="navigation">
+		<ul>
+			<li><a href="javascript:void 0;" class="li_active" mode="self">ç»™è‡ªå·±å……å€¼</a></li>
+			<li><a href="javascript:void 0;" mode="send">ç»™ä»–äººå……å€¼</a></li>
+		</ul>
+	</div>
+	<div class="secNav_option">
+		<ul>
+			<li class="nav_switch"><a href="javascript:if(confirm('https://my.pay.qq.com/account/account_general_query.shtml  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ËüÊÇÓòÍâµ½Ò»¸öÍâ²¿ÓòµÄµØÖ·¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://my.pay.qq.com/account/account_general_query.shtml'" tppabs="https://my.pay.qq.com/account/account_general_query.shtml" target="_blank">æŸ¥è¯¢Qç‚¹/Qå¸å¸æˆ·ä½™é¢</a></li>
+		</ul>
+	</div>
+</div>
+<div class="wrap">
+	<div class="sidebar normalbar" role="navigation">
+		<div class="channel clearfix">
+			<ul>
+				<li mm_switch="qqcard"><a  href="javascript:void(0);" ><span class="wd_con">QQ å¡</span></a></li>
+				<li mm_switch="tenpay"><div class="spe"><a href="javascript:void(0);"><span class="wd_con"><i class="icon_c_tenpay"></i>è´¢ä»˜é€š<em class='discount'>95æŠ˜</em><span class="wd_con in_text">å¿«æ·æ”¯ä»˜ | è´¢ä»˜é€šä½™é¢</span></span></a></div></li>
+				<li mm_switch="bank" class="current"><div class="spe"><a href="javascript:void(0);"><span class="wd_con"><i class="icon_c_qqcard"></i>é“¶è¡Œå¡<span class="in_text wd_con">å‚¨è“„å¡ | ä¿¡ç”¨å¡</span></span></a></div></li>
+				<li mm_switch="168" ><a href="javascript:void(0);" ><span class="wd_con">å›ºå®šç”µè¯</span></a></li>
+				<li mm_switch="adsl"><a  href="javascript:void(0);" ><span class="wd_con">å®½å¸¦ç”¨æˆ·</span></a></li>
+				<li mm_switch="mobile"><a  href="javascript:void(0);" ><span class="wd_con">ç§»åŠ¨æ‰‹æœº</span></a></li>
+				<li mm_switch="unicom"><a  href="javascript:void(0);" ><span class="wd_con">è”é€šæ‰‹æœº</span></a></li>
+				<li mm_switch="cdma"><a  href="javascript:void(0);" ><span class="wd_con">ç”µä¿¡æ‰‹æœº</span></a></li>
+				<li mm_switch="phonecard"><a  href="javascript:void(0);" ><span class="wd_con">æ‰‹æœºå……å€¼å¡</span></a></li>
+                <li mm_switch="paypal" style="display:none"><a  href="javascript:void(0);" ><span class="wd_con">PayPal æ”¯ä»˜</span></a></li>
+				<li mm_switch="wb"><a href="javascript:void(0);" ><span class="wd_con">ç½‘å§ç”¨æˆ·</span></a></li>
+				<li mm_switch="scard"><a  href="javascript:void(0);" ><span class="wd_con">åˆ·å¡æ”¯ä»˜</span></a></li>
+				<li mm_switch="creditcard"><a  href="javascript:void(0);" ><span class="wd_con">ä¿¡ç”¨å¡ç§¯åˆ†</span></a></li>
+				<li mm_switch="easypay"><a  href="javascript:void(0);" ><span class="wd_con">ç”µä¿¡æ˜“å……</span></a></li>
+			</ul>
+			<div class="clear"></div>
+		</div>
+	</div>
+	<div class="main_div" role="form" aria-label="å¡«å†™è¡¨å•åŒº">
+		<iframe id="frameset" width="580px" frameborder="0" src="" scrolling="no" height="550px">é¡µé¢åŠ è½½ä¸­ï¼Œè¯·ç¨å€™...</iframe>
+        <div id="divLoading" align="center" style="position:relative;top:60px;left:200px; display:none"><img src="../images/public/loading.gif" tppabs="https://pay.qq.com/images/public/loading.gif" border="0" />é¡µé¢åŠ è½½ä¸­ï¼Œè¯·ç¨å€™...</div> 
+	</div>
+</div>
+<div class="ad" role="complementary">
+	<span id="wrap_ad"></span>
+<script type="text/javascript" src = "../../imgcache.qq.com/bossweb/pay/js/ad/accuAd.js-v=20120511" tppabs="https://imgcache.qq.com/bossweb/pay/js/ad/accuAd.js?v=20120511">
+</script>
+<script src="../../imgcache.qq.com/bossweb/pay/js/com/ad.js" tppabs="https://imgcache.qq.com/bossweb/pay/js/com/ad.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+    ~(function(){
+        if (document.getElementById("flag")&&document.getElementById("flag").value==1) {
+            var b = {
+                flag: 2,
+                index: 1,
+                sort: "chargePic",
+                loc: "",
+                wh: [139, 426],
+                wrap: "wrap_ad"
+            }
+			window["imgError"] = function(){			   
+				accuAd.markHdl.chargePic();
+		    }
+            accuAd.markHdl.extend("chargePic", function(){
+				var d = accuAd.data.serlist,weight_arr = [],count = 0;
+				for(var i=0;i<5;i++){
+					i==0?(function(){
+						weight_arr.push(d[i].weight);
+					})():(function(){
+						weight_arr.push(weight_arr[i-1]*1+d[i].weight*1);
+					})()
+				} 
+				var r =Math.random()*weight_arr[4];
+				for(var i=0;i<4;i++){
+					if(weight_arr[i]<r&&r<weight_arr[i+1]){
+						count = i;
+					}
+				} 
+				var code = d[count].servicecode,aid = "payad.charge.upright." + code;
+				var c = {
+                    0: "/" + codeConf[code].dir + "/index.shtml?aid=" + aid,
+                    1: "/paygame/" + codeConf[code].dir + "/index.shtml?aid=" + aid
+                }
+				var t = accuAd.data.serlist[count].type;
+                var href = t ? c[1] : c[0];
+                var img = "//imgcache.qq.com/bossweb/pay/images_ad/accu_ad/" + code + "_" + b.flag + b.index + ".jpg";
+                var str = '<a href="' + href + '" target="_blank"><img src="' + img + '" onerror="imgError();" width="' + b.wh[0] + '" height="' + b.wh[1] + '" border="0"/></a>';
+                document.getElementById(b.wrap).innerHTML = str;
+				
+            });
+            accuAd.getAds(b);
+        }
+        else {
+            try {
+                AD.init({
+                    loc: "Pay_charge_upright",
+                    wh: [139, 426]
+                });
+            } 
+            catch (e) {
+            }
+        }
+        
+    })();
+    
+</script>
+<!--
+<script  src="//imgcache.qq.com/bossweb/pay/js/com/ad.js" type="text/javascript" ></script>
+<script type="text/javascript">
+try{
+AD.init({loc:"Pay_charge_upright",wh:[139,426]});
+}
+catch(e){
+}
+</script>-->
+
+</div>
+<div class="clear"></div>
+</div>
+
+<div class="copyright">
+    <p >
+    copyright &copy; 1998 - 2020 Tencent. All Rights Reserved<br /> è…¾è®¯å…¬å¸ <a class="clink" target="_blank" href="../../www.tencent.com/zh-cn/statement.html" tppabs="http://www.tencent.com/zh-cn/le/copyrightstatement.shtml">ç‰ˆæƒæ‰€æœ‰</a></p>
+    </div>
+<!--[if IE 6]>
+<script type="text/javascript">
+ // <![CDATA[
+        try{
+	      document.execCommand("BackgroundImageCache", false, true);
+	    }
+	   catch(e){}
+// ]]>
+</script>
+<![endif]-->
+<script type="text/javascript" src="../../tajs.qq.com/stats-sId=14602590" tppabs="https://tajs.qq.com/stats?sId=14602590" charset="UTF-8"></script>
+<script type="text/javascript" src="../../pingjs.qq.com/tcss.ping.https.js" tppabs="https://pingjs.qq.com/tcss.ping.https.js"></script>
+<script type="text/javascript" src="../../imgcache.qq.com/bossweb/pay/js/aidstat.js-v=20120816001" tppabs="https://imgcache.qq.com/bossweb/pay/js/aidstat.js?v=20120816001"></script>
+<script type="text/javascript">
+//for stat
+try {
+	(function(){
+		(location.href.indexOf('/404.') == -1) && ("function" == typeof pgvMain) &&
+		pgvMain("", {
+			repeatApplay: "true",
+			statIframe: true
+		});
+//		var _aid = LIB.getUrlParam("aid"), _AID = "https://pay.qq.com/paycenter/pay.adeny.roy";
+//		LIB.cookie.set('aid4open', _aid || _AID, {});
+	})();
+}catch(e){};
+</script>
+
+</body>
+<script type="text/javascript">startStepMark[1]=new Date();	</script>
+<script type="text/javascript" src="../js/speed.js" tppabs="https://pay.qq.com/js/speed.js"></script>
+<script type="text/javascript">
+  try{ send_stat_request(startStepMark,{flag2:_FLAG2_PAY,flag3:_FLAG3_INDEX_PAYCENTER},1,3000);}catch(e){}
+</script>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-cn" lang="zh-cn">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="utf-8" />
+<meta name="robots" content="all" />
+<meta name="author" content="Tencent-ISRD" />
+<meta name="Copyright" content="Tencent" />
+<meta name="Description" content="Qzone精彩由你而来" />
+<meta name="Keywords" content="Qzone,QQ空间,Blog,博客,网络日志,播客,腾讯,QQ,Tencent" />
+<title>Qzone精彩由你而来</title>
+<link rel="stylesheet" rev="stylesheet" href="http://imgcache.qq.com/qzone_v5/gb_d3f_out.css" type="text/css" media="screen"/>
+<link rel="stylesheet" rev="stylesheet" href="http://imgcache.qq.com/qzone_v5/app/app_vip/css/style_vip.css" type="text/css" media="screen"/>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<script type="text/javascript" src="http://imgcache.qq.com/qzone/qzfl/qzfl.js" charset="utf-8"></script>    
+<script type="text/javascript" src="http://imgcache.qq.com/qzone/qzfl/appclientlib.js" charset="utf-8"></script>	
+<script type="text/javascript" src="http://imgcache.qq.com/qzone/mall/v5/comm/js/FillDiv_Ex.js" charset="gb2312"></script>
+<script type="text/javascript" src="http://imgcache.qq.com/qzone/mall/v5/web/vip/util.js" charset="gb2312"></script>
+<script type="text/javascript">
+	var qzoneInfo = QZONE.FP.getQzoneConfig();
+	document.write('<link rel="stylesheet" rev="stylesheet" href="http://imgcache.qq.com/qzonestyle/qzone_client_v5/css/'+qzoneInfo.styleId+'/color_out.css" type="text/css" media="screen"/>');
+
+	var vscreen = '-';
+	if (top.g_fullMode == 3 || top.g_fullMode == 4 && !top.g_OFPLite) {
+		vscreen = 'wide';
+	}
+
+	QZONE.pageEvents.pageBaseInit();
+	QZONE.pageEvents.onloadRegister(function(){		
+		initLetter();	
+		initProperty();
+	});
+
+	//贵族信纸
+	function initLetter(){
+		top.loadJsonData("initLetter", "http://imgcache.qq.com/qzone/mall/static/json/mallpaper_259_1.json", postInitLetter, postInitLetter, true, void(0), "mallpaperdealdata");
+	}
+	function postInitLetter(data){
+		var data = data.data;
+		var list = [];
+		if(data.length >= 6){
+			if(vscreen == 'wide'){
+				list = data.slice(0,8);
+			}else {
+				list = data.slice(0,6);
+			}
+		}else{
+			list = data;
+		}
+		
+		for (var i in list){
+			list[i].dir = (list[i].Fitem_id)%16;
+			list[i].pic = 'http://imgcache.qq.com/qzone/space_item/pre/'+list[i].dir+'/'+list[i].Fitem_id+'_1.gif';
+		}
+		FillDiv_Ex("letterDiv", {'data': list});
+
+		var owner = top.g_JData["yellowInfo"].ownerinfo[0];
+		var num = FranchiseFunc.pages[owner.level];
+		if(owner.vip == 1){
+			$('letterTitle').innerHTML = '您当前的等级为<strong class="c_tx">黄钻Lv'+owner.level+'</strong>，本月共可使用<strong class="c_tx">'+num+'</strong>信纸';
+		}else{
+			$('letterTitle').innerHTML = '您回归黄钻后，每月可以使用<strong class="c_tx">'+num+'</strong>信纸';
+		}
+		iframeHeight();
+	}
+
+	//贵族道具
+	function initProperty(){
+		// 道具信息 
+		var properties = [{ name:"狗仔队", level:1, src:"/qzone/item/prop/2.gif", id:2, 
+		    note:"在我的道具栏目中可使用该道具，使用后可看到指定QQ号码最近访问过的十个Qzone列表,一个该道具只可查询一次。"
+		}, {name:"隐身草", level:1, src:"/qzone/item/prop/3.gif", id:3, 
+		    note:"在回复网络日志或投票时可使用此道具，使用后可以匿名发表回复，任何人无法看到使用者的真实身份，但使用照妖镜道具可解除此道具效果。  该道具一个只可使用一次。"
+		}, {name:"透视镜", level:1, src:"/qzone/item/prop/4.gif", id:4, 
+		    note:"在我的道具栏中可使用该道具，使用后可以看到指定QQ号码的道具情况，一个该道具只可查询一次。"
+		}, {name:"醒目灯", level:2, src:"/qzone/item/prop/1.gif", id:1, 
+			note:"在发表/编辑网络日志或投票时可使用该道具，使文章标题变为醒目的发光文字，一个该道具只可使用一次。"
+		}, {name:"开心红包", level:2, src:"/qzone/item/prop/10.gif", id:1000, 
+		    note:"领红包100%有奖，随机抽取，运气多多，开心多多！"
+		}, {name:"照妖镜", level:4, src:"/qzone/item/prop/5.gif", id:5, 
+		    note:"在使用隐身草的昵称旁使用该道具，可以解除隐身草效果，看到该用户真实昵称，一个该道具只可使用一次。"
+		}, {name:"天使之爱", level:4, src:"/qzone/item/prop/9.gif", id:9, 
+		    note:"在回复网络日志或投票时可使用此道具，使用后自己的昵称后面出现一个可爱天使的图片，一个该道具可使用5次，和彩虹炫，隐身草不能同时使用。"
+		}, {name:"彩虹炫", level:6, src:"/qzone/item/prop/6.gif", id:6, 
+		    note:"在回复网络日志或投票时可使用此道具，使您的昵称具有七彩发光闪烁的效果，一个该道具只可使用一次。"
+		}, {name:"神奇肥料", level:6, src:"/qzone/item/prop/7.gif", id:7, 
+		    note:"在我的道具栏中可使用该道具，使用后领养植物营养指数增加20分，其它三项指数加满8分，一个该道具只可使用一次。"
+		}, {name:"道具转让许可证", level:6, src:"/qzone/item/prop/8.gif", id:8, 
+		    note:"在我的道具栏中可使用该道具，可从自己已有的道具中选择一个赠送给指定QQ号，一个该道具可使用三次。"
+		}];
+
+		var list = [];
+		var owner = top.g_JData["yellowInfo"].ownerinfo[0];
+		for(var i=0, l=properties.length; i<l; i++){
+			if(owner.level >= properties[i].level){
+				var property = properties[i];				
+				if(owner.vip == 1){
+					property.display='block';
+				}else{
+					property.display='none';
+				}
+				list.push(property);
+			}
+		}
+
+		FillDiv_Ex("propertyDiv", {'data': list});
+		iframeHeight();
+		initTitle();
+	}
+
+	//道具标题
+	function initTitle(){
+		top.loadJsonData("initProperty", "http://vip.qzone.qq.com/fcg-bin/fcg_get_yellow_admin_info?uin=" + top.g_iUin+'&t='+Math.random(), postInitProperty, postInitProperty, true, void(0), "_Callback");
+	}
+	function postInitProperty(data){
+		var owner = top.g_JData["yellowInfo"].ownerinfo[0];
+		var num1 = data.ownerinfo[0].leftprop;
+		owner.leftprop = num1;
+		var num2 = FranchiseFunc.property[owner.level];
+		//if(parseInt(owner.bitmap[4])==1 && owner.level <3){
+		//	num2++;
+		//}
+		//var num1 = owner.vip == 1 ? num1 : 0;
+		if(owner.vip == 1){
+			$('propertyTitle').innerHTML = '您本月还可以领取的道具为<strong class="c_tx">'+num1+'/'+num2+'</strong>个：';
+		}else{
+			$('propertyTitle').innerHTML = '您回归黄钻后，每月可以领取<strong class="c_tx">'+num1+'</strong>道具';
+		}
+
+		iframeHeight();
+	}
+
+	
+	// 领取道具
+	var g_bReqProcessing = false;
+	function property_onclick(id, level) {	
+		if(top.g_JData["yellowInfo"].ownerinfo[0].leftprop <= 0) {
+			alert("提示：您本月的免费道具已经领完！");
+			return;
+		}
+		
+		if(top.g_JData["yellowInfo"].ownerinfo[0].level < level) {
+			alert("提示：只有黄钻"+level+"级及以上用户能领取这个道具!");
+			return;
+		}
+
+		if(g_bReqProcessing == true)
+			return;
+			
+		g_iTreasureID = parseInt(id);    
+		var msg = '是否确定领取？';
+		if(g_iTreasureID == 1000){
+			msg = '开心红包里为您包装了精美的绝版挂件（买不到的哦），领取可随机获得一个挂件1个月的使用期，是否继续领取？';
+		}
+
+		var _c = new top.QZFL.widget.Confirm('专属物品', msg, { type: top.QZFL.widget.Confirm.TYPE.OK_CANCEL, hastitle: true, tips: ['确定', '', '取消'] });
+		_c.onConfirm = function () {        
+			/*
+			var url = "http://vip.qzone.qq.com/cgi-bin/cgi_draw_yellow_prop?uin=" + top.g_iUin + "&prop=" + g_iTreasureID+'&t='+Math.random();
+			if(g_iTreasureID == 1000){
+				url += "&func=lucky";
+			}
+			*/
+		   
+			top.showMsgbox("正在向服务器提交请求,请稍候...", 0, 5000); 
+			g_bReqProcessing = true;
+			//top.loadJsonData("updateProperty", url, postProcProperty, postProcProperty, true, void(0), "_Callback");       
+			var form;
+			if(g_iTreasureID == 1000)
+			{
+				form={
+					'uin': top.g_iUin,
+					'prop':g_iTreasureID,
+					'func':'lucky',
+					't':Math.random()
+				}
+			}
+			else
+			{
+				form={
+					'uin': top.g_iUin,
+					'prop':g_iTreasureID,
+					't':Math.random()
+				}
+			}
+			var fs = new top.QZONE.FormSender("http://vip.qzone.qq.com/cgi-bin/cgi_draw_yellow_prop", 'post', form, 'gb2312');
+			fs.onSuccess = postProcProperty;
+			fs.send();
+		};
+		_c.show();
+	}
+	function postProcProperty(data) {
+		if (data && data.ret!=0) {        
+			top.hideMsgbox();
+			top.showMsgbox(data.msg, 1, 2000);
+			g_bReqProcessing = false;
+			return;              
+		}   
+
+
+		postInitProperty({
+			ownerinfo:[{leftprop:top.g_JData["yellowInfo"].ownerinfo[0].leftprop-1}]
+		});
+				
+		
+		top.hideMsgbox();            
+		g_bReqProcessing = false;       
+		if(g_iTreasureID == 1000){
+			//alert("领取成功！购物券有效期只限于当月，请在有效期内使用！");
+			var _c = new top.QZFL.widget.Confirm('专属物品', '领取成功！您已获得商城送出的一款神秘装扮，请在“当前拥有的物品”中查看！现在就去查看？', { type: top.QZFL.widget.Confirm.TYPE.OK_CANCEL, hastitle: true, tips: ['确定', '', '取消'] });
+			_c.onConfirm = function () { QZONE.FP.toApp('/mall?target=myitem') };
+			_c.show();
+			/*
+			if(confirm("领取成功！您已获得商城送出的一款神秘装扮，请在“当前拥有的物品”中查看！现在就去查看？")) {
+				top.showIndexArea(false);
+				top.guidebutton(99, 'mallinfo', 'qzone/mall/v'+(top.g_version==5?5:3)+'/web/mall/index.htm?target=myacct');
+			}
+			*/
+		} else{
+			var _c = new top.QZFL.widget.Confirm('专属物品', '领取成功！点击“确定”去空间“装扮管理--物品管理--藏宝阁”栏目查收。', { type: top.QZFL.widget.Confirm.TYPE.OK_CANCEL, hastitle: true, tips: ['确定', '', '取消'] });
+			_c.onConfirm = function () { QZONE.FP.toApp('/mall?target=cbgflower') };
+			_c.show();
+		}
+	}
+</script>
+</head>
+<body>
+<script type="text/javascript">document.write((vscreen == 'wide') ? '<div class="qzone_vip big_mode_vip">' : '<div class="qzone_vip">');</script>
+    <div class="bor paper" style="border:0px">
+		<div class="bor mode_items aristocracy_paper">
+			<div class="bg2 mode_items_tit">
+				<h3>贵族信纸</h3>
+				<span class="mode_items_tit_other"><a href="http://imgcache.qq.com/qzone/newblog/blogcanvas.html?secondary=1&paperdialog=1" target="_parent">去试用&gt;&gt;</a></span>
+			</div>
+			<div class="mode_items_cont">
+				<p class="aristocracy_paper_notice" id="letterTitle"></p>
+				<ul id="letterDiv" style="display:none">
+			    <textarea class="template">
+		        [%repeat_0 match="data"%]
+					<li>
+						<p class="bor2 ap_img"><a href="javascript:;" onclick="QZONE.FP.toApp('/blog?secondary=1&paperdialog=1&paperid=[%=@Fitem_id%]'); return false;"><img src="[%=@pic%]" alt="[%=@Fitem_name%]" style="width:107px; height:134px;" /></p>
+						<p><a href="javascript:;" onclick="QZONE.FP.toApp('/blog?secondary=1&paperdialog=1&paperid=[%=@Fitem_id%]'); return false;">[%=@Fitem_name%]</a></p>
+					</li>
+		        [%_repeat_0%]
+		        </textarea>	
+				</ul>
+			</div>
+		</div>
+    </div>
+
+	<div class="bor props">
+		<div class="bg2 tit">
+			<h4>贵族专属道具</h4>
+			<a href="javascript:;" onclick="QZONE.FP.toApp('/mall?target=cbgflower'); return false;" class="link">查看已有道具&gt;&gt;</a>
+		</div>
+		<div class="main">
+			<p class="ps" id="propertyTitle"></p>
+			<div class="list" id="propertyDiv" style="display:none">
+			  <textarea class="template">
+		      [%repeat_0 match="data"%]
+				<div class="item">
+					<a href="javascript:;"><img src="[%=@src%]" alt="[%=@name%]" class="pic" /></a>
+					<div class="name"><a href="javascript:;">[%=@name%]</a></div>
+					<button type="button" class="bt_get bt_tx2" style="display:[%=@display%]" onclick="property_onclick([%=@id%],[%=@level%])">领取</button>
+				</div>
+		      [%_repeat_0%]
+		      </textarea>	
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
+<!--[if !IE]>|xGv00|2824e0916ad44bb32ca1e2754cf9f2aa<![endif]-->

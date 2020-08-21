@@ -1,0 +1,2 @@
+;(function(ABTest,IPAY){ABTest.before(IPAY,'loadChannelJs',function(_channel){if(IPAY.data.code!=='qqacct_save'){if(this.getParam('actid')==='MP20120213112721375_01'){IPAY.data.price=8;}else{IPAY.data.price=10;}}else{IPAY.data.price=1;}
+this.onAmountChange(this.amount);});})(ABTest,IPAY);/*  |xGv00|f9a0eec4cddefc0480638a77ab2fd83c */

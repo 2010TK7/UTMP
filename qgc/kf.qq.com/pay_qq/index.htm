@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="Keywords"  content="腾讯客服,qq客服,腾讯游戏客服,qq游戏客服,腾讯客服电话,腾讯在线客服, qq在线客服,qq人工客服,腾讯人工客服, 微信客服,王者荣耀,微信,LOL,英雄联盟,DNF,CF,穿越火线,微信公众号,微信公众平台"/>
+<meta http-equiv="Content-Language" content="zh-cn"/>
+<meta name="robots" content="all"/>
+<meta name="author" content="Tencent-OUI"/>
+<meta name="Copyright" content="Tencent"/>
+<meta name="description"  content="腾讯客服成立于2002年，承接了腾讯集团的所有业务的海量用户服务，一直以来致力于依托先进的互联网技术，致力于通过建设多元化特色渠道，智能化解决用户问题，同时传递用户心声，助力产品优化体验，成为业界领先的互联网客服团队。"/>
+<script type="text/javascript">
+    var KF = {};
+    var _speedMark = new Date();
+</script>
+<script type="text/javascript" src="../../js.aq.qq.com/js/aq_common.js" tppabs="https://js.aq.qq.com/js/aq_common.js"></script>
+<link rel="stylesheet" type="text/css" href="../../imgcache.qq.com/bossweb/service/v7/css/main.css" tppabs="https://imgcache.qq.com/bossweb/service/v7/css/main.css">
+<link rel="stylesheet" type="text/css" href="../../imgcache.qq.com/bossweb/service/kf-ui/pc-login/css/style-m-login.css" tppabs="https://imgcache.qq.com/bossweb/service/kf-ui/pc-login/css/style-m-login.css">
+
+<!--<link rel="stylesheet" type="text/css" href="/pc_ui/kf_pc_v7/dist/css/main.css">-->
+<title>腾讯客服-服务开通查询专区</title>
+<link rel="stylesheet" href="../../imgcache.qq.com/bossweb/service/v4/css/ch_service_x5.css" tppabs="https://imgcache.qq.com/bossweb/service/v4/css/ch_service_x5.css" type="text/css" media="screen"/>
+<link rel="stylesheet" href="../../imgcache.qq.com/bossweb/service/v4/css/global/game_icon.css" tppabs="https://imgcache.qq.com/bossweb/service/v4/css/global/game_icon.css" type="text/css" media="screen"/>
+<link rel="stylesheet" href="../../imgcache.qq.com/bossweb/service/v4/css/global/kf-ui-base.css" tppabs="https://imgcache.qq.com/bossweb/service/v4/css/global/kf-ui-base.css" type="text/css">
+
+
+</head>
+<body>
+<!--header-->
+<div id="login_div"  style="position: fixed; width:650px; height:580px;z-index: 99999; top: 50%; left: 50%; display: none;" align="center">
+    <!-- <div class="mask"></div>    
+    <div class="modal" style="width:750px;height:450px;transform:none;-webkit-transform:none;left: 0;right: 0;top: 0;position: absolute;">
+        <i class="login-font icon-close" style="top: 13px;right: 10px;text-indent: 10em;" id="loginClose"></i>
+        <iframe id="login_frame" name="login_frame" frameborder="0" scrolling="auto" width="100%" height="100%" src=""></iframe>
+    </div>  -->
+    <div class="mod-login">
+        <div class="login-mask"></div>
+        <div class="login-dialog">
+            <div class="m-login">
+                <i class="login-font icon-login__close" id="loginClose"></i>
+                <iframe id="login_frame" name="login_frame" frameborder="0" scrolling="auto" width="100%" height="100%" src=""></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="header bills-header"  >
+    <div class="container" >
+        <div class="logo">
+            <a href="../index.html" tppabs="https://kf.qq.com/index.html"><i class="logo_img"></i></a>
+        </div>
+        <div class="searchHide" id="hidesearch" style="display: none">
+            <input type="text" class="search" id="kf_search_key" SearchSuggest="true" accesskey="/" autocomplete="off"  />
+            <input id="kf_search_key_hidden" type="hidden"/>
+            <button class="iconfont icon-search" id="kf_search_key_btn"></button>
+            <div class="search_key_suggest" id="kf_search_key_suggest" style="display: none">
+            </div>
+        </div>
+        <div class="member">
+            <p class="warn" id="announce_id"></p>
+            <div class="photo">
+                <button class="loginBtn" style="display: none">登录</button>
+                <div id="uinPhoto" tabindex="0" style="display:none">
+                    <img src="../../imgcache.qq.com/bossweb/service/v7/images/photo.png" tppabs="https://imgcache.qq.com/bossweb/service/v7/images/photo.png" >
+                </div>
+                <div class="loginBox" id="loginTitle" style="display: none">
+                    <p>请您登录账户！</p>
+                    <p>让我们为您提供更多贴心服务</p>
+                    <a href="javascript:void(0)" id="notLogin">随便逛逛</a>
+                </div>
+                <div class="bills-loginBox" id="loginOut" style="display: none">
+                </div>
+            </div>
+        </div>
+        <div class="questionNaire" id="question_naire" style="display: none">
+            <i class="line"></i>
+            <i class="line"></i>
+            <a href="javascript:if(confirm('https://wj.qq.com/s2/2276058/094a/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ �������⵽һ���ⲿ��ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://wj.qq.com/s2/2276058/094a/'" tppabs="https://wj.qq.com/s2/2276058/094a/" class="question-board" target="view_window"></a>
+        </div>
+    </div>
+</div>
+
+    <input type="hidden" id="toolname" name="toolname" value="pay_qq_index" />
+<!--通栏广告位-->
+    <!--banner区域-begin-->
+    <div class="banner_container" >
+    	<div class="banner">
+        	<img src="../../imgcache.qq.com/bossweb/service/v4/pic/service_banner_x5.jpg" tppabs="https://imgcache.qq.com/bossweb/service/v4/pic/service_banner_x5.jpg" width="990" height="130" alt="一路有你，腾讯服务" />
+        </div>
+    </div>
+    <!--banner区域-end-->
+  <!--主内容区域-begin-->
+    <div class="main border_eb ser_open_main" >
+		<div class="kf_mod_location">
+		    <a href="../index.htm" tppabs="https://kf.qq.com/">客服首页</a>&gt;<span>包月业务列表</span>
+		</div>
+        <div class="ser_list">
+        	<h2 class="h2" id='opengroups'>您的QQ已开通以下服务<em class="more"><a href="javascript:void(0)" id="change_hint">更换支付方式说明</a></em></h2>
+            <table class="kf_mod_table ser_opened_list" id='opengroup'>
+            	<thead>
+                	<tr>
+                    	<th width="200">服务名称</th>
+                    	<th width="80">开通方式</th>
+                    	<th width="200">起止时间</th> 	
+                    	<th width="140">服务状态</th>
+                    	<th id="f_reason" style="display:none">冻结原因</th>
+                    	<th >操作</th>
+                    </tr>
+                </thead>
+                <tbody id='open'>
+                	
+                </tbody>
+            </table>
+        	<h2 class="h2" id='services'>未开通的QQ服务</h2>
+
+            <table  class="kf_mod_table" id="closegroup">
+            	<thead>
+                	<tr>
+                    	<th align="left" class="tx_indent">服务名称</th>
+                    	<th width="140">操作</th>
+                    </tr>
+
+                </thead>
+                <tbody id='close'>
+                </tbody>
+            </table>
+        </div>
+	</div>
+
+    <!--原手机激活浮层-begin-->
+    <div class="kf_mod_popshade mobile_layer "  id="mobile_layer_popshade"  style="display:none;"></div>
+    <div class="kf_mod_pop activate_pop mobile_layer other_phone_pop" style="display:none">
+    	<h2 class="tlt_close"><em class="tlt" id="ori_phone_e">用原手机激活</em><span class="close" onclick="deblock_biz.close_mobile()">关闭</span></h2>
+    	<div class="cont" style="overflow:visible;">
+            <!--激活主内容-->
+            <div class="activate">
+                <ul style="display:none" id="deblock_form">
+                	<li>
+                    	<em class="tlt" id="ori_phone">原开通业务手机：</em>
+                        <div class="cont">
+                        	<span class="font_orange" id="biz_mobile" title=""></span>
+                        </div>
+                    </li>
+                    <li class="font_gray">
+                    	请用以上手机编辑短信<span class="font_orange font_bold font_14"> YZ#2910668906 </span>发送至<span class="font_orange font_bold font_14" id="sms_command">  </span>获取短信验证码。
+                    </li>
+                    <li>
+                    	<em class="tlt">短信验证码：</em>
+                        <div class="cont">
+                        	<input name="" type="text" class="tx tx_mcode"  id="input_sms"/>
+                            <p class="form_tip font_red" style="display:none;" id="err_sms"><i class="icon icon_tip_warn"></i>验证码不能为空，请重新输入！</p>
+                        </div>
+                    </li>
+                    <li>
+                    	<em class="tlt">下侧图中字符：</em>
+                        <div class="cont">
+                        	<input name="" type="text" class="tx tx_vcode"  id="input_verify"/>
+                            <p class="form_tip font_red" style="display:none;" id="err_code"><i class="icon icon_tip_warn"></i> 图中字符不正确，请重新输入！</p>
+                            <p class="validate_img" id="verify_reopen"><img src="../imgcache/pic/validateimg.jpg" tppabs="https://kf.qq.com/imgcache/pic/validateimg.jpg" width="130" height="53" alt="验证码" /><a class="change_img" href="#">看不清楚，换一张</a></p>
+                        </div>
+                    </li>
+                    <li class="btn_box">
+                    	<em class="tlt">&nbsp;</em>
+                        <div class="cont">
+                           <input name="" type="hidden" class="tx tx_mcode"  id="service_code_hidden"/>
+                    		<button class="btn btn_blue" id="verify_btn" onclick="deblock_biz.submit_reopen()">提交验证</button>
+                        </div>
+                    </li>
+                </ul>
+                <!--温馨提示-->
+                <div class="kf_mod_hint warm_hint" style="display:block;height:78px">
+                    <i class="icon icon_faceok_small"></i>
+                    <div class="hint_con">
+                        <h5>温馨提示</h5>
+                        <p id="wxts_p">短信费用与您所在地区普通短信资费一致（一般为0.1元/条）。</p>
+                    </div>
+                </div>
+                <!--成功提示-->
+                <div class="kf_mod_hint" style="display:none;"  id="deblock_suc" >
+                    <i class="icon icon_ok"></i>
+                    <div class="hint_con">
+                        <h5 id="deblock_suc_greeting">恭喜您，亲爱的*****</h5>
+                        <p id="deblock_suc_msg">您的黄钻服务已解冻成功，可以正常使用了。</p>
+                    </div>
+                </div>
+                <!--失败提示-->
+                <div class="kf_mod_hint" style="display:none;"  id="deblock_fail">
+                    <i class="icon icon_facefail"></i>
+                    <div class="hint_con">
+                        <h5 id="deblock_err_greeting">对不起，亲爱的*****</h5>
+                        <p id="deblock_err_msg">您的黄钻服务解冻失败。</p>
+                    </div>
+                </div>
+                <!--系统繁忙-->
+                <div class="kf_mod_hint" style="display:none;" id="err_reopen_tips">
+                    <i class="icon icon_warn_big"></i>
+                    <div class="hint_con">
+                        <h5>对不起</h5>
+                        <p>系统繁忙,请稍后再试。</p>
+                    </div>
+                </div>
+            </div>
+			<div class="btn_box" style="display:none;" id="deblock_btns"><button class="btn btn_blue" id="deblock_suc_btn" onclick="pgvSendClick({hottag:'https://kf.qq.com/pay_qq/KF.SERVICE.PAY.ACTIVE_BY_MOBILE.DEBLOCK.SUC'});deblock_biz.close_mobile()" style="display:none;">完成</button><button class="btn btn_blue" id="deblock_fail_btn" onclick="pgvSendClick({hottag:'https://kf.qq.com/pay_qq/KF.SERVICE.PAY.ACTIVE_BY_MOBILE.DEBLOCK.SUC'});deblock_biz.close_mobile()" style="display:none;">返回</button></div>
+        </div>
+    </div>
+    <!--原手机激活浮层-end-->  
+    <!--解除冻结方式选择-begin-->
+    <div class="kf_mod_popshade deblock_menthod_container" style="display:none;" ></div>
+    <div class="kf_mod_pop relieve_methods_pop deblock_menthod_container" style="display:none;">
+    	<h2 class="tlt_close"><em class="tlt">解除冻结</em><span class="close" onclick="deblock_biz.deblock_close()">关闭</span></h2>
+    	<div class="cont">
+            <dl style="display:block">
+            	<dt>请选择解除冻结方法：</dt>
+                <dd class="on" onclick="deblock_biz.method_change(this)"><label><input name="relieve" type="radio" value="1" checked>原手机激活</label></dd>
+                <dd class=""     onclick="deblock_biz.method_change(this)"><label><input name="relieve" type="radio" value="2">重新开通</label></dd>
+                <dd class=""     onclick="deblock_biz.method_change(this)"><label><input name="relieve" type="radio" value="3">其他手机解冻 <span class="font_red" id="other_msg" style="display:none">(仅解除您业务的冻结状态)</span></label></dd>
+            </dl>
+            <!--系统繁忙-->
+            <div class="kf_mod_hint" style="display:none;">
+                <i class="icon icon_warn_big"></i>
+                <div class="hint_con">
+                    <h5>对不起，亲爱的*****</h5>
+                    <p>系统繁忙，请稍后再试。</p>
+                </div>
+            </div>
+			<div class="btn_box" style="display:block;"><button class="btn btn_blue"  onclick="deblock_biz.deblock_next()" id="tmp_data">下一步</button></div>
+        </div>
+    </div>
+    <!--解除冻结方式选择-end--> 
+    
+    <!--其他手机解冻-begin-->
+    <div class="kf_mod_popshade other_phone " style="display:none;"></div>
+    <div class="kf_mod_pop activate_pop other_phone_pop other_phone" style="display:none;">
+    	<h2 class="tlt_close"><em class="tlt">其他手机激活</em><span class="close" onclick="deblock_biz.other_phone_hide()">关闭</span></h2>
+    	<div class="cont" style="height:200px;">
+            <!--解冻主内容-->
+            <div class="activate">
+                <ul style="display:none;" id="deblock_form_other">
+                	<li>
+                    	<em class="tlt">您输入的短信号：</em>
+                        <div class="cont">
+                        	<span class="font_orange" id="biz_mobile_other" title=""> </span>
+                        </div>
+                    </li>
+                    <li class="font_gray">
+                    	请用以上手机编辑短信<span class="font_orange font_bold font_14"> YZ#2910668906 </span>发送至<span class="font_orange font_bold font_14" id="sms_command_other">  </span>获取短信验证码。
+                    </li>
+                    <li>
+                    	<em class="tlt">短信验证码：</em>
+                        <div class="cont">
+                        	<input name="" type="text" class="tx tx_mcode" id="input_sms_other"/>
+                            <p class="form_tip font_red" style="display:none;" id="err_sms_other"><i class="icon icon_tip_warn"></i>验证码不正确，请重新输入！</p>
+                        </div>
+                    </li>
+                    <li>
+                    	<em class="tlt">下侧图中字符：</em>
+                        <div class="cont">
+                        	<input name="" type="text" class="tx tx_vcode"  id="input_verify_other"/>
+                            <p class="form_tip font_red" id="err_code_other" style="display:none"><i class="icon icon_tip_warn" ></i> 验证码不正确，请重新输入！</p>
+                            <p class="validate_img" id="verify_reopen_other"><img src="../imgcache/pic/validateimg.jpg" tppabs="https://kf.qq.com/imgcache/pic/validateimg.jpg" width="130" height="53" alt="验证码" /><a class="change_img" href="#">看不清楚，换一张</a></p>
+                        </div>
+                    </li>
+                    <li class="btn_box">
+                    	<em class="tlt">&nbsp;</em>
+                        <div class="cont">
+                    		<button class="btn btn_blue" onclick="deblock_biz.submit_reopen_other()">提交验证</button>
+                        </div>
+                    </li>
+                </ul>
+                <!--输入手机号-->
+                <ul class="ser_close_list enter_phone" style="display:block;" id="other_phone_form">
+                	<li>
+                    	<em class="tlt">手机号码：</em>
+                        <div class="cont">
+                        	<input name="input_other_phone" type="text" class="tx" id="input_other_phone"/>
+                            <p class="form_tip font_red" id="err_phone" style="display:none"><i class="icon icon_tip_warn"></i> 请输入正确的手机号码</p>
+                        </div>
+                    </li>
+                    <li class="btn_box">
+                    	<em class="tlt">&nbsp;</em>
+                        <div class="cont">
+                        <input name="" type="hidden" class="tx tx_mcode"  id="service_code_hidden_other"/>
+                    		<button class="btn btn_blue" onclick="deblock_biz.input_other_phone()">提交验证</button>
+                        </div>
+                    </li>
+                </ul>
+                <!--成功提示-->
+                <div class="kf_mod_hint" style="display:none;">
+                    <i class="icon icon_ok"></i>
+                    <div class="hint_con">
+                        <h5>恭喜您，亲爱的*****</h5>
+                        <p>您的黄钻服务已解冻成功，可以正常使用了。</p>
+                    </div>
+                </div>
+                <!--失败提示-->
+                <div class="kf_mod_hint" style="display:none;">
+                    <i class="icon icon_facefail"></i>
+                    <div class="hint_con">
+                        <h5>对不起，亲爱的*****</h5>
+                        <p>您的黄钻服务解冻失败。</p>
+                    </div>
+                </div>
+            </div>
+			<div class="btn_box" style="display:none;"><button class="btn btn_blue">完成</button><button class="btn btn_blue">返回</button></div>
+        </div>
+        <!--温馨提示-->
+        <div class="kf_mod_hint warm_hint" style="display:block;height:78px">
+            <i class="icon icon_faceok_small"></i>
+            <div class="hint_con">
+                <h5>温馨提示</h5>
+                <p>1、目前<span class="font_red">仅支持移动用户和联通用户</span>，请输入准确的手机号码。<br>2、使用“其它手机解除冻结状态”<span class="font_red">仅关闭您业务的冻结状态</span>，无法恢复您的业务，如需开通该业务，请选择“重新开通”。</p>
+            </div>
+        </div>
+    </div>
+    <!--其他手机解冻-end-->
+<!--其他手机关闭-end-->
+<div class="kf_mod_popshade other_phone " style="display:none;" id="change_pay_mobilekt_shade"></div>
+<div class="kf_mod_pop" style="display:none" id="change_pay_mobilekt">
+    <h2 class="tlt_close"><em class="tlt">手机包月服务退订</em><span class="close hide_change_hint" id="new_change_pay_close">关闭</span></h2>
+    <div class="cont">
+        <!--手机发送短信浮层-->
+        <div class="change_pay_way" style="display:block">
+            <div class="cont">
+                <ol>
+                    <li>
+                        <div class="tlt">步骤一 . 发送短信查询手机已订制业务</div>
+                        <div class="">移动：编辑<span style="color: #00ace9">0000</span>发送到<span style="color: #00ace9">10086</span>或<span style="color:#00ace9">106580083030</span></div>
+                        <div class="">电信：编辑<span style="color:#00ace9">0000</span>发送到<span style="color: #00ace9">10000</span></div>
+                        <div class="">联通：编辑<span style="color: #00ace9">CX</span>到<span style="color:#00ace9">10655198664</span></div>
+                    </li>
+                    <li>
+                        <div class="tlt">步骤二 . 按运营商下发的指引进行回复，完成业务退订</div>
+                    </li>
+                </ol>
+                <div class="kf_mod_hint warm_hint">
+                    <i class="icon icon_faceok_small"></i>
+                    <div class="hint_con">
+                        <h5>温馨提示：</h5>
+                        <p>退订成功后，下月起运营商不再扣除费用。如退订失败，请联系本地的运营商（移动10086,联通10010,电信10000）为您操作。退订当月内，使用原开通方式重新开通此业务不会重复扣费。</p>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+     <!--关闭浮层-begin-->
+    <div class="kf_mod_popshade close_biz_container" style="display:none;"></div>
+    <div class="kf_mod_pop activate_pop ser_close_pop close_biz_container" style="display:none;">
+    	<h2 class="tlt_close"><em class="tlt">业务关闭</em><span class="close" onclick="deblock_biz.close_biz_cancel()">关闭</span></h2>
+    	<div class="cont">
+            <!--关闭主内容-->
+            <div class="activate">
+                <!--服务关闭-->
+                <ul class="ser_close_list" style="display:block;">
+                	<li>
+                    	<em class="tlt">原开通业务手机：</em>
+                        <div class="cont">
+                        	<span class="font_orange" id="close_ori_mobile"></span>
+                        </div>
+                    </li>
+                    <li>
+                    	请用以上手机编辑短信<span class="font_orange font_bold" id="close_command"></span>发送至<span class="font_orange font_bold" id="close_entrance"> </span>获取短信验证码。
+                    </li>
+                </ul>
+            </div>
+			<div class="btn_box" style="display:block;"><button class="btn btn_blue" id="close_btn" onclick="deblock_biz.close_biz_confirm()">已发送短信，查看结果</button></div>
+        </div>
+    </div>
+    <!--关闭浮层-end-->         
+    <!--预付费服务关闭提醒-begin-->
+    <div class="kf_mod_popshade" style="display:none;" id="prepaid_popshade"></div>
+    <div class="kf_mod_pop relieve_methods_pop" style="display:none" id="prepaid_auto_pay" >
+    	<h2 class="tlt_close"><em class="tlt">预付费服务关闭</em><span class="close" onclick="deblock_biz.cancle_auto_prepaid()">关闭</span></h2>
+    	<div class="cont">
+            <div class="kf_mod_hint" style="display:block;">
+                <i class="icon icon_warn_big"></i>
+                <div class="hint_con">
+                    <h5>关闭提示</h5>
+                    <p>关闭后，您的<span class="prepaid_biz">黄钻贵族</span>服务<br/>将于<span class="font_orange prepaid_close_date">2015-12-16</span>停止，<br/>到期后系统不再自动扣费。</p>
+                </div>
+            </div>
+			<div class="btn_box" style="display:block;"><button class="btn btn_blue" id="prepaid_sure_btn">确认</button><button class="btn btn_gray " onclick="deblock_biz.cancle_auto_prepaid()">取消</button></div>
+        </div>
+    </div>
+    <!--预付费服务关闭提醒-end-->
+    <!--预付费服务关闭提醒-begin-->
+     <div class="kf_mod_popshade" style="display:none;" id="close_by_prepaid_popshade"></div>
+    <div class="kf_mod_pop relieve_methods_pop" style="display:none" id="close_by_prepaid_suc" >
+    	<h2 class="tlt_close"><em class="tlt">预付费服务关闭</em><span class="close" onclick="deblock_biz.close_auto_popshade()">关闭</span></h2>
+    	<div class="cont">
+            <div class="kf_mod_hint" style="display:block;">
+                <i class="icon icon_ok"></i>
+                <div class="hint_con">
+                    <h5>关闭自动续费成功</h5>
+                    <p>您的<span class="prepaid_biz">黄钻贵族</span>服务将在<span class="font_orange prepaid_close_date">2015-12-16</span>到期后系统自动关闭。</p>
+                </div>
+            </div>
+			<div class="btn_box" style="display:block;"><button class="btn btn_blue reload_page">返回</button></div>
+        </div>
+    </div>
+    <!--预付费服务关闭提醒-end--> 
+        <!--预付费服务关闭提醒-begin-->
+    <div class="kf_mod_pop relieve_methods_pop" style="display:none" id="close_by_prepaid_fail" >
+    	<h2 class="tlt_close"><em class="tlt">预付费服务关闭</em><span class="close" onclick="deblock_biz.close_auto_popshade()">关闭</span></h2>
+    	<div class="cont">
+            <div class="kf_mod_hint" style="display:block;">
+                <i class="icon icon_warn_big"></i>
+                <div class="hint_con">
+                    <h5>对不起</h5>
+                    <p>系统繁忙，请您稍后再试</p>
+                </div>
+            </div>
+			<div class="btn_box" style="display:block;"><button class="btn btn_blue reload_page">返回</button></div>
+        </div>
+    </div>
+    <!--预付费服务关闭提醒-end--> 
+     <!--更换支付方式说明-begin-->
+    <div class="kf_mod_popshade" style="display:none" id="change_pay_popshade"></div>
+    <div class="kf_mod_pop" style="display:none" id="change_pay_popshade">
+    	<h2 class="tlt_close"><em class="tlt">更换支付方式说明</em><span class="close hide_change_hint">关闭</span></h2>
+    	<div class="cont">
+            <!--手机发送短信浮层-->
+            <div class="change_pay_way" style="display:block">
+                <div class="cont">
+                	<ol>
+                    	<li>
+                        	<div class="tlt">预付费开通的服务:</div>
+                            <div>不支持更换支付方式，服务到期后可选择其他方式支付。</div>
+                        </li>
+                    	<li>
+                        	<div class="tlt">手机开通的包月服务:</div>
+                            <div>可以更换支付方式，但需要先把手机开通的服务关闭后，再选择其他方式开通。</div>
+                        </li>
+                    </ol>
+                    <div class="kf_mod_hint warm_hint">
+                        <i class="icon icon_faceok_small"></i>
+                        <div class="hint_con">
+                            <h5>提醒</h5>
+                            <p>如手机当月已产生服务费用，更换其他方式会产生两次服务费，建议等到扣费日时关闭业务 再选择其他方式开通。</p>
+                        </div>
+                    </div>
+                </div>
+				<div class="btn_box"><button class="btn btn_gray hide_change_hint" >关闭</button></div>
+            </div>
+        </div>
+    </div>
+    <!--更换支付方式说明-end-->  
+<!--footer-->
+<!--浮层begin-->
+<div class="layer-new">
+  <div class="layer-box">
+    <div class="box-img">
+      <i class="code-img"></i>
+    </div>
+    <div class="box-txt">
+      <p>关注微信公众号</p>
+      <p>向腾讯客服提问</p>
+    </div>
+  </div>
+</div>
+<!--浮层end-->
+<!--尾部begin-->
+
+<div class="footer-new">
+  <div class="container">
+    <div class="topArea">
+      <ul class="helpList" id="right_service">
+        <li>
+          <i class="icon-serve"></i>
+          <div class="service-txt">
+            <h3>腾讯服务热线</h3>
+            <p>0755-83765566</p>
+          </div>
+        </li>
+        <li>
+          <i class="icon-money"></i>
+          <div class="service-txt">
+            <h3>财付通、手Q钱包专线</h3>
+            <p>0755-86013860</p>
+          </div>
+        </li>
+        <li>
+          <i class="icon-weipay"></i>
+          <div class="service-txt">
+            <h3>微信支付、理财通专线</h3>
+            <p>95017</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="bottomArea">
+      <ul class="copyrightList">
+        <li><a href="javascript:if(confirm('https://www.tencent.com/zh-cn/index.html  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ �������⵽һ���ⲿ��ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.tencent.com/zh-cn/index.html'" tppabs="https://www.tencent.com/zh-cn/index.html" target="view_window">关于腾讯</a></li>
+        <li><a href="javascript:if(confirm('https://www.tencent.com/en-us/index.html  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.tencent.com/en-us/index.html'" tppabs="https://www.tencent.com/en-us/index.html" target="view_window">about Tencent</a></li>
+        <li><a href="javascript:if(confirm('https://www.qq.com/contract.shtml  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ �������⵽һ���ⲿ��ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='https://www.qq.com/contract.shtml'" tppabs="https://www.qq.com/contract.shtml" target="view_window">服务条款</a></li>
+      </ul>
+      <p id="copyright" ></p>
+    </div>
+  </div>
+</div>
+<!--尾部end-->
+<script type="text/javascript" src="../../imgcache.qq.com/bossweb/service/js/jquery-1.9.1.min.js" tppabs="https://imgcache.qq.com/bossweb/service/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../static/js/includepingjs.js" tppabs="https://kf.qq.com/static/js/includepingjs.js"></script>
+<script src="../static/lib/util.js" tppabs="https://kf.qq.com/static/lib/util.js" type="text/javascript"></script>
+<script type="text/javascript" src="../static/layer/layer.js" tppabs="https://kf.qq.com/static/layer/layer.js"></script>
+<script type="text/javascript" src="../static/module/kf_login_tools.js" tppabs="https://kf.qq.com/static/module/kf_login_tools.js"></script>
+<script type="text/javascript" src="../static/js/kf_pc_ping.js" tppabs="https://kf.qq.com/static/js/kf_pc_ping.js"></script>
+<!-- <script type="text/javascript" src="/static/js/reportSceneIdPc.js"></script> -->
+<script type="text/javascript" src="../../imgcache.qq.com/bossweb/unikf/js/md5.js" tppabs="https://imgcache.qq.com/bossweb/unikf/js/md5.js"></script>
+<script type="text/javascript" src="../js/xmlDeal.js" tppabs="https://kf.qq.com/js/xmlDeal.js"></script>
+<script type="text/javascript" src="../js/ajaxDeal.js" tppabs="https://kf.qq.com/js/ajaxDeal.js"></script>
+<script type="text/javascript" src="../static/lib/sea.js" tppabs="https://kf.qq.com/static/lib/sea.js"></script>
+<script type="text/javascript" src="../static/module/kf_login_new.js" tppabs="https://kf.qq.com/static/module/kf_login_new.js"></script>
+<script type="text/javascript">
+    document.domain = 'https://kf.qq.com/pay_qq/qq.com';
+    KF.com.init();
+    $("#tel_toggle").click(function(){
+        var $target=$("#tel_area");
+        if($target.css("display")==="none"){
+            $target.fadeIn(500);
+        }else{
+            $target.fadeOut(500);
+        }
+        //pgvSendClick({hottag:'PC.INDEX.CLICK_TEL'});
+    });
+    seajs.config({
+        paths: {
+            'module': '/static/module/',
+            'js': '/static/js/'
+        }
+    });
+    document.domain = 'https://kf.qq.com/pay_qq/qq.com';
+    seajs.use("module/kf_search_new",function(a){
+        $(document).ready(function(){
+            a.init();
+        })
+    });
+    // seajs.use("module/kf_login_new",function(a){
+    //     $(document).ready(function(){
+    //         a.checkLogin();
+    //         //a.init();
+    //     })
+    // });
+    seajs.use("module/kf_right_menu",function(b){
+        $(document).ready(function(){
+            b.gotop();
+        })
+    });
+    seajs.use("module/kf_announce_new",function(b){
+        $(document).ready(function(){
+            b.announce();
+        })
+    });
+    var imcStr  = '';
+        imcStr += '<li><i class="icon-consult"></i>';
+        imcStr += '<div class="service-txt"><h3>QQ在线客服</h3>';
+        imcStr += '<p id="onlineBtn">我要咨询<i class="icon-consult-arrow"></i></p></div></li>';
+    $("#right_service").append(imcStr);
+    $("#onlineBtn").click(function(){
+        var hotname = '';
+            var toolname = $("#toolname").val();
+            if(toolname){
+                hotname = 'KFPC.TOOLS.'+toolname+'.GOTOIMC';
+            }else{
+                hotname = 'KFPC.TOOLS.GOTOIMC';
+            }
+
+        Pc_ping.kf_tagClick(hotname);
+        window.open('http://crm2.qq.com/page/portalpage/wpa.php?uin=40012345&f=1&ty=1&ap=000011|f:kfxdall');
+    });
+</script>
+
+<script type="text/javascript" src="../pay/set_nav.js" tppabs="https://kf.qq.com/pay/set_nav.js" ></script>
+<script type="text/javascript" src="../pay/code.js" tppabs="https://kf.qq.com/pay/code.js" ></script>
+<script type="text/javascript" src="../static/ext/date/date.js" tppabs="https://kf.qq.com/static/ext/date/date.js" ></script>
+<script type="text/javascript" src="../static/lib/txtpl_v1.1.min.js" tppabs="https://kf.qq.com/static/lib/txtpl_v1.1.min.js"></script>  
+<script id="biz_tpl" type="text/tmpl">
+<% for (i = 0, l = list.length; i < l; i ++) { %>
+<tr>
+	<td><i class="icon <%=list[i].biz_icon%>"></i><div class="ser_name"><h5><%=list[i].simple_name%></h5></div></td> 					
+	<td><%=list[i].open_method_name%></td>     
+	<td><%=list[i].start_end_time%></td> 
+	<td><span><%=list[i].status_name%></span></td>
+	<td class="block_reason"><span><%=list[i].block_reason%></span></td>
+	<% if(list[i]._status==="Y") {%>
+   			<% if(list[i].is_moblie===false) {%>
+				<td><div class="pos_container"><% if(list[i].is_auto_prepaid!==0) {%><button class="btn btn_gray"  onclick="deblock_biz.close_auto_prepaid('<%=list[i].biz_sub_code%>','<%=list[i].simple_name%>','<%=list[i].time_close%>')">关闭自动续费</button><% }%><button class="btn btn_gray"  onclick="deblock_biz.open_with_ipay('<%=list[i].biz_code%>',2)">续费</button>
+				</div></td>
+			<% }else {%>
+				<td><button class="btn btn_gray"  onclick='pgvSendClick({hottag:"KF.SERVICE.PAY.CLOSE"});toggle_close_hint_new("<%=list[i].biz_code%>")'>退订业务</button></td>
+			<% }%>
+	<% } else if(list[i]._status==="A") {%>
+		<td><div  style="" class="pos_container"><button class="btn btn_gray" onclick='deblock_biz.close_biz("<%=list[i].simple_name%>","<%=list[i].cmd_close%>","<%=list[i].cmd_close_num%>","<%=list[i].bind_mobile%>","<%=list[i].biz_code%>")'>关闭业务</button><button class="btn btn_gray" onclick='deblock_biz.deblock_method("<%=list[i].bind_mobile%>","<%=list[i].biz_sub_code%>","<%=list[i].simple_name%>","<%=list[i].biz_code%>")'>解除冻结</button><% if(+list[i].pay_method===1) {%>
+		<% }%></div></td>
+	<% } else if(list[i]._status==="B" && +(list[i].pay_method)===1) {%>
+<td><button class="btn btn_gray" onclick='deblock_biz.close_biz("<%=list[i].simple_name%>","<%=list[i].cmd_close%>","<%=list[i].cmd_close_num%>","<%=list[i].bind_mobile%>","<%=list[i].biz_code%>")'>关闭业务</button><button class="btn btn_gray" onclick='deblock_biz.active_by_mobile("<%=list[i].bind_mobile%>","<%=list[i].biz_sub_code%>","<%=list[i].simple_name%>")'>原手机激活</button>
+</td>
+	<% } else if(list[i]._status==="C") {%>
+			<td><button class="btn btn_gray"  onclick="deblock_biz.open_with_ipay('<%=list[i].biz_code%>',3)">解除冻结</button></td>
+	<% } %>
+</tr>
+<% if(list[i]._status==="Y" && list[i].is_moblie===true) {%>
+	<tr>
+		<td colspan="5" class="pop_hint_td"  style="display:none;" id="close_<%=list[i].biz_code%>"><div class="opt_tips_msg"><a onclick='toggle_close_hint("<%=list[i].biz_code%>");' class="close" href="javascript:void(0);">关闭业务</a><div class="cont"><p>您可以使用手机<%=list[i].bind_mobile_hint%>发送短信<%=list[i].cmd_close%>到<%=list[i].cmd_close_num%>取消该服务。<a onclick="pgvSendClick({hottag:'KF.SERVICE.PAY.RECLOSE '});window.location.reload();" href="javascript:void(0);">已发送短信，点击此处刷新</a></p></div></div></td>
+	</tr>
+<% } %>
+<% } %>
+</script>
+<script id="none_biz_tpl" type="text/tmpl">
+<% for (i = 0, l = list.length; i < l; i ++) { %>
+<tr><td><i class="icon <%=list[i].biz_icon%>"></i><div class="ser_name"><h5><%=list[i].simplechinesename%></h5><p><%=list[i].desc%></p></div></td><td><button class="btn btn_gray" onclick="deblock_biz.open_with_ipay('<%=list[i].code%>',1)">开通</button></td></tr>
+<% } %>
+</script>
+<script type="text/javascript" src="../pay/service_open_by_qq.js" tppabs="https://kf.qq.com/pay/service_open_by_qq.js" ></script>
+<script type="text/javascript" src="../pay/biz_code_2_auth.js" tppabs="https://kf.qq.com/pay/biz_code_2_auth.js" ></script>
+<script type="text/javascript" src="../pay/deblock_biz.js" tppabs="https://kf.qq.com/pay/deblock_biz.js" ></script>
+    <script src="../static/ext/jquery.cookie.js" tppabs="https://kf.qq.com/static/ext/jquery.cookie.js" type="text/javascript"></script>
+<script type="text/javascript" src="../../imgcache.qq.com/bossweb/ipay/js/api/cashier.js" tppabs="https://imgcache.qq.com/bossweb/ipay/js/api/cashier.js" charset="utf-8" ></script>
+<script type="text/javascript">
+    $(function () {
+//        $(window).scroll(function() {
+//            if($(this).scrollTop() > 275){
+//                $('.header').addClass('header-scroll');
+//
+//            } else {
+//                $('.header').removeClass('header-scroll');
+//
+//            }
+//        });
+        var showOpen=$.cookie('open_tmp');
+        if(typeof showOpen !="undefined" && showOpen!=""){
+            if(code[showOpen.toUpperCase()].code==showOpen.toUpperCase()) deblock_biz.open_with_ipay(showOpen,1);
+            $.removeCookie('open_tmp', { path: '/' })
+        }
+    });
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".imc_access_pop .toggle_pg").click(function(){
+            if($(this).attr("class")=='toggle_pg get_more'){
+                $(".imc_access_pop .cont_container").animate({marginLeft:"-800px"},300,function(){$(".imc_access_pop .toggle_pg").removeClass("get_more").addClass("go_back").html('<span>&lt;&lt;</span> 返回');});return false;
+            }else{
+                $(".imc_access_pop .cont_container").animate({marginLeft:"0"},300,function(){$(".imc_access_pop .toggle_pg").removeClass("go_back").addClass("get_more").html("更多游戏 <span>&gt;&gt;</span>");});return false;
+            }
+        });
+    });
+//    showImcUrl('globalimc',false);
+    //showImcUrl('','http://crm2.qq.com/page/portalpage/wpa.php?uin=40012345&f=1&ty=1&ap=000011|f:kfxdall');
+</script>
+</body>
+</html>

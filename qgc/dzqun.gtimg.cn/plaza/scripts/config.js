@@ -1,0 +1,1 @@
+seajs.config({alias:{},paths:{module:"https://dzqun.gtimg.cn/plaza/scripts/module"},base:"https://dzqun.gtimg.cn/plaza/scripts/module"});

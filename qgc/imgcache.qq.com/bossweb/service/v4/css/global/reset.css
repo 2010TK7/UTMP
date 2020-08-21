@@ -1,0 +1,42 @@
+@charset "utf-8";
+/*
+ **************************************************************************
+ *                                                                        *
+ *  腾讯客服官网reset样式                                                 *
+ *                                                                        *
+ *  @copyright       Copyright © 1998-2012 Tencent. All Rights Reserved.  *
+ *  @link            http://kf.qq.com/                                    *
+ *  @author          silenceWang                                          *
+ *  @version         4.0                                                  *
+ *  @lastmodify      2012.8.21                                            *
+ *                                                                        *
+ **************************************************************************
+*/
+
+
+/*========== reset ==========*/
+body,h1,h2,h3,h4,h5,h6,p,ul,dl,ol{margin:0;}
+h1,h2,h3,h4,h5,h6,input,textarea,select,button,label{font-size:100%;vertical-align:middle;}
+ul,ol{padding-left:0;}
+ul,dl,ol{list-style:none;}
+img,fieldset{border:none;}
+img{display:inline-block;overflow:hidden;vertical-align:top;}
+em,address{font-style:normal;}
+sup,sub{vertical-align:baseline;}
+table{border-collapse:collapse;border-spacing:0;}
+q:before{content:"";}
+q:after{content:"";}
+textarea{word-wrap:break-word;resize:none;}
+article,aside,dialog,figure,footer,header,hgroup,nav,section{display:block;}
+menu{margin:0;padding:0;}
+mark{background-color:transparent;}
+body{font:12px/1.6 "微软雅黑","宋体";background:#fff;_width:100%;_height:100%;}
+* html,* html body{background-image:url(about:blank);background-attachment:fixed;}
+legend,button,select,textarea,input{color:#333;font-family:Tahoma,Arial,Simsun;}
+button{min-width:50px;min-width:42px\9;*min-width:auto;height:24px;padding:0 5px 1px;*padding:0 10px 1px;cursor:pointer;}
+input{padding:2px 0 1px;*padding:4px 0 0;_padding:4px 0 0;_height:21px;}
+input[type='file']{padding:2px 0 5px;}
+a{color:#666;text-decoration:none;}
+a:hover{color:#00a7ee;text-decoration:none;}
+a:focus{/*outline:none;*/}
+/*  |xGv00|b0654bd6afff6f43c09710ce89db1750 */

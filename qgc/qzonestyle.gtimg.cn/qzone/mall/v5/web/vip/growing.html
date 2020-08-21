@@ -1,0 +1,213 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-cn" lang="zh-cn">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta http-equiv="Content-Language" content="gb2312" />
+<meta name="robots" content="all" />
+<meta name="author" content="Tencent-ISRD" />
+<meta name="Copyright" content="Tencent" />
+<meta name="Description" content="Qzone精彩由你而来" />
+<meta name="Keywords" content="Qzone,QQ空间,Blog,博客,网络日志,播客,腾讯,QQ,Tencent" />
+<title>Qzone精彩由你而来</title>
+<script type="text/javascript">document.domain='qq.com';</script>
+<link rel="stylesheet" rev="stylesheet" href="http://imgcache.qq.com/qzone_v5/gb_d3f_out.css" type="text/css" media="screen"/>
+<link rel="stylesheet" rev="stylesheet" href="http://imgcache.qq.com/qzone_v5/app/app_vip/css/style_vip.css" type="text/css" media="screen"/>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+<script type="text/javascript" src="http://imgcache.qq.com/qzone/qzfl/qzfl.js" charset="utf-8"></script>    
+<script type="text/javascript" src="http://imgcache.qq.com/qzone/qzfl/appclientlib.js" charset="utf-8"></script>	
+<script type="text/javascript" src="http://imgcache.qq.com/qzone/mall/v5/comm/js/FillDiv_Ex.js" charset="gb2312"></script>
+<script type="text/javascript" src="http://imgcache.qq.com/qzone/mall/v5/web/vip/util.js" charset="gb2312"></script>
+<script type="text/javascript">
+	var qzoneInfo = QZONE.FP.getQzoneConfig();
+	document.write('<link rel="stylesheet" rev="stylesheet" href="http://imgcache.qq.com/qzonestyle/qzone_client_v5/css/'+qzoneInfo.styleId+'/color_out.css" type="text/css" media="screen"/>');
+
+	var vscreen = '-';
+	if (top.g_fullMode == 3 || top.g_fullMode == 4) {
+		vscreen = 'wide';
+	}
+
+	var isGuest = 0;
+	QZONE.pageEvents.pageBaseInit();
+	QZONE.pageEvents.onloadRegister(function(){		
+		if(top.g_iLoginUin != top.g_iUin){
+			isGuest = 1;
+		}
+		QZONE.FP.getPortraitList([qzoneInfo.ownerUin], function(o) {
+			getOwnerVipInfo(function(ownerInfo) {
+				postInitUin(o, ownerInfo);
+			});
+		}, true);
+		iframeHeight();
+	});
+	
+	function getOwnerVipInfo(callback) {
+		var ownerinfo = top.g_JData["yellowInfo"].ownerinfo[0];
+		if(ownerinfo) {
+			callback(ownerinfo);
+			return;
+		}
+		// 这里拉的主人的信息
+		var g_tk = QZONE.FP.getACSRFToken();
+		var g = new QZFL.JSONGetter("http://vip.qzone.qq.com/fcg-bin/v2/fcg_get_mall_ex?g_tk=" + g_tk + "&uin="+qzoneInfo.ownerUin+"&vip=need&mode=1&nf=-1", null, null, 'gb2312');
+		g.onSuccess = function(o) {
+			var data = o && o.data;
+			data.bitmap = data.bitmap.split("");
+			callback && callback(data);
+		};
+		g.send('_Callback');
+	}
+
+	function postInitUin(data, owner){
+		var level = owner.level;
+		var isY = data[top.g_iUin][5];
+		var ztc	= parseInt(owner.bitmap[4]);
+
+		if(isGuest==0){
+			if(isY == 0){
+				//$('titleDiv').innerHTML = '黄钻特权由<span class="c_tx">基础特权</span>和<span class="c_tx">成长特权</span>两部分组成：';
+				//$('titleFirstDiv').innerHTML = '现在回归黄钻贵族，您可重新享受以下基础特权';
+				$('titleSecondDiv').innerHTML = '现在回归黄钻贵族，继续特权精彩成长';
+			}else{
+				//$('titleDiv').innerHTML = '您的黄钻特权由基础特权和成长特权两部分组成：';
+				//$('titleFirstDiv').innerHTML = '您现在是黄钻用户，您可享受以下特权';
+				$('titleSecondDiv').innerHTML = '您现在是黄钻lv'+level+'，尊享以下成长特权';
+			}
+		}else{
+			//$('titleDiv').innerHTML = '黄钻特权由<span class="c_tx">基础特权</span>和<span class="c_tx">成长特权</span>两部分组成：';
+			//$('titleFirstDiv').innerHTML = '';
+			$('titleSecondDiv').innerHTML = '';
+		}
+
+		var list = FranchiseFunc.growing;
+		var table = $('tableDiv');
+		for(var i in list){			
+			var tr = table.insertRow(-1);
+			tr.className = i%2==0?'bor bg2':'bor'
+			var tn = i==0?document.createElement('th'):document.createElement('td');
+			tn.innerHTML = list[i].name;	
+			tr.appendChild(tn);
+			for(var j=0; j<7; j++){
+				var td = document.createElement('td');
+				if(ztc == 1 && j < 5 && i==8){
+					td.innerHTML = '不可用';
+				} else if(ztc == 1 && j < 3  && i==7){
+					td.innerHTML = '可用';
+				} else {
+					td.innerHTML = list[i].txt[j].v;
+				}
+				if(j==level-1 && isGuest==0){
+					td.className = i%2==0?'bor bg2 c_tx now':'bor c_tx now'
+				}else{
+					td.className = i%2==0?'bor bg2':'bor'
+				}				
+				tr.appendChild(td);
+			}
+		}
+		iframeHeight();
+	}
+</script>
+</head>
+<body>
+<div class="qzone_vip">
+	<div class="rules">
+		<div class="tit bg2">
+			<p class="tits">第一部分：黄钻成长规则</p>
+		</div>
+		<div class="rule2">
+			<p class="txt">1.黄钻成长体系目前包含7个阶段，分别用lv1至lv7表示，等级高低取决于“黄钻成长值”大小，对应关系表如下：</p>
+			<div class="main">
+				<table border="0" cellspacing="0" cellpadding="0" class="bor tab">
+					<thead>
+						<tr>
+							<th class="bor bg2">黄钻等级</th>
+							<th class="bor bg2">Lv1</th>
+							<th class="bor bg2">Lv2</th>
+							<th class="bor bg2">Lv3</th>
+							<th class="bor bg2">Lv4</th>
+							<th class="bor bg2">Lv5</th>
+							<th class="bor bg2">Lv6</th>
+							<th class="bor bg2">Lv7</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="bor">黄钻成长值</td>
+							<td class="bor">0</td>
+							<td class="bor">400</td>
+							<td class="bor">800</td>
+							<td class="bor">1600</td>
+							<td class="bor">3000</td>
+							<td class="bor">5000</td>
+							<td class="bor">7000及以上</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<p class="txt">2.各种支付方式每天成长速度如下表：</p>
+			<div class="main2">
+				<table border="0" cellspacing="0" cellpadding="0" class="bor tab">
+					<thead>
+						<tr>
+							<th class="bor bg2 w1">支付时长</th>
+							<th class="bor bg2 w2">支付方式</th>
+							<th class="bor bg2 w3">基础成长值</th>
+							<th class="bor bg2 w4">激励成长值</th>
+							<th class="bor bg2 w5" style="width:90px">成长值总计</th>
+							<th class="bor bg2 w6">备注</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td rowspan="3" class="bor w1">按月支付</td>
+							<td class="bor w2">移动手机、联通手机、小灵通/CDMA、ADSL</td>
+							<td class="bor w3">10</td>
+							<td class="bor w4">0</td>
+							<td class="bor w5" style="width:90px">&nbsp;<strong>10</strong>点/天&nbsp;<img src="http://imgcache.qq.com/ac/b.gif" alt="" class="icon_h_1" /><img src="http://imgcache.qq.com/ac/b.gif" alt="" class="icon_h_1_n" /><img src="http://imgcache.qq.com/ac/b.gif" alt="" class="icon_h_2_n" /><img src="http://imgcache.qq.com/ac/b.gif" alt="" class="icon_h_3_n" /></td>
+							<td rowspan="4" class="bor w6">开通或更换支付方式后，新的成长速度将在24小时后开始计算。</td>
+						</tr>
+						<tr>
+							<td class="bor w2">Q点/Q币账户、固定电话、QQ卡、移动充值卡</td>
+							<td class="bor w3">10</td>
+							<td class="bor w4">2</td>
+							<td class="bor w5" style="width:90px">&nbsp;<strong>12</strong>点/天&nbsp;<img src="http://imgcache.qq.com/ac/b.gif" alt="" class="icon_h_1" /><img src="http://imgcache.qq.com/ac/b.gif" alt="" class="icon_h_2" /><img src="http://imgcache.qq.com/ac/b.gif" alt="" class="icon_h_2_n" /><img src="http://imgcache.qq.com/ac/b.gif" alt="" class="icon_h_3_n" /></td>
+						</tr>
+						<tr>
+							<td class="bor w2">财付通（8.8折）/网银（9折）</td>
+							<td class="bor w3">10</td>
+							<td class="bor w4">3</td>
+							<td class="bor w5" style="width:90px">&nbsp;<strong>13</strong>点/天&nbsp;<img src="http://imgcache.qq.com/ac/b.gif" alt="" class="icon_h_1" /><img src="http://imgcache.qq.com/ac/b.gif" alt="" class="icon_h_2" /><img src="http://imgcache.qq.com/ac/b.gif" alt="" class="icon_h_3" /><img src="http://imgcache.qq.com/ac/b.gif" alt="" class="icon_h_3_n" /></td>
+						</tr>
+						<tr>
+							<td class="bor w1">按年支付（且处于年费区间内）</td>
+							<td class="bor w2">年费黄钻（Q点/Q币账户、财付通/网银开通年费黄钻）</td>
+							<td class="bor w3">10</td>
+							<td class="bor w4">5</td>
+							<td class="bor w5" style="width:90px">&nbsp;<strong>15</strong>点/天&nbsp;<img src="http://imgcache.qq.com/ac/b.gif" alt="" class="icon_h_1" /><img src="http://imgcache.qq.com/ac/b.gif" alt="" class="icon_h_2" /><img src="http://imgcache.qq.com/ac/b.gif" alt="" class="icon_h_3" /><img src="http://imgcache.qq.com/ac/b.gif" alt="" class="icon_h_4" /></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<!-- -->
+
+		<div class="tit bg2">
+			<p class="tits ">第二部分：黄钻成长特权</p>
+			<p class="ps2" id="titleSecondDiv"></p>
+		</div>
+
+		<div class="rule2">
+			<div class="main">
+				<table border="0" cellspacing="0" cellpadding="0" class="bor tab" id="tableDiv">					
+				</table>
+			</div>
+		</div>
+
+	</div>
+</div>
+<script language="javascript" src="http://imgcache.qq.com/qzone/ping.js"></script>
+<script language="javascript" src="http://imgcache.qq.com/qzone/mall/v5/js/clickhot.js"></script>
+</body>
+</html>
+<!--[if !IE]>|xGv00|c572c98e3b73f4bdb3579f5ad36df075<![endif]-->

@@ -1,0 +1,664 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="zh-cn" lang="zh-cn">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="utf-8" />
+<meta name="robots" content="all" />
+<meta name="author" content="Tencent-ISRD" />
+<meta name="Copyright" content="Tencent" />
+<meta name="Description" content="Qzoneç²¾å½©ç”±ä½ è€Œæ¥" />
+<meta name="Keywords" content="Qzone,QQç©ºé—´,Blog,åšå®¢,ç½‘ç»œæ—¥å¿—,æ’­å®¢,è…¾è®¯,QQ,Tencent" />
+<title>æŸ¥çœ‹ä¸»äººè£…æ‰®</title>
+<link rel="stylesheet" rev="stylesheet" href="../../../../../../imgcache.qq.com/qzonestyle/qzone_app/app_dress_v2/app_dress.css" tppabs="http://imgcache.qq.com/qzonestyle/qzone_app/app_dress_v2/app_dress.css" type="text/css" media="screen" />
+
+
+<script type="text/javascript" src="../../../../../../imgcache.qq.com/qzone/qzfl/qzfl.js" tppabs="http://imgcache.qq.com/qzone/qzfl/qzfl.js" charset="utf-8"></script>
+<script type="text/javascript" src="../../../../../../imgcache.qq.com/qzone/qzfl/shoplib.js" tppabs="http://imgcache.qq.com/qzone/qzfl/shoplib.js" charset="utf-8"></script>
+<script type="text/javascript" src="../../../../../../imgcache.qq.com/qzone/mall/v5/js/style_data.js" tppabs="http://imgcache.qq.com/qzone/mall/v5/js/style_data.js" charset="utf-8"></script>
+<script type="text/javascript">
+	var topWin = QZONE.FP._t;   //è·å–TOPå¯¹è±¡
+	var pWin = parent || document.parentWindow.parent;   //è·å–å½“å‰çª—å£çš„çˆ¶çª—å£
+	var qzoneInfo = QZONE.FP.getQzoneConfig();
+	var styleId = (qzoneInfo.styleId + '').split('/');
+	styleId = styleId[styleId.length - 1];
+	document.write('<link rel="stylesheet" rev="stylesheet" href="../../../../../../imgcache.qq.com/qzonestyle/qzone_client_v5/css/'+styleId+'/color_out.css"/*tpa=http://imgcache.qq.com/qzonestyle/qzone_client_v5/css/'+styleId+'/color_out.css*/ type="text/css" media="screen"/>');
+	
+	QZONE.pageEvents.pageBaseInit();
+	QZONE.pageEvents.onloadRegister(function(){	
+		/*
+		var interval = setInterval(function(){
+			if(topWin.g_JData["yellowInfo"] && topWin.g_JData["yellowInfo"].ownerinfo[0]){
+				initMaster();
+				clearInterval(interval);
+			}
+		}, 500);
+		*/
+		initMaster();
+		_pageSize = qzoneInfo.wide ? 10 : 6;
+		initItems();
+		initDiy();
+	});
+
+	//ä¸»äººä¿¡æ¯é‡
+	var plevel = [0, 0, 25, 60, 92, 126, 183, 254, 285];
+	var charms = [0, 0, 400, 800, 1600, 3000, 5000, 7000, 15000];
+	function getCharmsBar(vl, vc){	
+		if(vc==0) return 1;
+		return Math.floor((vc - charms[vl]) / (charms[vl+1] - charms[vl]) * 100);
+	}
+	function initMaster(){
+		QZONE.FP.getPortraitList([qzoneInfo.ownerUin], function(uins){
+			//var owner = topWin.g_JData["yellowInfo"].ownerinfo[0];
+			var uinInf = {
+				uin : qzoneInfo.ownerUin,
+				nick: uins[qzoneInfo.ownerUin][6],
+				vip : uins[qzoneInfo.ownerUin][5],
+				ztc	: (uins[qzoneInfo.ownerUin][5] && top.QZONE.FrontPage.isUserVIPExpress()) ? 1 : 0,
+				level : uins[qzoneInfo.ownerUin][3],
+				imgurl : uins[qzoneInfo.ownerUin][0]
+			};
+			
+			/*
+			var dataArray = [{
+				nickIcon : uinInf.imgurl,
+				nick : uinInf.nick, 
+				imgurl : uinInf.imgurl,
+				ztcClass : uinInf.ztc > 0 ? '../../../../../../imgcache.qq.com/qzone_v5/app/app_vip/img/icon/year.png'/*tpa=http://imgcache.qq.com/qzone_v5/app/app_vip/img/icon/year.png*/ 
+		                                  : '../../../../../../imgcache.qq.com/qzone_v5/app/app_vip/img/icon/year_n.png'/*tpa=http://imgcache.qq.com/qzone_v5/app/app_vip/img/icon/year_n.png*/,
+				charm    : owner.charm,
+				charmnl  : (uinInf.vip==1 &&uinInf.level==7) ? '' : '/'+ charms[(uinInf.level==0) ? 2 : uinInf.level+1],
+				charmlvc : 'LV' + uinInf.level,
+				charmlvn : (uinInf.level == 7) ? '<span style="padding-left:16px;">&nbsp;</span>' : 'LV' + (uinInf.level+1),
+				charmbar : Math.floor(getCharmsBar(uinInf.level, owner.charm)),
+				speed    : (uinInf.ztc == 1) ? 15 : owner.speed * ((uinInf.vip==1) ? 1 : -1),
+				yellowIcon : ['<a ',(uinInf.vip==1)?' href="http://imgcache.qq.com/qzone/mall/v5/web/vip/yellowgrade_v5.htm" title="ä¸»äººå½“å‰æ˜¯é»„é’»è´µæ—ç”¨æˆ·"':'href="javascript:;"  onclick="payCenter(\'qmall.index\')" title="ç‚¹å‡»å¸®ä¸»äººå¼€é€šé»„é’»å³å¯ç‚¹äº®å›¾æ ‡" ',' class="yellow_lv', (uinInf.vip)?'':'n','"><span>', uinInf.level, '</span></a>'].join(''),
+				tips : FranchiseFunc.getTips(uinInf.level, uinInf.ztc, (uinInf.vip != 1)?true:false),
+				notVip : uinInf.vip != 1 ? 'not_vip' : '',
+				ztcTitle : uinInf.ztc == 1 ? 'title="ä¸»äººæ˜¯å°Šè´µå¹´è´¹é»„é’»ç”¨æˆ·"' : 'title="ä¸»äººæœªå¼€é€šå¹´è´¹é»„é’»"',
+				ztcLink  : uinInf.ztc == 1 ? 'href="http://imgcache.qq.com/qzone/mall/v3/vip/portal/yellow_act.html" target="_blank"': 'href="http://imgcache.qq.com/qzone/mall/v3/vip/portal/yellow_act.html" target="_blank"'
+			}];
+			if(uinInf.vip==1 && uinInf.level != 7){
+				var value = charms[uinInf.level+1] - dataArray[0].charm;
+				value = Math.floor((value/dataArray[0].speed) + (value%dataArray[0].speed>0?1:0));	
+				var tags = document.getElementsByName('upgradeDiv');
+				for(var i=0; i<tags.length; i++){
+					tags[i].innerHTML = 'ï¼Œè¿˜æœ‰'+value+'å¤©å‡çº§';
+				}
+			}
+
+			switch(dataArray[0].speed){
+			case 10: case 12: case 13:
+				dataArray[0].speedBar = '<img class="icon_levelup_fast" src="../../../../../../imgcache.qq.com/ac/b.gif"/*tpa=http://imgcache.qq.com/ac/b.gif*//><img class="icon_levelup_slow" src="../../../../../../imgcache.qq.com/ac/b.gif"/*tpa=http://imgcache.qq.com/ac/b.gif*//>';
+				$('speedNumDiv').innerHTML = dataArray[0].speed;
+				dataArray[0].speed = 10;
+				break;
+			case 15:
+				dataArray[0].speedBar = '<img class="icon_levelup_fast" src="../../../../../../imgcache.qq.com/ac/b.gif"/*tpa=http://imgcache.qq.com/ac/b.gif*//><img class="icon_levelup_fast" src="../../../../../../imgcache.qq.com/ac/b.gif"/*tpa=http://imgcache.qq.com/ac/b.gif*//>';
+				break;
+			default:
+				if(owner.charm == 0){
+					dataArray[0].speed=0;
+					dataArray[0].speedBar = '<img class="icon_levelup_slow" src="../../../../../../imgcache.qq.com/ac/b.gif"/*tpa=http://imgcache.qq.com/ac/b.gif*//><img class="icon_levelup_slow" src="../../../../../../imgcache.qq.com/ac/b.gif"/*tpa=http://imgcache.qq.com/ac/b.gif*//>';
+				} else {					
+					dataArray[0].speed=-1;
+					dataArray[0].speedBar = '<img class="icon_levelup" src="../../../../../../imgcache.qq.com/ac/b.gif"/*tpa=http://imgcache.qq.com/ac/b.gif*//><img class="icon_levelup_lost" src="../../../../../../imgcache.qq.com/ac/b.gif"/*tpa=http://imgcache.qq.com/ac/b.gif*//>';
+				}	
+			}
+			
+			if(uinInf.vip ==1 && uinInf.level == 7){
+				$('speedTipsDiv_15').style.left = '67px';
+				$('speedTipsDiv_10').style.left = '67px';
+				$('speedTipsDiv_0').style.left = '67px';
+				$('speedTipsDiv_-1').style.left = '67px';
+			}
+	
+			$('speedTipsDiv_up_'+dataArray[0].speed).style.left = (((dataArray[0].charm+''+dataArray[0].charmnl).length-5)*7+-3)+'px';
+			if(uinInf.vip==1){
+				$('masterDiv').className = 'qzone_vip_mode';
+			} else {
+				$('masterDiv').className = 'qzone_vip_mode not_vip_mode';
+			}
+
+			FillDiv_Ex('masterDiv', {data: dataArray});  
+			
+			if(uinInf.vip == 1){
+				$('goPayDiv').innerHTML = '<p><a href="http://imgcache.qq.com/qzone/mall/v5/comm/web/gmall.htm?target=ysvip" target="blank">é»„é’»ä¸“å±ç‰©å“ï¼Œé»„é’»å…è´¹è£…æ‰®!</a></p><p class="vip_mode_bt"><button class="vip_mode_bt_open" onclick="payCenter1(\'qmall.observ\')"><span>é©¬ä¸Šç»­è´¹é»„é’»</span></button></p>';
+			} else {
+				$('goPayDiv').innerHTML = '<p><a href="http://imgcache.qq.com/qzone/mall/v5/comm/web/gmall.htm?target=ysvip" target="blank">é»„é’»ä¸“å±ç‰©å“ï¼Œé»„é’»å…è´¹è£…æ‰®!</a></p><p class="vip_mode_bt"><button class="vip_mode_bt_open" onclick="payCenter1(\'qmall.observ\')"><span>é©¬ä¸Šå¼€é€šé»„é’»</span></button></p>';
+			}	
+			*/
+			$('titleDiv').innerHTML = ['<img src="../../../../../../imgcache.qq.com/ac/b.gif"/*tpa=http://imgcache.qq.com/ac/b.gif*/ alt="icon" class="icon_title"/>', escHTML(uinInf.nick), '(', uinInf.uin, ') ç©ºé—´çš„è£…æ‰®è¯¦æƒ…'].join('');
+
+			//uinInf.vip   = 1
+			//uinInf.level = 3
+			//uinInf.ztc   = 1
+
+			//ç‰¹æƒä¿¡æ¯
+			var count = 0;
+			if(uinInf.vip == 1){//é»„é’»
+				switch(uinInf.level){
+				case 1://é»„é’»LV1
+					if(uinInf.ztc==1){//ç›´é€šè½¦
+						$('th_span_1').style.display = 'block';
+						$('li_diy_1').style.display  = 'block';
+						count +=1;
+					}
+					$('tr_1').className = 'nonce_lv';	
+					$('img_pt_1').src = '../../../../../../imgcache.qq.com/qzone_v5/app/app_vip/img/icon/15.gif'/*tpa=http://imgcache.qq.com/qzone_v5/app/app_vip/img/icon/15.gif*/;
+					$('img_hz_1').src = '../../../../../../imgcache.qq.com/qzone_v5/app/app_vip/img/icon/02.gif'/*tpa=http://imgcache.qq.com/qzone_v5/app/app_vip/img/icon/02.gif*/;
+					count +=2;
+					break;
+				case 2://é»„é’»LV2
+					if(uinInf.ztc==1){//ç›´é€šè½¦
+						$('th_span_2').style.display = 'block';
+						$('li_diy_2').style.display  = 'block';	
+						count +=1;					
+					}
+					$('tr_2').className = 'nonce_lv';
+					$('tr_1').className = 'nonce_lv';
+					$('img_tg_2').src = '../../../../../../imgcache.qq.com/qzone_v5/app/app_vip/img/icon/14.gif'/*tpa=http://imgcache.qq.com/qzone_v5/app/app_vip/img/icon/14.gif*/;
+					$('img_pt_1').src = '../../../../../../imgcache.qq.com/qzone_v5/app/app_vip/img/icon/15.gif'/*tpa=http://imgcache.qq.com/qzone_v5/app/app_vip/img/icon/15.gif*/;
+					$('img_hz_1').src = '../../../../../../imgcache.qq.com/qzone_v5/app/app_vip/img/icon/02.gif'/*tpa=http://imgcache.qq.com/qzone_v5/app/app_vip/img/icon/02.gif*/;
+					count +=3;
+					break;
+				default://é»„é’»LV3åŠä»¥ä¸Š
+					if(uinInf.ztc==1){//ç›´é€šè½¦
+						$('th_span_3').style.display = 'block';			
+					}
+					$('tr_3').className = 'nonce_lv';
+					$('tr_2').className = 'nonce_lv';
+					$('tr_1').className = 'nonce_lv';
+					$('img_diy_3').src = '../../../../../../imgcache.qq.com/qzone_v5/app/app_vip/img/icon/06.gif'/*tpa=http://imgcache.qq.com/qzone_v5/app/app_vip/img/icon/06.gif*/;
+					$('img_tg_2').src = '../../../../../../imgcache.qq.com/qzone_v5/app/app_vip/img/icon/14.gif'/*tpa=http://imgcache.qq.com/qzone_v5/app/app_vip/img/icon/14.gif*/;
+					$('img_pt_1').src = '../../../../../../imgcache.qq.com/qzone_v5/app/app_vip/img/icon/15.gif'/*tpa=http://imgcache.qq.com/qzone_v5/app/app_vip/img/icon/15.gif*/;
+					$('img_hz_1').src = '../../../../../../imgcache.qq.com/qzone_v5/app/app_vip/img/icon/02.gif'/*tpa=http://imgcache.qq.com/qzone_v5/app/app_vip/img/icon/02.gif*/;
+					count +=4;
+				}
+			}
+			$('tUinDiv').innerHTML = uinInf.nick;
+			$('countDiv').innerHTML = count;
+		}, 1);
+	}
+
+	var itemListStr;
+	var itemIdList = [];
+	function initItems(){
+		//top.encodeWindows()
+		//QZONE.shop.shopLib.getItemList()		
+		itemListStr = QZONE.shop.shopLib.getItemList();
+		var items = itemListStr.split('|'), tmp = [];
+		for(var i=0; i<items.length; i++){
+			var item = items[i].split('_');
+			if(item[0]=='7' || item[0]=='23' || item[1]=='1'){
+			} else {
+				tmp.push(items[i]);
+				itemIdList.push(item[1]);
+			}			
+		}
+		itemListStr = tmp.join('|');
+
+		var style = styleMap[styleId];
+		$('styleDiv').innerHTML = [
+			'<p class="tit">é£æ ¼è®¾ç½®ï¼š</p>',
+	        '  <div class="zone_style_now">',
+			'    <img class="style_icon_',styleId,'" src="../../../../../../imgcache.qq.com/ac/b.gif"/*tpa=http://imgcache.qq.com/ac/b.gif*//>',
+			'    <span>',(style&&style[1]==1)?'<img src="../../../../../../imgcache.qq.com/ac/b.gif"/*tpa=http://imgcache.qq.com/ac/b.gif*/ alt="" class="icon_vip_yl_s"/>':'',style?style[0]:'','</span>',
+			'  </div>',
+	        (style[1]==1)?'<p class="hit" style="padding-left:13px;">é»„é’»ä¸“ç”¨</p>':''
+		].join('');
+
+		g_mallGetCgiData.init('http://mall.qzone.qq.com/cgi-bin/v3/cgi_host_scenario_item?item_list='+itemListStr, function(obj){
+			fixJsonArrayLength(obj.data);
+			if(obj.data && obj.data.length == 0){
+				$('itemNull').style.display = 'block';
+				return;
+			}
+			$('itemShow').style.display = 'block';
+			tMyItemArrayInfo(obj.data);
+			itemList = obj.data;
+			_tPage = Math.floor((itemList.length/_pageSize+(itemList.length%_pageSize>0?1:0)));	
+			pageShow();
+		});
+	}
+
+
+	var _pageSize = 10;	//æ¨¡æ¿ä¸­ä¹Ÿè¦ä¿®æ”¹repeat_num
+	var _nPage = 1;		//å½“å‰é¡µç 
+	var _tPage = 0;		//æ€»é¡µæ•°
+	var itemList ;
+	function pageShow(){
+		var newData = itemList.slice((_nPage-1)*_pageSize, _nPage*_pageSize);
+		var last = qzoneInfo.wide ? 5 : 3;
+		for(var i=0; i<newData.length; i++){
+			if(i<last){
+				newData[i].mouseClass = 'preview';
+			} else {
+				newData[i].mouseClass = 'preview last';			
+			}
+		}
+		FillDiv_Ex("itemDiv", {'data':newData});
+
+		if(_tPage<=1){
+			$("pageDiv").style.display = 'none';
+			return;
+		}
+
+		var pageInfo = {};
+		pageInfo.curPage   = _nPage;
+		pageInfo.totalPage = _tPage;
+		pageInfo.prevClass = (pageInfo.curPage == 1) ? 'icon_page_pre_n' : 'icon_page_pre';
+		pageInfo.prevLink  = (pageInfo.curPage == 1) ? '' : 'mPage('+(pageInfo.curPage-1)+');return false;';
+		pageInfo.nextClass = (pageInfo.curPage == pageInfo.totalPage) ? 'icon_page_next_n' : 'icon_page_next';
+		pageInfo.nextLink  = (pageInfo.curPage == pageInfo.totalPage) ? '' : 'mPage('+(pageInfo.curPage+1)+');return false;';
+		pageInfo.subLink   = '';
+
+		var startPage;
+		switch(pageInfo.totalPage - pageInfo.curPage){
+			case 1:
+				startPage = pageInfo.curPage - 3;break;
+			case 0:
+				startPage = pageInfo.curPage - 4;break;
+			default:
+				startPage = pageInfo.curPage - 2;break;
+		}
+		startPage = (startPage < 1) ? 1 : startPage;
+		for(var i = startPage; (i<=(startPage+4) && i<=pageInfo.totalPage); ++i) {
+			if(i == pageInfo.curPage){
+				pageInfo.subLink += ' <span class="hit">'+i+'</span>';
+			} else {
+				pageInfo.subLink += ' <a href="javascript:;" onclick="mPage(\''+i+'\');return false;">'+i+'</a>';
+			}
+		}
+		FillDiv_Ex('pageDiv', {'data':[pageInfo]});
+	}
+
+	function mPage(pageNo){
+		_nPage = pageNo;
+		pageShow();
+	}
+
+
+	//è‡ªå®šä¹‰åŒºåŸŸ
+	function initDiy(){
+		var divitems = topWin.QZONE.shop.getDiyItemString().split('|');
+		if(!divitems || divitems[0]==""){
+			$('diyNonDiv').style.display = 'block';
+			return;
+		}
+
+		var divitemData = [];
+		for(var i=0; i<divitems.length; i++){
+			var divitem = divitems[i].split('_');
+			if(divitem[0]=='1' || divitem[0]=='19'){
+				divitemData.push({
+					name: (divitem[0]=='1') ? 'DIYçš®è‚¤' : (divitem[0]=='19') ? 'DIYæ ‡é¢˜æ ' : '',
+					url : decodeURIComponent(divitem[8])
+				})
+			}		
+		}		
+		FillDiv_Ex("diyDiv", {'data':divitemData});	
+	}
+
+
+	//é‚€è¯·ä¸»äººæ¨è
+	function onSubmit_share(){	
+		QZONE.FP.popupDialog('é‚€è¯·ç•™è¨€', {src:'http://imgcache.qq.com/qzone/mall/v5/web/myitem/host_scenario_request.htm'}, 357, 185);	
+	}
+	function onHelp(){	
+		QZONE.FP.popupDialog('å¦‚ä½•æ¨èï¼Ÿ', {src:'http://imgcache.qq.com/qzone/mall/v5/web/myitem/host_scenario_help.htm'}, 550, 480);	
+	}
+
+
+	//å‘TAæ¨è
+	function onSubmit_recommend(){
+		if(!qzoneInfo.loginUin || qzoneInfo.loginUin == 0){
+			QZONE.FP.showLoginBox();
+			return;
+		}
+		//window.open('http://user.qzone.qq.com/'+qzoneInfo.loginUin+'/mall?target=mymall_shares&uin='+qzoneInfo.ownerUin, "_top");
+		//window.open('http://imgcache.qq.com/qzone/mall/v5/comm/web/gmall.htm?target='+encodeURIComponent('mymall_shares&uin='+qzoneInfo.ownerUin));
+		window.open('http://imgcache.qq.com/qzone/mall/v5/comm/web/gmall.htm?target='+encodeURIComponent('mymall_shares&uin='+qzoneInfo.ownerUin));
+	}
+
+	//åº”ç”¨åˆ°æˆ‘çš„ç©ºé—´
+	function onSubmit_myhome(){
+		if(!qzoneInfo.loginUin || qzoneInfo.loginUin == 0){
+			QZONE.FP.showLoginBox();
+			return;
+		}
+
+		if(!itemList){
+			QZONE.FP.showMsgbox('ç©ºé—´ä¸»äººæ²¡æœ‰è£…æ‰®ç‰©å“', 0, 2000);	
+			return;
+		}
+		//window.open('http://user.qzone.qq.com/'+qzoneInfo.loginUin+'/mall?target=tempitem&uin='+qzoneInfo.ownerUin+'&style='+styleId+'&temp_item_list='+itemListStr, "_top");
+		window.open('http://rc.qzone.qq.com/mall?target=home&style='+styleId+'&tryOnItems='+itemIdList.join('_'), "_top");
+	}
+
+	function payCenter(aid){
+		window.open('http://pay.qq.com/');
+		return;
+		window.open('http://jump.qq.com/clienturl_168?service_type=home&pageshow=acctgive&clientuin='+QZONE.cookie.get('zzpaneluin')+'&clientkey='+QZONE.cookie.get('zzpanelkey')+'&aid='+aid);
+	}
+
+	function payCenter1(aid){
+		window.open('http://pay.qq.com/');
+		return;
+		window.open('http://jump.qq.com/clienturl_168?service_type=home&pageshow=acct&clientuin='+QZONE.cookie.get('zzpaneluin')+'&clientkey='+QZONE.cookie.get('zzpanelkey')+'&aid='+aid);
+	}
+
+	function payCenterBank(aid){
+		window.open('http://pay.qq.com/');
+		return;
+		if(QZONE.cookie.get('zzpaneluin') == ''){
+			window.open('http://paycenter.qq.com/home/?pageshow=bank&paytime=year&aid='+aid);
+		} else {
+			window.open('http://ptlogin2.qq.com/jump?clientuin=' + QZONE.cookie.get('zzpaneluin')+'&clientkey='+QZONE.cookie.get('zzpanelkey') +'&u1=http%3A%2F%2Fpaycenter.qq.com%2Fhome%2F%3Fpageshow%3Dbank%26paytime%3Dyear%26aid%3D'+aid);
+		}
+	}
+
+	var speedTimerId=0;
+	function openSpeedTips(divId){
+		$('speedTipsDiv_0').style.display  = 'none';
+		$('speedTipsDiv_10').style.display = 'none';
+		$('speedTipsDiv_15').style.display = 'none';
+		$('speedTipsDiv_-1').style.display = 'none';
+
+		$(divId).style.display='block';
+		speedTimerId = new Date().getTime();
+		setTimeout(function(){			
+			if(new Date().getTime() - speedTimerId > 2000){
+				$(divId).style.display='none';
+			}
+		}, 3000);
+	}
+
+	if(typeof(QuickFunc) == "undefined" || !QuickFunc) {var QuickFunc = {};}
+	QuickFunc.loadJson = function(url, callback, callbackFName, charset){
+		var g = new QZONE.JSONGetter(url, Math.random().toString(), null, charset);
+		g.onSuccess = callback;
+		g.onError   = callback;
+		g.send(callbackFName);
+	}
+		
+	QuickFunc.sendForm = function(url, param, successFun, charset){
+		var fs = new QZONE.FormSender(url, 'post', param, charset?charset:'gb2312');
+		fs.onSuccess = successFun;
+		fs.send();
+	}
+</script>
+</head>
+<body>
+<script language="javascript">
+	document.write(qzoneInfo.wide ? '<div class="bg_mode bighome">' : '<div class="bg_mode fullhome">');
+</script>
+  <div class="box_ml bor">
+    <div class="mode_gb">
+      <!--==S æ¨¡å—æ ‡é¢˜-->
+      <div class="mode_gb_title style_mode_gb_title" style="height:auto">
+        <div class="bg_mode_gb_title">
+          <h3 id="titleDiv"><img src="../../../../../../imgcache.qq.com/ac/b.gif" tppabs="http://imgcache.qq.com/ac/b.gif" alt="icon" class="icon_title"/>ç©ºé—´çš„è£…æ‰®è¯¦æƒ…</span></h3>
+        </div>
+      </div>
+      <div class="mode_gb_cont app_dress">      
+		<!--===S ä¸»äººçš„é»„é’»æˆé•¿æƒ…å†µ -->
+		<div class="qzone_vip_mode" id="masterDiv" style="display:none">
+	    <textarea class="template">
+	    [%repeat_0 match="data"%]
+		<!--
+		  <div class="main">
+		    <div class="pic"><img src="[%=@imgurl%]" width="82" height="82"/></div>
+			<div class="name">[%=@nick%]</div>
+			<div class="lv">[%=@yellowIcon%]&nbsp;<a [%=@ztcLink%]><img [%=@ztcTitle%] src="[%=@ztcClass%]" /></a></div>
+			<div class="pro">
+			  [%repeat_1 match="tips"%]<a href="[%=@link%]" target="_blank"><img src="[%=@url%]" title="[%=@alt%]"/></a> [%_repeat_1%]
+			</div>
+			<div class="vip_rate [%=@notVip%]"> <span class="vip_rate_lv">[%=@charmlvc%]</span>
+		      <div class="vip_rate_bar vip_rate_full">
+			    <div class="vip_rate_speed" style="width:[%=@charmbar%]%;"> </div>
+			  </div>
+			  <span class="vip_rate_lv">[%=@charmlvn%]</span>
+			  <span class="vip_rate_num"><strong>[%=@charm%][%=@charmnl%]</strong> 	
+			  <span style="cursor:pointer;" onmouseover="openSpeedTips('speedTipsDiv_[%=@speed%]');">
+			    [%=@speedBar%]
+			  </span></span>
+			</div>
+		  </div>
+		  <div class="value_info" id="goPayDiv"> [%=@gopay%]</div>
+		-->
+        <div class="my_vip">
+			<p class="userpic"><img src="[%=@nickIcon%]" tppabs="https://qzonestyle.gtimg.cn/qzone/mall/v5/web/myitem/[%=@nickIcon%]"/></p>
+			<div class="welcome_part">
+				<strong style="width:75px;" title="[%=@nick%]">[%=@nick%]</strong>
+				<div class="vip_info_element">[%=@yellowIcon%] <a [%=@ztcLink%]><img [%=@ztcTitle%] src="[%=@ztcClass%]" tppabs="https://qzonestyle.gtimg.cn/qzone/mall/v5/web/myitem/[%=@ztcClass%]" style="vertical-align:-3px;"/></a></div>
+			</div>
+			<!--S é»„é’»ç­‰çº§è¿›åº¦-->
+			<div class="vip_rate [%=@notVip%]"> <span class="vip_rate_lv">[%=@charmlvc%]</span>
+				<div class="vip_rate_bar vip_rate_full" title="ä¸»äººå½“å‰çš„ç»éªŒå€¼ä¸ºï¼š[%=@charm%]ç‚¹">
+					<div class="vip_rate_speed" style="width:[%=@charmbar%]%;"></div>
+				</div>
+				<span class="vip_rate_lv">[%=@charmlvn%]</span>				
+				<a href="javascript:payCenterBank('qmall.yicon')"><img class="icon_levelup_s" src="../../../../../../imgcache.qq.com/ac/b.gif" tppabs="http://imgcache.qq.com/ac/b.gif" onmouseover="openSpeedTips('speedTipsDiv_[%=@speed%]');"/></a>
+			</div>
+			<div class="vip_icons">
+				[%repeat_1 match="tips"%]<a href="javascript:if(confirm('https://qzonestyle.gtimg.cn/qzone/mall/v5/web/myitem/[%=@link%]  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='https://qzonestyle.gtimg.cn/qzone/mall/v5/web/myitem/[%=@link%]'" tppabs="https://qzonestyle.gtimg.cn/qzone/mall/v5/web/myitem/[%=@link%]" target="_blank"><img src="[%=@url%]" tppabs="https://qzonestyle.gtimg.cn/qzone/mall/v5/web/myitem/[%=@url%]" title="[%=@alt%]"/></a> [%_repeat_1%]
+			</div>
+			<div class="over_tips" id="goPayDiv">[%=@gopay%]</div>
+        </div>		  
+	    [%_repeat_0%]
+	    </textarea>
+		</div>
+			
+		<!--S è£…æ‰®ç‰¹æƒ-->
+	    <div class="comm_mode mode_peculiar_dress">
+	      <div class="comm_mode_tit"><h3>è£…æ‰®ç‰¹æƒ</h3></div>
+	      <div class="comm_mode_cont">
+	        <p><span id="tUinDiv">ç”¨æˆ·ååœ¨è¿™é‡Œ</span>å½“å‰æ‹¥æœ‰ <strong class="hit" id="countDiv">4</strong> é¡¹è£…æ‰®ç‰¹æƒï¼</p>
+	        <table class="peculiar_table">
+			  <caption>é»„é’»ç‰¹æƒè¡¨</caption>
+			  <colgroup>
+				<col style="width:75px" />
+				<col />
+			  </colgroup>
+			  <thead>
+				<tr>
+				  <th scope="col">é»„é’»ç­‰çº§</th><th scope="col">è£…æ‰®ç‰¹æƒ</th>
+				</tr>
+			  </thead>
+		      <tbody>
+				<tr id="tr_3">
+				  <th scope="row">LV3åŠä»¥ä¸Š<span class="hit" id="th_span_3" style="display:none"><a href="javascript:payCenterBank('qmall.obsdiy')" class="hit"><span style="text-decoration:none" title="å³é»„é’»ç›´é€šè½¦">å¹´è´¹é»„é’»</span></a></span></th>
+				  <td>
+					<ul>
+					  <li  id="li_2_diy" title="é»„é’»ç›´é€šè½¦ç”¨æˆ·ä¼˜å…ˆäº«å—">
+					    <a href="javascript:if(confirm('http://qzone.qq.com/helpcenter/yellow_diamond.html?url=http://qzone.qq.com/helpcenter/yellow_info.htm?25  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://qzone.qq.com/helpcenter/yellow_diamond.html?url=http://qzone.qq.com/helpcenter/yellow_info.htm?25'" tppabs="http://qzone.qq.com/helpcenter/yellow_diamond.html?url=http://qzone.qq.com/helpcenter/yellow_info.htm?25" target="_blank">
+						  <img title="é»„é’»ç›´é€šè½¦ç”¨æˆ·ä¼˜å…ˆäº«å—" id="img_diy_3" src="../../../../../../imgcache.qq.com/qzone_v5/app/app_vip/img/icon/06_n.gif" tppabs="http://imgcache.qq.com/qzone_v5/app/app_vip/img/icon/06_n.gif" /></a> DIYè£…æ‰®
+					  </li>
+					</ul>
+				  </td>
+				</tr>
+				<tr id="tr_2">
+				  <th scope="row">LV2 <span class="hit" id="th_span_2" style="display:none"><a href="javascript:payCenter1('qmall.obsdiy')" class="hit"><span style="text-decoration:none">é»„é’»ç›´é€šè½¦</span></a></span></th>
+				  <td>
+					<ul>
+					  <li><a href="javascript:if(confirm('http://qzone.qq.com/helpcenter/yellow_diamond.html?url=http://qzone.qq.com/helpcenter/yellow_info.htm?38  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://qzone.qq.com/helpcenter/yellow_diamond.html?url=http://qzone.qq.com/helpcenter/yellow_info.htm?38'" tppabs="http://qzone.qq.com/helpcenter/yellow_diamond.html?url=http://qzone.qq.com/helpcenter/yellow_info.htm?38" target="_blank"><img alt="ç‰¹ä¾›å“å…è´¹" id="img_tg_2" src="../../../../../../imgcache.qq.com/qzone_v5/app/app_vip/img/icon/14_n.gif" tppabs="http://imgcache.qq.com/qzone_v5/app/app_vip/img/icon/14_n.gif" /></a> ç‰¹ä¾›ç‰©å“</li>
+					  <li id="li_diy_2" style="display:none" class="hit" title="é»„é’»ç›´é€šè½¦ç”¨æˆ·ä¼˜å…ˆäº«å—"><a href="javascript:if(confirm('http://qzone.qq.com/helpcenter/yellow_diamond.html?url=http://qzone.qq.com/helpcenter/yellow_info.htm?25  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://qzone.qq.com/helpcenter/yellow_diamond.html?url=http://qzone.qq.com/helpcenter/yellow_info.htm?25'" tppabs="http://qzone.qq.com/helpcenter/yellow_diamond.html?url=http://qzone.qq.com/helpcenter/yellow_info.htm?25" target="_blank"><img title="é»„é’»ç›´é€šè½¦ç”¨æˆ·ä¼˜å…ˆäº«å—" src="../../../../../../imgcache.qq.com/qzone_v5/app/app_vip/img/icon/06.gif" tppabs="http://imgcache.qq.com/qzone_v5/app/app_vip/img/icon/06.gif" /></a> DIYè£…æ‰®</li>
+					</ul>
+				  </td>
+				</tr>
+				<tr id="tr_1">
+				  <th scope="row">LV1 <span class="hit" id="th_span_1" style="display:none"><a href="javascript:payCenter1('qmall.obsdiy')" class="hit"><span style="text-decoration:none">é»„é’»ç›´é€šè½¦</span></a></span></th>
+				  <td>
+					<ul>
+					  <li><a href="javascript:if(confirm('http://qzone.qq.com/helpcenter/yellow_diamond.html?url=http://qzone.qq.com/helpcenter/yellow_info.htm?38  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://qzone.qq.com/helpcenter/yellow_diamond.html?url=http://qzone.qq.com/helpcenter/yellow_info.htm?38'" tppabs="http://qzone.qq.com/helpcenter/yellow_diamond.html?url=http://qzone.qq.com/helpcenter/yellow_info.htm?38" target="_blank"><img alt="æ™®é€šå“å…è´¹" id="img_pt_1" src="../../../../../../imgcache.qq.com/qzone_v5/app/app_vip/img/icon/15_n.gif" tppabs="http://imgcache.qq.com/qzone_v5/app/app_vip/img/icon/15_n.gif" /></a> æ™®é€šå“å…è´¹</li>					  
+					  <li><a href="javascript:if(confirm('http://qzone.qq.com/helpcenter/yellow_diamond.html?url=http://qzone.qq.com/helpcenter/yellow_info.htm?40  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://qzone.qq.com/helpcenter/yellow_diamond.html?url=http://qzone.qq.com/helpcenter/yellow_info.htm?40'" tppabs="http://qzone.qq.com/helpcenter/yellow_diamond.html?url=http://qzone.qq.com/helpcenter/yellow_info.htm?40" target="_blank"><img alt="é»„é’»é£æ ¼" id="img_hz_1" src="../../../../../../imgcache.qq.com/qzone_v5/app/app_vip/img/icon/02_n.gif" tppabs="http://imgcache.qq.com/qzone_v5/app/app_vip/img/icon/02_n.gif" /></a> é»„é’»é£æ ¼</li>
+					  <li id="li_diy_1" style="display:none" class="hit" title="é»„é’»ç›´é€šè½¦ç”¨æˆ·ä¼˜å…ˆäº«å—"><a href="javascript:if(confirm('http://qzone.qq.com/helpcenter/yellow_diamond.html?url=http://qzone.qq.com/helpcenter/yellow_info.htm?25  \n\n¸ÃÎÄ¼şÎŞ·¨ÓÃ Teleport Ultra ÏÂÔØ, ÒòÎª ²»¿ÉÓÃ, »ò·ÅÆúÁËÏÂÔØ, »òÏîÄ¿¼´½«Í£Ö¹¡£  \n\nÄãÏëÔÚ·şÎñÆ÷ÉÏ´ò¿ªËü?'))window.location='http://qzone.qq.com/helpcenter/yellow_diamond.html?url=http://qzone.qq.com/helpcenter/yellow_info.htm?25'" tppabs="http://qzone.qq.com/helpcenter/yellow_diamond.html?url=http://qzone.qq.com/helpcenter/yellow_info.htm?25" target="_blank"><img title="é»„é’»ç›´é€šè½¦ç”¨æˆ·ä¼˜å…ˆäº«å—" src="../../../../../../imgcache.qq.com/qzone_v5/app/app_vip/img/icon/06.gif" tppabs="http://imgcache.qq.com/qzone_v5/app/app_vip/img/icon/06.gif" /></a> DIYè£…æ‰®</li>				
+					</ul>
+				  </td>
+				</tr>
+			  </tbody>
+			</table>
+	      </div>
+	    </div>
+	    
+	    <!--S å•†åŸè£…æ‰®-->
+	    <div class="comm_mode mode_shop_dress">
+	      <div class="comm_mode_tit">
+	        <h3>å•†åŸè£…æ‰®</h3>
+	      </div>
+	      <div class="comm_mode_cont">	        	
+	        <div class="favorite_info">
+		      <div class="top_op">
+		      	<div>
+				  <button class="bt_hit_t7 spr" onclick="pgvSendMallClick({hottag:'https://qzonestyle.gtimg.cn/qzone/mall/v5/web/myitem/ISD.QZONEMALL.HOST.APP'});onSubmit_myhome()">åº”ç”¨åˆ°æˆ‘çš„ç©ºé—´</button> 
+				</div>
+		      </div>
+	          <!--S ç‰©å“åˆ—è¡¨-->
+	          <div class="favorite_item">
+	          	<div class="favorite_item_style" id="styleDiv"></div>
+	          	<div class="favorite_item_list">
+	          		<p class="tit">è£…æ‰®ç‰©å“</p>
+
+	          		<div class="product_content" id="itemNull" style="display:none;">
+	          			<p class="hint">å½“å‰æ²¡æœ‰è£…æ‰®ç‰©å“ï¼</p>
+	          		</div>
+
+	          		<div class="product_content" id="itemShow" style="padding-top:0px; display:none;">
+	          		  <ul class="relating_index" id="itemDiv" style="display:none;">
+                      <textarea class="template">	
+					  [%repeat_0 match="data"%]
+                        <li class="nor_item" onmouseover="this.className='nor_item [%=@mouseClass%]'" onmouseout="this.className='nor_item'">
+                          <div class="item_wrap">
+                            <div class="product_img"><img height="85" width="85" src="[%=@imgurl%]" tppabs="https://qzonestyle.gtimg.cn/qzone/mall/v5/web/myitem/[%=@imgurl%]"/></div>
+                            <ul class="item_info">
+                              <li>[%=@name%]</li>
+                              <li><strong>[%=@nqprice%]</strong>[%=@nqunit%][%=@split%] <strong>[%=@nsprice%]</strong>[%=@nsunit%]</li>
+                              <li>
+                                <p class="hit"><a href="javascript:payCenter('qmall.obstip')" class="hit">é»„é’»</a>[%=@vsprice%][%=@vsunit%]</p>
+                              </li>
+                              <li>
+                                <p>ç‚¹å‡»å›¾ç‰‡æ¢è£…</p>
+                              </li>
+                            </ul>
+                          </div>
+                        </li>
+                      [%_repeat_0%]
+                      </textarea>
+                      </ul>
+                      
+	          		  <div class="global_page_list" id="pageDiv" style="display:none">
+					  <textarea class="template">	
+					  [%repeat_0 match="data"%]
+					    <a class="page_pre" href="javascript:;" onclick="[%=@prevLink%]" ><img src="../../../../../../imgcache.qq.com/ac/b.gif" tppabs="http://imgcache.qq.com/ac/b.gif" alt="ä¸Šä¸€é¡µ" class="[%=@prevClass%]"/><span>ä¸Šä¸€é¡µ</span></a> 						
+						[%=@subLink%]						
+						<a class="page_next" href="javascript:;" onclick="[%=@nextLink%]"><img src="../../../../../../imgcache.qq.com/ac/b.gif" tppabs="http://imgcache.qq.com/ac/b.gif" alt="ä¸‹ä¸€é¡µ" class="[%=@nextClass%]"/><span>ä¸‹ä¸€é¡µ</span></a>						
+                      [%_repeat_0%]
+                      </textarea>
+					  </div>
+	          		</div>
+
+	          	</div>
+	          </div>
+	        </div>
+	        </div>
+	      </div>
+	      
+	      <!--S DIYè£…æ‰®-->
+	      <div class="comm_mode mode_diy_dress">
+	        <div class="comm_mode_tit">
+	          <h3>DIYè£…æ‰®</h3>
+	        </div>
+       		<div class="comm_mode_cont" id="diyNonDiv" style="display:none;">
+       			<p class="hint">å½“å‰æ²¡æœ‰DIYè£…æ‰®ï¼</p>
+       		</div>
+
+			<div class="comm_mode_cont" id="diyDiv" style="display:none">
+			<textarea class="template">	
+			  [%repeat_0 match="data"%]
+				<div class="diy_bg">
+					<img src="[%=@url%]" tppabs="https://qzonestyle.gtimg.cn/qzone/mall/v5/web/myitem/[%=@url%]" title="[%=@name%]" width="116" height="85"/>
+					<p>[%=@name%]</p>
+				</div>
+              [%_repeat_0%]
+			  <div class="diy_hint">
+				<p>DIYè£…æ‰®é™å¦‚ä¸‹ç”¨æˆ·ä½¿ç”¨ï¼š</p>
+				<p style="margin-top:5px">Â· é»„é’»LV3åŠä»¥ä¸Šç­‰çº§ç”¨æˆ·</p>
+				<p style="margin-top:5px">Â· <a href="javascript:payCenter1('qmall.obsdiy')" class="hit">é»„é’»ç›´é€šè½¦</a>ç”¨æˆ·</p>
+			  </div>		
+            </textarea>
+	        </div>
+	      </div>
+	      <!--E DIYè£…æ‰®-->
+				
+      </div>
+      <!--==E æ¨¡æ¡†å†…å®¹-->
+    </div>
+  </div>
+</div>
+
+<!--iframeç»“æŸ-->
+<div id="speedTipsDiv_10" style="left:40px; top:78px; position:absolute; display:none" class="global_client_tip">
+  <div class="client_tip_up" id="speedTipsDiv_up_10" style="left:5px;"></div>
+  <div class="client_tip">
+    <div class="client_tip_main">
+      <p>
+	    <!--
+	    TAå½“å‰ä¸ºé»„é’»æ™®é€šç”¨æˆ·ï¼Œæˆé•¿é€Ÿåº¦ä¸º <span class="hit" id="speedNumDiv">12</span> ç‚¹/å¤©ã€‚<br />
+        å‡çº§é»„é’»å¹´è´¹ç”¨æˆ·ï¼Œæˆé•¿é€Ÿåº¦å¢è‡³ <span class="hit">15</span> ç‚¹/å¤©ã€‚
+		-->
+		æˆé•¿é€Ÿåº¦ï¼š<span class="hit" id="speedNumDiv">12</span>ç‚¹/å¤©<span id="upgradeDiv" name="upgradeDiv"></span>ã€‚<br/>
+		å‡çº§<a href="javascript:payCenterBank('qmall.index');">å¹´è´¹é»„é’»</a>ç”¨æˆ·ï¼Œäº«å—15ç‚¹/å¤©æœ€å¿«æˆé•¿é€Ÿåº¦ï¼
+	  </p>
+    </div>
+  </div>
+</div>
+<div id="speedTipsDiv_15" style="left:40px; top:78px; position:absolute; display:none" class="global_client_tip">
+  <div class="client_tip_up" id="speedTipsDiv_up_15" style="left:-3px;"></div>
+  <div class="client_tip">
+    <div class="client_tip_main">
+      <p>
+	    <!--
+		TAå½“å‰ä¸ºé»„é’»å¹´è´¹ç”¨æˆ·ï¼Œæˆé•¿é€Ÿåº¦ä¸º <span class="hit">15</span> ç‚¹/å¤©ã€‚
+		-->	
+		æˆé•¿é€Ÿåº¦ï¼š<span class="hit">15</span>ç‚¹/å¤©<span id="upgradeDiv" name="upgradeDiv"></span>ã€‚<br/>
+		ä¸»äººå½“å‰æ˜¯<a href="javascript:payCenterBank('qmall.index');">å¹´è´¹é»„é’»</a>ç”¨æˆ·ï¼Œäº«å—æœ€å¿«é€Ÿåº¦æˆé•¿ï¼
+	  </p>
+    </div>
+  </div>
+</div>
+<div id="speedTipsDiv_0" style="left:67px; top:78px; position:absolute; display:none" class="global_client_tip">
+  <div class="client_tip_up" id="speedTipsDiv_up_0" style="left:-3px;"></div>
+  <div class="client_tip">
+    <div class="client_tip_main">
+      <p>
+	    <!--
+	    ç°åœ¨å¼€é€šé»„é’»ï¼Œå¯åŠ¨ç©ºé—´ç‰¹æƒæˆé•¿ä¹‹æ—…ï¼<a href="javascript:payCenter('qmall.observ')">å¸®TAå¼€é€š</a>
+	    -->
+		ä¸»äººå½“å‰ä¸æ˜¯é»„é’»è´µæ—ï¼
+	  </p>
+    </div>
+  </div>
+</div>
+<div id="speedTipsDiv_-1" style="left:60px; top:78px; position:absolute; display:none" class="global_client_tip">
+  <div class="client_tip_up" id="speedTipsDiv_up_-1" style="left:-3px;"></div>
+  <div class="client_tip">
+    <div class="client_tip_main">
+      <p>
+	    <!--
+	    TAå½“å‰æˆé•¿é€Ÿåº¦ä¸º: <span style="color:#3EA306">-10</span> ç‚¹/å¤© 
+	    -->
+		ä¸»äººçš„é»„é’»å·²å…³é—­ï¼Œç»éªŒå€¼å°†æ¯å¤©å‡å°‘<span class="hit">10</span>ç‚¹ï¼
+		</p>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="../../../../../../imgcache.qq.com/qzone/mall/v5/web/vip/util.js" tppabs="http://imgcache.qq.com/qzone/mall/v5/web/vip/util.js" charset="gb2312"></script>
+<script type="text/javascript" src="../../../../../../imgcache.qq.com/qzone/mall/v5/js/mall.js" tppabs="http://imgcache.qq.com/qzone/mall/v5/js/mall.js" charset="gb2312"></script>
+<script type="text/javascript" src="../../../../../../imgcache.qq.com/qzone/mall/v5/comm/js/FillDiv_Ex.js" tppabs="http://imgcache.qq.com/qzone/mall/v5/comm/js/FillDiv_Ex.js" charset="gb2312"></script>
+<script type="text/javascript" src="../../../../../../imgcache.qq.com/qzone/mall/v5/comm/js/mall_common.js" tppabs="http://imgcache.qq.com/qzone/mall/v5/comm/js/mall_common.js" charset="gb2312"></script>
+<script type="text/javascript" src="../../../../../../imgcache.qq.com/qzone/mall/v5/comm/js/login.js" tppabs="http://imgcache.qq.com/qzone/mall/v5/comm/js/login.js" charset="gb2312"></script>
+<script type="text/javascript" src="../../../../../../imgcache.qq.com/qzone/ping.js" tppabs="http://imgcache.qq.com/qzone/ping.js" charset="gb2312" defer></script>
+<script type="text/javascript" src="../../../../../../imgcache.qq.com/qzone/mall/v5/js/clickhot.js" tppabs="http://imgcache.qq.com/qzone/mall/v5/js/clickhot.js" charset="gb2312" defer></script>
+</body>
+</html><!--[if !IE]>|xGv00|569f8adfce53f761f139944728bfdb73<![endif]-->

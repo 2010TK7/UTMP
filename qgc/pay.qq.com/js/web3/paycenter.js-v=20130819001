@@ -1,0 +1,189 @@
+var selfMenu={
+	"0":["qqcard","tenpay","bank","168","adsl","mobile","unicom","cdma","phonecard","paypal","wb","easypay","scard","creditcard"]
+};
+var sendMenu={
+	"0":["qqcard","tenpay","bank","phonecard","creditcard"]
+};
+var sid=0;
+var services={
+	"0":[ "", "","",""]
+	};
+$(function(){
+		   setTopMenu("2");
+		   $("a").focus(function(){this.blur()});
+		   //ch=LIB.endecode(LIB.getUrlParam("ch"));
+		   ch="";
+		   cm=LIB.endecode(LIB.getUrlParam("cm"));
+		   cn=LIB.endecode(LIB.getUrlParam("cn"));
+		   if(ch=="") ch="self";
+		   if (cm == "clubdiscount") {
+		   	cm = "bank";
+		   	cn = "vip";
+		   } else if ($.inArray(cm, selfMenu[sid]) < 0) {
+			try{
+				cm = (function(){
+					var __tmp_cm = 'bank';
+					if (LIB.cookie.get('__pay_paycenter_cm').split('|').length==2 && LIB.cookie.get('__pay_paycenter_cm').split('|')[1]==LIB.cookie.get('uin')) {
+						__tmp_cm = LIB.cookie.get('__pay_paycenter_cm').split('|')[0]||__tmp_cm;	
+					}else {
+						__tmp_cm = 'bank';
+					}
+					return __tmp_cm;
+				})();
+			}catch(e){
+				cm = 'bank';
+			};
+		   }
+		   if(cn=="") cn=false;
+		   createMenu(ch,cm,cn);
+		   doPaypal();
+		   if(cm=="paypal")
+		   {
+			   $("li[mm_switch='paypal']").show();
+		   }
+		   $("a[mode]").click(channelHandler);
+		   $("li[mm_switch]").click(menuHandler);
+})
+function createMenu(CHANNELDIR,ACTIVEURL,CN)
+{
+	
+	$("a[mode]").removeClass("li_active");
+	$("a[mode='"+CHANNELDIR+"']").addClass("li_active");
+	
+	var serviceMenu=eval(CHANNELDIR+"Menu")[sid];
+	if(sid==0)
+	{
+		var bu="";
+		var urlParam="";
+		if(CN)
+		{
+			urlParam="?cn="+CN;
+		}
+	}
+	else
+	{
+		bu=services[sid][0]+"/";
+		urlParam="?sid="+sid;
+		if(CN)
+		{
+			urlParam+="&cn="+CN;
+		}
+	}
+	var serviceDir=CHANNELDIR+"/"+bu;
+	$("li[mm_switch]").each(function(){$(this).attr("targetURL",serviceDir+$(this).attr("mm_switch")+".shtml"+urlParam)});
+	$("li[mm_switch]").hide();
+	$.each(serviceMenu,function(i,value){
+							if(value!="paypal")
+						   $("li[mm_switch='"+value+"']").show();
+						   });
+	activeURL=$("li[mm_switch='"+ACTIVEURL+"']").attr("targetURL");
+	$("li[mm_switch]").removeClass("current");
+	$("li[mm_switch='"+ACTIVEURL+"']").addClass("current");
+
+	loadFrame(activeURL);
+}
+function channelHandler()
+{	
+	var activeURL=$("li[mm_switch][class='current']").attr("mm_switch");
+	if($.inArray(activeURL, selfMenu[sid])<0 || $.inArray(activeURL, sendMenu[sid])<0)
+		activeURL="bank";
+	createMenu($(this).attr("mode"),activeURL,false);
+	if($(this).attr("mode")=="send")
+	{
+		document.title="给他人充值—腾讯充值中心";
+	}
+	else
+	{
+		document.title="帐户充值 - 腾讯充值中心";
+	}
+}
+function menuHandler()
+{
+	$("li[mm_switch]").removeClass("current");
+	$(this).addClass("current");
+	cm=$(this).attr('mm_switch');
+	targetURL=$(this).attr("targetURL");
+	loadFrame(targetURL);
+}
+function loadFrame(sURL)
+{
+    var cm = $("li[mm_switch][class='current']").attr("mm_switch");
+    var ch = $("a[class='li_active']").attr("mode");
+    LIB.report({
+        action : 'recharge.pv.' + (cm == 'tenpay' ? 'cft' : cm),
+        ch : ch,
+        uin : LOGIN_UIN,
+        aid : LIB.getUrlParam('aid'),
+        service : '-qqpoint',
+        sessionid : LOGIN_UIN,
+        rr : Math.random()
+    });
+
+	$("#frameset").hide();
+	$("#divLoading").show();
+	$("#frameset").attr("src",sURL);
+	$("#frameset").load(function(){
+		try {
+			setFrameAutoHandler();
+		} 
+		catch (e) {
+		}
+	});
+}
+function setFrameAutoHandler()
+{
+	$("#divLoading").hide();
+	$("#frameset").show();
+	//var firstInput=$(window.frames["frameset"].document).find(":input[type='text'][value='']:enabled:visible")[0];
+	var firstInput=$("#frameset").contents().find(":input[type='text'][value='']:enabled:visible")[0];
+	if(firstInput)
+		firstInput.select();
+	var activeURL=$("li[mm_switch][class='current']").attr("mm_switch");
+	var obj = document.getElementById("frameset");
+	obj.height=0;
+	var fdh=0;
+	if(activeURL!="qdqb")
+	{
+	  try{
+			fdh=(obj.Document?obj.Document.body.scrollHeight:obj.contentDocument.body.offsetHeight);
+		}
+		catch(e)
+		{
+			fdh=700;
+		}
+	  obj.height=(fdh>600?fdh+30:600);
+	}
+	else
+	{
+		 obj.height=600;
+	}
+	//按钮统计
+	~function(){
+		var cm=$("li[mm_switch][class='current']").attr("mm_switch");
+		var ch =$("a[class='li_active']").attr("mode");
+		if(typeof pgvSendClick !="undefined"){
+			var hot = "PAYCHARGE."+cm.toUpperCase()+"."+ch.toUpperCase();
+			pgvSendClick({hottag:hot});
+		} 
+	}();
+	
+}
+function dataSplit(text)
+{
+	var a=text.split("&"), b, c={};
+	for(var i=0;i<a.length;i++)
+	{
+		b=a[i].split("=");
+		c[b[0]]=b[1];
+	}
+	return c;
+}
+function  doPaypal()
+{
+	$.ajax({url:"https://pay.qq.com/cgi-bin/personal/get_ip_info.cgi",type:'get',dataType:'json',success:function(text){
+					if(text["resultcode"]!="0")
+					{
+							$("li[mm_switch='paypal']").show();
+					}
+			}})
+}

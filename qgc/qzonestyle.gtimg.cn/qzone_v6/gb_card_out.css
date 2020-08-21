@@ -1,0 +1,341 @@
+html{font-size:62.5%;font-family:Tahoma}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,input,button,textarea,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0}
+body{line-height:1.333;font-size:12px}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+input,textarea,select,button{font-size:12px;font-weight:normal;font-family:inherit}
+input[type="button"],input[type="submit"]{cursor:pointer}
+select,button{cursor:pointer}
+table{border-collapse:collapse;border-spacing:0}
+address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:normal}
+li{list-style:none}
+caption,th{text-align:left}
+q:before,q:after{content:''}
+abbr,acronym{border:0;font-variant:normal}
+sup{vertical-align:text-top}
+sub{vertical-align:text-bottom}
+fieldset,img,a img,iframe{border-width:0;border-style:none}
+iframe{overflow:hidden}
+img{-ms-interpolation-mode:bicubic}
+textarea{resize:vertical;overflow-y:auto}
+legend{color:#000}
+a{text-decoration:none}
+a:hover{text-decoration:underline}
+hr{height:0}
+label{cursor:pointer}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+.os_mac{font-family:"ff-tisa-web-pro-1","ff-tisa-web-pro-2","Lucida Grande","Hiragino Sans GB","Hiragino Sans GB W3"}
+@media screen and (-ms-high-contrast:active),(-ms-high-contrast:none){a:active{background-color:transparent}}
+.qzone_cards{font-size:12px;width:304px;border-radius:2px;border:1px solid #c6c6c6;color:#545454;background-color:#fff}
+.qzone_cards a:link,.qzone_cards a:visited,.qzone_cards .card_user_info_more a:link,.qzone_cards .card_user_info_more a:visited{color:#0981C6}
+.qzone_cards_profile .qzone_cards_blog a{color:#535353}
+.qzone_cards_default .qzone_cards_feed,.qzone_cards_profile .qzone_cards_feed{background-color:#f5f5f5}
+.qzone_cards_default .qzone_cards_app{background-color:#fff}
+.qzone_cards_vip{background-image:url("img/gb_card/bg_card_vip.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/img/gb_card/bg_card_vip.png?max_age=19830212&d=20130904150153*/;background-color:#fff}
+.qzone_cards_vip .qzone_cards_feed{background-color:#f3f3f3}
+.qzone_cards_vip .qzone_cards_app{background-color:#fff}
+.card_skin_dark{color:#d2d2d2}
+.card_skin_dark a:link,.card_skin_dark a:visited,.card_skin_dark .card_user_info_more a:link,.card_skin_dark .card_user_info_more a:visited{color:#00c6ff}
+.card_skin_dark .qzone_cards_feed .right .trig{border-color:#00c6ff transparent transparent transparent}
+.qz_qzone_lv{display:inline-block;width:16px;background-repeat:no-repeat;height:16px;position:relative;margin-right:2px}
+.qz_qzone_lv_s{margin-right:18px}
+.qz_qzone_no_1{margin-right:0}
+.qz_qzone_no_2{margin-right:8px}
+.qz_qzone_no_3{margin-right:16px}
+.qz_qzone_lv_1{background-image:url("sprite/qz_qzone_lv-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/qz_qzone_lv-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:0 0}
+.qz_qzone_lv_2{background-image:url("sprite/qz_qzone_lv-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/qz_qzone_lv-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-17px 0}
+.qz_qzone_lv_3{background-image:url("sprite/qz_qzone_lv-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/qz_qzone_lv-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-34px 0}
+.qz_qzone_lv_4{background-image:url("sprite/qz_qzone_lv-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/qz_qzone_lv-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-51px 0}
+.qz_qzone_lv_1{_background-image:url("sprite/qz_qzone_lv-ie6-chu130903102016.png-max_age=19830212&d=20130904150153")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/qz_qzone_lv-ie6-chu130903102016.png?max_age=19830212&d=20130904150153*/;_background-position:0 0}
+.qz_qzone_lv_2{_background-image:url("sprite/qz_qzone_lv-ie6-chu130903102016.png-max_age=19830212&d=20130904150153")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/qz_qzone_lv-ie6-chu130903102016.png?max_age=19830212&d=20130904150153*/;_background-position:-17px 0}
+.qz_qzone_lv_3{_background-image:url("sprite/qz_qzone_lv-ie6-chu130903102016.png-max_age=19830212&d=20130904150153")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/qz_qzone_lv-ie6-chu130903102016.png?max_age=19830212&d=20130904150153*/;_background-position:-34px 0}
+.qz_qzone_lv_4{_background-image:url("sprite/qz_qzone_lv-ie6-chu130903102016.png-max_age=19830212&d=20130904150153")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/qz_qzone_lv-ie6-chu130903102016.png?max_age=19830212&d=20130904150153*/;_background-position:-51px 0}
+.qz_qzone_lv .no{position:absolute;left:10px;bottom:0;width:21px;line-height:7px;height:7px;_overflow:hidden}
+.qz_qzone_lv .no b{display:inline-block;width:8px;background-repeat:no-repeat;height:7px;margin-right:-1px;vertical-align:top}
+.qz_qzone_lv .no .d1_g{background-image:url("sprite/qz_qzone_lv-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/qz_qzone_lv-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-68px 0}
+.qz_qzone_lv .no .d2_g{background-image:url("sprite/qz_qzone_lv-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/qz_qzone_lv-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-85px 0}
+.qz_qzone_lv .no .d3_g{background-image:url("sprite/qz_qzone_lv-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/qz_qzone_lv-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-102px 0}
+.qz_qzone_lv .no .d1{background-image:url("sprite/qz_qzone_lv-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/qz_qzone_lv-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-119px 0}
+.qz_qzone_lv .no .d2{background-image:url("sprite/qz_qzone_lv-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/qz_qzone_lv-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-136px 0}
+.qz_qzone_lv .no .d3{background-image:url("sprite/qz_qzone_lv-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/qz_qzone_lv-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-153px 0}
+.qz_qzone_lv .no .d4{background-image:url("sprite/qz_qzone_lv-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/qz_qzone_lv-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-170px 0}
+.qz_qzone_lv .no .d5{background-image:url("sprite/qz_qzone_lv-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/qz_qzone_lv-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-187px 0}
+.qz_qzone_lv .no .d6{background-image:url("sprite/qz_qzone_lv-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/qz_qzone_lv-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-204px 0}
+.qz_qzone_lv .no .d7{background-image:url("sprite/qz_qzone_lv-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/qz_qzone_lv-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-221px 0}
+.qz_qzone_lv .no .d8{background-image:url("sprite/qz_qzone_lv-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/qz_qzone_lv-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-238px 0}
+.qz_qzone_lv .no .d9{background-image:url("sprite/qz_qzone_lv-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/qz_qzone_lv-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-255px 0}
+.qz_qzone_lv .no .d0{background-image:url("sprite/qz_qzone_lv-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/qz_qzone_lv-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-272px 0}
+.qz_qzone_lv .no .d1_g{_background-image:url("sprite/qz_qzone_lv-ie6-chu130903102016.png-max_age=19830212&d=20130904150153")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/qz_qzone_lv-ie6-chu130903102016.png?max_age=19830212&d=20130904150153*/;_background-position:-68px 0}
+.qz_qzone_lv .no .d2_g{_background-image:url("sprite/qz_qzone_lv-ie6-chu130903102016.png-max_age=19830212&d=20130904150153")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/qz_qzone_lv-ie6-chu130903102016.png?max_age=19830212&d=20130904150153*/;_background-position:-85px 0}
+.qz_qzone_lv .no .d3_g{_background-image:url("sprite/qz_qzone_lv-ie6-chu130903102016.png-max_age=19830212&d=20130904150153")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/qz_qzone_lv-ie6-chu130903102016.png?max_age=19830212&d=20130904150153*/;_background-position:-102px 0}
+.qz_qzone_lv .no .d1{_background-image:url("sprite/qz_qzone_lv-ie6-chu130903102016.png-max_age=19830212&d=20130904150153")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/qz_qzone_lv-ie6-chu130903102016.png?max_age=19830212&d=20130904150153*/;_background-position:-119px 0}
+.qz_qzone_lv .no .d2{_background-image:url("sprite/qz_qzone_lv-ie6-chu130903102016.png-max_age=19830212&d=20130904150153")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/qz_qzone_lv-ie6-chu130903102016.png?max_age=19830212&d=20130904150153*/;_background-position:-136px 0}
+.qz_qzone_lv .no .d3{_background-image:url("sprite/qz_qzone_lv-ie6-chu130903102016.png-max_age=19830212&d=20130904150153")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/qz_qzone_lv-ie6-chu130903102016.png?max_age=19830212&d=20130904150153*/;_background-position:-153px 0}
+.qz_qzone_lv .no .d4{_background-image:url("sprite/qz_qzone_lv-ie6-chu130903102016.png-max_age=19830212&d=20130904150153")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/qz_qzone_lv-ie6-chu130903102016.png?max_age=19830212&d=20130904150153*/;_background-position:-170px 0}
+.qz_qzone_lv .no .d5{_background-image:url("sprite/qz_qzone_lv-ie6-chu130903102016.png-max_age=19830212&d=20130904150153")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/qz_qzone_lv-ie6-chu130903102016.png?max_age=19830212&d=20130904150153*/;_background-position:-187px 0}
+.qz_qzone_lv .no .d6{_background-image:url("sprite/qz_qzone_lv-ie6-chu130903102016.png-max_age=19830212&d=20130904150153")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/qz_qzone_lv-ie6-chu130903102016.png?max_age=19830212&d=20130904150153*/;_background-position:-204px 0}
+.qz_qzone_lv .no .d7{_background-image:url("sprite/qz_qzone_lv-ie6-chu130903102016.png-max_age=19830212&d=20130904150153")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/qz_qzone_lv-ie6-chu130903102016.png?max_age=19830212&d=20130904150153*/;_background-position:-221px 0}
+.qz_qzone_lv .no .d8{_background-image:url("sprite/qz_qzone_lv-ie6-chu130903102016.png-max_age=19830212&d=20130904150153")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/qz_qzone_lv-ie6-chu130903102016.png?max_age=19830212&d=20130904150153*/;_background-position:-238px 0}
+.qz_qzone_lv .no .d9{_background-image:url("sprite/qz_qzone_lv-ie6-chu130903102016.png-max_age=19830212&d=20130904150153")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/qz_qzone_lv-ie6-chu130903102016.png?max_age=19830212&d=20130904150153*/;_background-position:-255px 0}
+.qz_qzone_lv .no .d0{_background-image:url("sprite/qz_qzone_lv-ie6-chu130903102016.png-max_age=19830212&d=20130904150153")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/qz_qzone_lv-ie6-chu130903102016.png?max_age=19830212&d=20130904150153*/;_background-position:-272px 0}
+.qz_vip_icon_s,.qz_vip_icon_s_1,.qz_vip_icon_s_2,.qz_vip_icon_s_3,.qz_vip_icon_s_4,.qz_vip_icon_s_5,.qz_vip_icon_s_6,.qz_vip_icon_s_7,.qz_vip_icon_s_8,.qz_vip_icon_s_gray,.qz_vip_icon_s_gray_1,.qz_vip_icon_s_gray_2,.qz_vip_icon_s_gray_3,.qz_vip_icon_s_gray_4,.qz_vip_icon_s_gray_5,.qz_vip_icon_s_gray_6,.qz_vip_icon_s_gray_7,.qz_vip_icon_s_gray_8,.qz_vip_icon_fla_s,.qz_vip_icon_fla_s_1,.qz_vip_icon_fla_s_2,.qz_vip_icon_fla_s_3,.qz_vip_icon_fla_s_4,.qz_vip_icon_fla_s_5,.qz_vip_icon_fla_s_6,.qz_vip_icon_fla_s_7,.qz_vip_icon_fla_s_8,.qz_vip_icon_fla_s_gray,.qz_vip_icon_fla_s_gray_1,.qz_vip_icon_fla_s_gray_2,.qz_vip_icon_fla_s_gray_3,.qz_vip_icon_fla_s_gray_4,.qz_vip_icon_fla_s_gray_5,.qz_vip_icon_fla_s_gray_6,.qz_vip_icon_fla_s_gray_7,.qz_vip_icon_fla_s_gray_8{display:inline-block;width:17px;background-image:url("img/qz_vip_icon/qz_vip_icon_s.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/img/qz_vip_icon/qz_vip_icon_s.png?max_age=19830212&d=20130904150153*/;background-repeat:no-repeat;height:15px;overflow:hidden}
+.qz_vip_icon_s{background-position:-136px 0}
+.qz_vip_icon_s_1{background-position:0 0}
+.qz_vip_icon_s_2{background-position:-17px 0}
+.qz_vip_icon_s_3{background-position:-34px 0}
+.qz_vip_icon_s_4{background-position:-51px 0}
+.qz_vip_icon_s_5{background-position:-68px 0}
+.qz_vip_icon_s_6{background-position:-85px 0}
+.qz_vip_icon_s_7{background-position:-102px 0}
+.qz_vip_icon_s_8{background-position:-119px 0}
+.qz_vip_icon_s_gray_1{background-position:0 -15px}
+.qz_vip_icon_s_gray_2{background-position:-17px -15px}
+.qz_vip_icon_s_gray_3{background-position:-34px -15px}
+.qz_vip_icon_s_gray_4{background-position:-51px -15px}
+.qz_vip_icon_s_gray_5{background-position:-68px -15px}
+.qz_vip_icon_s_gray_6{background-position:-85px -15px}
+.qz_vip_icon_s_gray_7{background-position:-102px -15px}
+.qz_vip_icon_s_gray_8{background-position:-119px -15px}
+.qz_vip_icon_s_gray{background-position:-136px -15px}
+.qz_vip_icon_fla_s_1{background-position:0 -30px}
+.qz_vip_icon_fla_s_2{background-position:-17px -30px}
+.qz_vip_icon_fla_s_3{background-position:-34px -30px}
+.qz_vip_icon_fla_s_4{background-position:-51px -30px}
+.qz_vip_icon_fla_s_5{background-position:-68px -30px}
+.qz_vip_icon_fla_s_6{background-position:-85px -30px}
+.qz_vip_icon_fla_s_7{background-position:-102px -30px}
+.qz_vip_icon_fla_s_8{background-position:-119px -30px}
+.qz_vip_icon_fla_s{background-position:-136px -30px}
+.qz_vip_icon_fla_s_gray_1{background-position:0 -45px}
+.qz_vip_icon_fla_s_gray_2{background-position:-17px -45px}
+.qz_vip_icon_fla_s_gray_3{background-position:-34px -45px}
+.qz_vip_icon_fla_s_gray_4{background-position:-51px -45px}
+.qz_vip_icon_fla_s_gray_5{background-position:-68px -45px}
+.qz_vip_icon_fla_s_gray_6{background-position:-85px -45px}
+.qz_vip_icon_fla_s_gray_7{background-position:-102px -45px}
+.qz_vip_icon_fla_s_gray_8{background-position:-119px -45px}
+.qz_vip_icon_fla_s_gray{background-position:-136px -45px}
+.qz_vip_icon_m_1,.qz_vip_icon_m_2,.qz_vip_icon_m_3,.qz_vip_icon_m_4,.qz_vip_icon_m_5,.qz_vip_icon_m_6,.qz_vip_icon_m_7,.qz_vip_icon_m_8,.qz_vip_icon_m_gray_1,.qz_vip_icon_m_gray_2,.qz_vip_icon_m_gray_3,.qz_vip_icon_m_gray_4,.qz_vip_icon_m_gray_5,.qz_vip_icon_m_gray_6,.qz_vip_icon_m_gray_7,.qz_vip_icon_m_gray_8,.qz_vip_icon_fla_m_1,.qz_vip_icon_fla_m_2,.qz_vip_icon_fla_m_3,.qz_vip_icon_fla_m_4,.qz_vip_icon_fla_m_5,.qz_vip_icon_fla_m_6,.qz_vip_icon_fla_m_7,.qz_vip_icon_fla_m_8,.qz_vip_icon_fla_m_gray_1,.qz_vip_icon_fla_m_gray_2,.qz_vip_icon_fla_m_gray_3,.qz_vip_icon_fla_m_gray_4,.qz_vip_icon_fla_m_gray_5,.qz_vip_icon_fla_m_gray_6,.qz_vip_icon_fla_m_gray_7,.qz_vip_icon_fla_m_gray_8{display:inline-block;width:40px;background-image:url("img/qz_vip_icon/qz_vip_icon_m.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/img/qz_vip_icon/qz_vip_icon_m.png?max_age=19830212&d=20130904150153*/;height:15px;overflow:hidden}
+.qz_vip_icon_m_1{background-position:0 0}
+.qz_vip_icon_m_2{background-position:-40px 0}
+.qz_vip_icon_m_3{background-position:-80px 0}
+.qz_vip_icon_m_4{background-position:-120px 0}
+.qz_vip_icon_m_5{background-position:-160px 0}
+.qz_vip_icon_m_6{background-position:-200px 0}
+.qz_vip_icon_m_7{background-position:-240px 0}
+.qz_vip_icon_m_8{background-position:-280px 0}
+.qz_vip_icon_m_gray_1{background-position:0 -15px}
+.qz_vip_icon_m_gray_2{background-position:-40px -15px}
+.qz_vip_icon_m_gray_3{background-position:-80px -15px}
+.qz_vip_icon_m_gray_4{background-position:-120px -15px}
+.qz_vip_icon_m_gray_5{background-position:-160px -15px}
+.qz_vip_icon_m_gray_6{background-position:-200px -15px}
+.qz_vip_icon_m_gray_7{background-position:-240px -15px}
+.qz_vip_icon_m_gray_8{background-position:-280px -15px}
+.qz_vip_icon_fla_m_1{background-position:0 0}
+.qz_vip_icon_fla_m_2{background-position:-40px -30px}
+.qz_vip_icon_fla_m_3{background-position:-80px -30px}
+.qz_vip_icon_fla_m_4{background-position:-120px -30px}
+.qz_vip_icon_fla_m_5{background-position:-160px -30px}
+.qz_vip_icon_fla_m_6{background-position:-200px -30px}
+.qz_vip_icon_fla_m_7{background-position:-240px -30px}
+.qz_vip_icon_fla_m_8{background-position:-280px -30px}
+.qz_vip_icon_fla_m_gray_1{background-position:0 -45px}
+.qz_vip_icon_fla_m_gray_2{background-position:-40px -45px}
+.qz_vip_icon_fla_m_gray_3{background-position:-80px -45px}
+.qz_vip_icon_fla_m_gray_4{background-position:-120px -45px}
+.qz_vip_icon_fla_m_gray_5{background-position:-160px -45px}
+.qz_vip_icon_fla_m_gray_6{background-position:-200px -45px}
+.qz_vip_icon_fla_m_gray_7{background-position:-240px -45px}
+.qz_vip_icon_fla_m_gray_8{background-position:-280px -45px}
+.qz_vip_icon_s_year_1,.qz_vip_icon_s_year_2,.qz_vip_icon_s_year_3,.qz_vip_icon_s_year_4,.qz_vip_icon_s_year_5,.qz_vip_icon_s_year_6,.qz_vip_icon_s_year_7,.qz_vip_icon_s_year_8,.qz_vip_icon_s_year_gray_1,.qz_vip_icon_s_year_gray_2,.qz_vip_icon_s_year_gray_3,.qz_vip_icon_s_year_gray_4,.qz_vip_icon_s_year_gray_5,.qz_vip_icon_s_year_gray_6,.qz_vip_icon_s_year_gray_7,.qz_vip_icon_s_year_gray_8,.qz_vip_icon_s_gray_year_gray_1,.qz_vip_icon_s_gray_year_gray_2,.qz_vip_icon_s_gray_year_gray_3,.qz_vip_icon_s_gray_year_gray_4,.qz_vip_icon_s_gray_year_gray_5,.qz_vip_icon_s_gray_year_gray_6,.qz_vip_icon_s_gray_year_gray_7,.qz_vip_icon_s_gray_year_gray_8,.qz_vip_icon_fla_s_year_1,.qz_vip_icon_fla_s_year_2,.qz_vip_icon_fla_s_year_3,.qz_vip_icon_fla_s_year_4,.qz_vip_icon_fla_s_year_5,.qz_vip_icon_fla_s_year_6,.qz_vip_icon_fla_s_year_7,.qz_vip_icon_fla_s_year_8,.qz_vip_icon_fla_s_year_gray_1,.qz_vip_icon_fla_s_year_gray_2,.qz_vip_icon_fla_s_year_gray_3,.qz_vip_icon_fla_s_year_gray_4,.qz_vip_icon_fla_s_year_gray_5,.qz_vip_icon_fla_s_year_gray_6,.qz_vip_icon_fla_s_year_gray_7,.qz_vip_icon_fla_s_year_gray_8,.qz_vip_icon_fla_s_gray_year_gray_1,.qz_vip_icon_fla_s_gray_year_gray_2,.qz_vip_icon_fla_s_gray_year_gray_3,.qz_vip_icon_fla_s_gray_year_gray_4,.qz_vip_icon_fla_s_gray_year_gray_5,.qz_vip_icon_fla_s_gray_year_gray_6,.qz_vip_icon_fla_s_gray_year_gray_7,.qz_vip_icon_fla_s_gray_year_gray_8{display:inline-block;width:30px;background-image:url("img/qz_vip_icon/qz_vip_icon_s_year.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/img/qz_vip_icon/qz_vip_icon_s_year.png?max_age=19830212&d=20130904150153*/;background-repeat:no-repeat;height:15px;overflow:hidden}
+.qz_vip_icon_s_year_1{background-position:0 0}
+.qz_vip_icon_s_year_2{background-position:-31px 0}
+.qz_vip_icon_s_year_3{background-position:-62px 0}
+.qz_vip_icon_s_year_4{background-position:-93px 0}
+.qz_vip_icon_s_year_5{background-position:-124px 0}
+.qz_vip_icon_s_year_6{background-position:-155px 0}
+.qz_vip_icon_s_year_7{background-position:-186px 0}
+.qz_vip_icon_s_year_8{background-position:-217px 0}
+.qz_vip_icon_s_year_gray_1{background-position:0 -60px}
+.qz_vip_icon_s_year_gray_2{background-position:-31px -60px}
+.qz_vip_icon_s_year_gray_3{background-position:-62px -60px}
+.qz_vip_icon_s_year_gray_4{background-position:-93px -60px}
+.qz_vip_icon_s_year_gray_5{background-position:-124px -60px}
+.qz_vip_icon_s_year_gray_6{background-position:-155px -60px}
+.qz_vip_icon_s_year_gray_7{background-position:-186px -60px}
+.qz_vip_icon_s_year_gray_8{background-position:-217px -60px}
+.qz_vip_icon_s_gray_year_gray_1{background-position:0 -15px}
+.qz_vip_icon_s_gray_year_gray_2{background-position:-31px -15px}
+.qz_vip_icon_s_gray_year_gray_3{background-position:-62px -15px}
+.qz_vip_icon_s_gray_year_gray_4{background-position:-93px -15px}
+.qz_vip_icon_s_gray_year_gray_5{background-position:-124px -15px}
+.qz_vip_icon_s_gray_year_gray_6{background-position:-155px -15px}
+.qz_vip_icon_s_gray_year_gray_7{background-position:-186px -15px}
+.qz_vip_icon_s_gray_year_gray_8{background-position:-217px -15px}
+.qz_vip_icon_fla_s_year_1{background-position:0 -30px}
+.qz_vip_icon_fla_s_year_2{background-position:-31px -30px}
+.qz_vip_icon_fla_s_year_3{background-position:-62px -30px}
+.qz_vip_icon_fla_s_year_4{background-position:-93px -30px}
+.qz_vip_icon_fla_s_year_5{background-position:-124px -30px}
+.qz_vip_icon_fla_s_year_6{background-position:-155px -30px}
+.qz_vip_icon_fla_s_year_7{background-position:-186px -30px}
+.qz_vip_icon_fla_s_year_8{background-position:-217px -30px}
+.qz_vip_icon_fla_s_gray_year_gray_1{background-position:0 -45px}
+.qz_vip_icon_fla_s_gray_year_gray_2{background-position:-31px -45px}
+.qz_vip_icon_fla_s_gray_year_gray_3{background-position:-62px -45px}
+.qz_vip_icon_fla_s_gray_year_gray_4{background-position:-93px -45px}
+.qz_vip_icon_fla_s_gray_year_gray_5{background-position:-124px -45px}
+.qz_vip_icon_fla_s_gray_year_gray_6{background-position:-155px -45px}
+.qz_vip_icon_fla_s_gray_year_gray_7{background-position:-186px -45px}
+.qz_vip_icon_fla_s_gray_year_gray_8{background-position:-217px -45px}
+.qz_vip_icon_fla_s_year_gray_1{background-position:0 -75px}
+.qz_vip_icon_fla_s_year_gray_2{background-position:-31px -75px}
+.qz_vip_icon_fla_s_year_gray_3{background-position:-62px -75px}
+.qz_vip_icon_fla_s_year_gray_4{background-position:-93px -75px}
+.qz_vip_icon_fla_s_year_gray_5{background-position:-124px -75px}
+.qz_vip_icon_fla_s_year_gray_6{background-position:-155px -75px}
+.qz_vip_icon_fla_s_year_gray_7{background-position:-186px -75px}
+.qz_vip_icon_fla_s_year_gray_8{background-position:-217px -75px}
+.qzone_cards .ui_ico{cursor:pointer;display:block;height:16px;width:18px;line-height:900px;overflow:hidden;font-size:0}
+.qzone_cards img{border:0 none;vertical-align:middle}
+.qzone_cards ul,.qzone_cards ol{list-style-type:none}
+.qzone_cards button{border:none;font-size:12px;cursor:pointer}
+.qzone_card_loading{margin:0;padding:0;font-size:12px;text-align:center;line-height:30px;height:34px;border:1px solid #c6c6c6;width:304px;color:#666}
+.qzone_card_loading_wrap{border:2px solid #efefef;background-color:#fff}
+.qzone_cards .split{color:#E7E7E7;margin:0 5px}
+.qzone_cards{font-size:12px;width:304px;background-repeat:no-repeat}
+.qzone_cards .link_change_skin{display:block;position:absolute;right:0;top:0;height:25px;width:25px;background-image:url("sprite/gb_card_out-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:0 0;_background-image:url("sprite/gb_card_out-ie6-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-ie6-chu130903102016.png?max_age=19830212&d=20130904150153*/;_background-position:0 0}
+.qzone_cards .cards_abstract{zoom:1;padding:11px 11px 9px 11px}
+.qzone_cards .cards_abstract:after{display:block;clear:both;content:""}
+.qzone_cards .card_user_pic{float:left;margin-right:11px;_margin-right:8px;position:relative}
+.qzone_cards .card_user_pic a img{display:block;width:100px;height:100px}
+.qzone_cards .card_user_pic .ico_zoom{display:block;height:16px;width:16px;position:absolute;right:4px;bottom:4px;background-image:url("sprite/gb_card_out-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-140px 0;_background-image:url("sprite/gb_card_out-ie6-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-ie6-chu130903102016.png?max_age=19830212&d=20130904150153*/;_background-position:-140px 0}
+.qzone_cards .pic_hat{margin-right:30px}
+.qzone_cards .card_user_pic .hat{display:none}
+.qzone_cards .pic_hat .hat{display:block;position:absolute;top:-20px;right:-22px}
+.qzone_cards .pic_hat .hat img{height:auto;width:auto}
+.qzone_cards .card_user_info{height:19px;line-height:18px;_margin-top:2px;_font-family:Verdana,Geneva;overflow:hidden;position:relative}
+.qzone_cards .card_user_info .nickname{font-size:14px;float:left;white-space:nowrap;max-width:68px;_width:68px;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;word-wrap:normal}
+.qzone_cards .card_user_info .nickname_ico{float:left}
+.qzone_cards .card_user_info .nickname_ico img{border:0 none;display:block}
+.qzone_cards .card_user_info .ico_card_remark{display:inline-block;*display:inline;zoom:1;height:16px;width:16px;vertical-align:middle;margin-right:2px;background-image:url("sprite/gb_card_out-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-140px -17px}
+.qzone_cards a:link,.qzone_cards a:visited{text-decoration:none}
+.qzone_cards a:hover.qzone_cards a:active{text-decoration:underline}
+.qzone_cards .card_main{overflow:hidden;*zoom:1;padding-top:1px}
+.qzone_cards .card_main .card_remark{height:19px;overflow:hidden}
+.qzone_cards .card_main .card_remark .nickname{display:inline-block;*display:inline;zoom:1;width:78px}
+.qzone_cards .card_main .card_remark input{width:60px;height:15px;margin-right:5px;float:left;border:1px solid #CCC}
+.qzone_cards .card_user_info_more a:link,.qzone_cards .card_user_info_more a:visited{margin-right:9px;*margin-right:7px}
+.qzone_cards .card_main .btn_realname{background-image:url("sprite/gb_card_out-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-157px 0;display:inline-block;*display:inline;zoom:1;width:15px;height:15px}
+.qzone_cards .card_main .icon_pencil{background-image:url("sprite/gb_card_out-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-157px -17px;display:inline-block;*display:inline;zoom:1;width:15px;height:15px;cursor:pointer}
+.qzone_cards .card_main .btn_xiaoyou{background-image:url("sprite/gb_card_out-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-174px 0;_background-image:url("sprite/gb_card_out-ie6-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-ie6-chu130903102016.png?max_age=19830212&d=20130904150153*/;_background-position:-140px -17px;display:inline-block;*display:inline;zoom:1;width:16px;height:16px}
+.qzone_cards .card_user_basicinfo{line-height:20px;margin-top:3px;word-break:normal;word-break:break-all;word-wrap:break-word;overflow:hidden}
+.qzone_cards .qzone_cards_op{margin:9px auto 0 0;_margin:8px auto 0 0;zoom:1;overflow:hidden;padding-bottom:10px;padding-left:7px;position:relative;height:16px;line-height:16px}
+.qzone_cards .qzone_cards_op a i{vertical-align:middle;*vertical-align:bottom}
+.qzone_cards .qzone_cards_op a img{float:left;margin-top:1px;margin-top:0\9;*margin-top:1px;*vertical-align:-2px;_vertical-align:0}
+.qzone_cards .qzone_cards_right{position:absolute;bottom:11px;top:2px;*top:1px;right:10px}
+.qzone_cards .qzone_cards_btn{display:block;font-size:12px;color:#3e7fc2;padding:1px 3px;margin-right:5px;overflow:hidden;float:left;height:16px}
+.auth_cards .qzone_cards_btn{padding-top:0;padding-top:1px\9;*}
+.qzone_cards a.qzone_cards_btn:link,.qzone_cards a.qzone_cards_btn:visited,.qzone_cards a.qzone_cards_btn:hover,.qzone_cards a.qzone_cards_btn:active{text-decoration:none}
+.qzone_cards .qzone_cards_btn i{display:block;float:left;height:16px;width:16px;margin-right:3px;*margin-top:-2px;_display:inline}
+.qzone_cards .qzone_cards_btn .btn_card_add{background-image:url("sprite/gb_card_out-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-174px -17px}
+.qzone_cards .qzone_cards_btn .btn_card_addpengyou{background-image:url("sprite/gb_card_out-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-191px 0}
+.qzone_cards .qzone_cards_btn .btn_card_heart{background-image:url("sprite/gb_card_out-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-191px -17px}
+.qzone_cards .qzone_cards_btn .btn_card_msg{background-image:url("sprite/gb_card_out-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-208px 0}
+.qzone_cards .qzone_cards_btn .btn_card_talk{background-image:url("sprite/gb_card_out-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-208px -17px}
+.qzone_cards .qzone_cards_btn .btn_card_like{background-image:url("sprite/gb_card_out-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-225px 0}
+.card_user_op{margin-top:15px;position:relative;line-height:16px}
+.card_user_op .ui_ico{display:inline-block;*display:inline;zoom:1;position:relative;margin:0 5px 0 0;height:16px;width:18px}
+.card_user_op .ui_txt{vertical-align:3px}
+.card_user_op .right{position:absolute;right:0;top:0}
+.card_user_op .ico_user_like{background-image:url("sprite/gb_card_out-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-26px 0;_background-image:url("sprite/gb_card_out-ie6-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-ie6-chu130903102016.png?max_age=19830212&d=20130904150153*/;_background-position:-26px 0}
+.card_user_op .icon_thumb{background-image:url("sprite/gb_card_out-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-225px -17px;width:16px}
+.card_user_op .icon_hufen{background-image:url("sprite/gb_card_out-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-242px 0;width:16px}
+.card_user_op .ico_user_like:hover{background-image:url("sprite/gb_card_out-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-26px -17px;_background-image:url("sprite/gb_card_out-ie6-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-ie6-chu130903102016.png?max_age=19830212&d=20130904150153*/;_background-position:-26px -17px}
+.card_user_op .ico_user_msg{background-image:url("sprite/gb_card_out-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-45px 0;_background-image:url("sprite/gb_card_out-ie6-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-ie6-chu130903102016.png?max_age=19830212&d=20130904150153*/;_background-position:-45px 0}
+.card_user_op .ico_user_msg:hover{background-image:url("sprite/gb_card_out-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-45px -17px;_background-image:url("sprite/gb_card_out-ie6-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-ie6-chu130903102016.png?max_age=19830212&d=20130904150153*/;_background-position:-45px -17px}
+.card_user_op .ico_user_mail{background-image:url("sprite/gb_card_out-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-64px 0;_background-image:url("sprite/gb_card_out-ie6-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-ie6-chu130903102016.png?max_age=19830212&d=20130904150153*/;_background-position:-64px 0}
+.card_user_op .ico_user_mail:hover{background-image:url("sprite/gb_card_out-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-64px -17px;_background-image:url("sprite/gb_card_out-ie6-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-ie6-chu130903102016.png?max_age=19830212&d=20130904150153*/;_background-position:-64px -17px}
+.card_user_op .ico_add_friend{background-image:url("sprite/gb_card_out-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-83px 0;_background-image:url("sprite/gb_card_out-ie6-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-ie6-chu130903102016.png?max_age=19830212&d=20130904150153*/;_background-position:-83px 0}
+.card_user_op .ico_add_friend:hover{background-image:url("sprite/gb_card_out-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-83px -17px;_background-image:url("sprite/gb_card_out-ie6-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-ie6-chu130903102016.png?max_age=19830212&d=20130904150153*/;_background-position:-83px -17px}
+.card_user_op .ico_invite_qzone{background-image:url("sprite/gb_card_out-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-102px 0;_background-image:url("sprite/gb_card_out-ie6-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-ie6-chu130903102016.png?max_age=19830212&d=20130904150153*/;_background-position:-102px 0}
+.card_user_op .ico_invite_qzone:hover{background-image:url("sprite/gb_card_out-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-102px -17px;_background-image:url("sprite/gb_card_out-ie6-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-ie6-chu130903102016.png?max_age=19830212&d=20130904150153*/;_background-position:-102px -17px}
+.card_user_op .ico_user_notlike{background-image:url("sprite/gb_card_out-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-121px 0;_background-image:url("sprite/gb_card_out-ie6-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-ie6-chu130903102016.png?max_age=19830212&d=20130904150153*/;_background-position:-121px 0}
+.card_user_op .ico_user_notlike:hover{background-image:url("sprite/gb_card_out-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-121px -17px;_background-image:url("sprite/gb_card_out-ie6-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-ie6-chu130903102016.png?max_age=19830212&d=20130904150153*/;_background-position:-121px -17px}
+.card_user_op .ico_report{width:16px;background-image:url("sprite/gb_card_out-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-242px -17px;_background-image:url("sprite/gb_card_out-ie6-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-ie6-chu130903102016.png?max_age=19830212&d=20130904150153*/;_background-position:-157px 0}
+.card_user_op .user_like_notice{border:1px solid #c0c0c0;color:#a9a9ab;position:absolute;top:-4px;left:24px;border-radius:3px;cursor:default;padding:2px 15px 2px 4px;background-color:#fff}
+.card_user_op .user_like_notice .ui_trigbox_l{zoom:1;position:absolute;top:6px;left:-5px}
+.card_user_op .user_like_notice .ui_trigbox_l .ui_trig{position:absolute;z-index:1;left:0;top:0;width:0;height:0;line-height:0;overflow:hidden;font-size:0;display:inline-block;zoom:1;border-width:5px;border-top-color:transparent!important;border-bottom-color:transparent!important;border-style:outset solid;_border-style:dotted solid!important;border-left-width:0!important;border-color:#c0c0c0}
+.card_user_op .user_like_notice .ui_trigbox_l .ui_trig_up{left:1px;border-color:#fff}
+.card_user_op .user_like_notice .notice_close{cursor:pointer;font-size:12px;position:absolute;right:2px;top:-1px}
+.card_user_op .user_like_notice .notice_btn{cursor:pointer}
+.qzone_cards .qzone_cards_feed{padding:8px 11px;position:relative;_zoom:1}
+. qzone_cards_profile.qzone_cards_feed{padding-bottom:11px}
+.qzone_cards .qzone_cards_feed .right{height:30px;position:absolute;right:-2px;bottom:0;width:64px;_zoom:1}
+.qzone_cards .qzone_cards_feed .right .right_inner{padding:5px 7px;position:absolute;top:0}
+.qzone_cards .qzone_cards_feed .right .expand{height:15px;margin-bottom:5px;display:block;position:relative}
+.qzone_cards .qzone_cards_feed .right .trig{width:0;height:0;overflow:hidden;font-size:0;display:block;position:absolute;top:5px;*top:4px;left:30px;border-width:6px;border-color:#0981C6 transparent transparent transparent;border-style:solid dashed dashed dashed}
+.qzone_cards .qzone_cards_feed .right ul{display:none}
+.qzone_cards .qzone_cards_feed .right_hover{right:-1px;bottom:1px}
+.qzone_cards .qzone_cards_feed .right_hover .right_inner{border:1px solid #e5e5e5;background-color:#fff;-moz-border-radius:2px;-webkit-border-radius:2px;border-radius:2px;z-index:1000}
+.qzone_cards .qzone_cards_feed .right_hover ul{display:block}
+.qzone_cards .qzone_cards_feed .right ul li,.qzone_cards .qzone_cards_feed .right ul .expand{display:block;margin-bottom:5px}
+.qzone_cards .qzone_cards_app{padding:4px 12px}
+.qzone_cards .qzone_cards_app .nickname_ico{margin-right:2px}
+.qzone_cards .qzone_cards_blog{width:238px;display:block;white-space:nowrap;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;word-wrap:normal}
+.qzone_cards .qzone_cards_blog,.qzone_cards .more{line-height:1.6}
+.qzone_cards_feed_no_right .qzone_cards_blog{width:100%!important}
+.qzone_cards .qzone_cards_shuoshuo{line-height:1.9}
+.qzone_cards .qzone_cards_shuoshuo .shuoshuo_content{display:block;float:left;max-width:200px;_width:200px;white-space:nowrap;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;word-wrap:normal}
+.qzone_cards .qzone_cards_shuoshuo .shuoshuo_content img{vertical-align:text-bottom;*vertical-align:-6px}
+.qzone_cards .qzone_cards_shuoshuo .quotes_symbols_left{*margin-left:-12px}
+.qzone_cards .qzone_cards_shuoshuo .quotes_symbols_left,.qzone_cards .qzone_cards_shuoshuo .quotes_symbols_right{display:block;_display:none;float:left;font-family:Arial,Consolas;font-size:36px;*font-size:28px;height:16px;line-height:36px;line-height:32px\0;*line-height:34px;overflow:hidden;color:#b7b7b7}
+.qzone_cards .card_user_info_more{margin-top:5px}
+.card_user_info_more .relation b{display:inline-block;*display:inline;zoom:1;height:15px;width:15px;background:url("img/gb_card/relation_bg.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/img/gb_card/relation_bg.png?max_age=19830212&d=20130904150153*/ no-repeat;margin:0 4px -3px 0}
+.card_user_info_more .relation_sign b{background-position:0 0}
+.card_user_info_more .relation_work b{background-position:0 -15px}
+.card_user_info_more .relation_city b{background-position:0 -30px}
+.card_user_info_more .relation_home b{background-position:0 -45px}
+.card_user_info_more .relation_birthday b{background-position:0 -60px}
+.card_user_info_more .relation_school b{background-position:0 -75px}
+.qzone_cards_lite{width:224px}
+.qzone_cards_lite .card_user_pic{display:none}
+.qzone_cards_lite .card_main{width:203px;float:none}
+.qzone_cards_lite .qzone_cards_feed{display:none}
+.qzone_cards_vip_lite .qzone_cards_wrap{background:url("img/gb_card/bg_card_vip.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/img/gb_card/bg_card_vip.png?max_age=19830212&d=20130904150153*/ right bottom no-repeat}
+.auth_cards .qzone_cards_wrap{background-image:url("img/gb_card/bg_card_auth.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/img/gb_card/bg_card_auth.png?max_age=19830212&d=20130904150153*/}
+.auth_cards .qzone_cards_op{overflow:hidden;*zoom:1}
+.auth_cards .auth_fan_ct{display:block;float:right;width:216px}
+.auth_cards .ico_auth{margin:0 5px;float:left;height:16px;width:16px;background-image:url("sprite/gb_card_out-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-259px 0}
+.auth_cards .card_user_info .desc{float:left}
+.auth_cards .qzone_cards_feed{background-color:#f3f3f3}
+.auth_cards .qzone_cards_shuoshuo{height:auto}
+.auth_cards .qzone_cards_shuoshuo .shuoshuo_content{max-width:240px;_width:240px}
+.auth_cards .qzone_cards_blog{width:280px}
+.card_user_basicinfo .setting_op i{cursor:pointer;width:16px;height:14px;display:inline-block;*display:inline;*zoom:1;vertical-align:-2px;*vertical-align:0}
+.card_user_basicinfo .setting_op .icon_access{background-image:url("sprite/gb_card_out-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-259px -17px}
+.card_user_basicinfo .setting_op .icon_forbid{background-image:url("sprite/gb_card_out-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-276px 0}
+.card_user_basicinfo .setting_op .icon_answer{background-image:url("sprite/gb_card_out-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-276px -17px;vertical-align:-3px;*vertical-align:-1px}
+.card_user_basicinfo .setting_op:hover .icon_access{background-image:url("sprite/gb_card_out-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-293px 0}
+.card_user_basicinfo .setting_op:hover .icon_forbid{background-image:url("sprite/gb_card_out-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-293px -17px}
+.card_user_basicinfo .setting_op:hover .icon_answer{background-image:url("sprite/gb_card_out-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-310px 0}
+.card_user_op .setting_op{position:relative;padding-left:18px;top:-3px;zoom:1}
+.card_user_op .setting_op i{position:absolute;left:0;top:1px;width:16px;height:16px;zoom:1;*top:0;_top:1px}
+.card_user_op .setting_op .icon_access{background-image:url("sprite/gb_card_out-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-259px -17px;_background-image:url("sprite/gb_card_out-ie6-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-ie6-chu130903102016.png?max_age=19830212&d=20130904150153*/;_background-position:-157px -17px}
+.card_user_op .setting_op .icon_forbid{background-image:url("sprite/gb_card_out-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-276px 0;_background-image:url("sprite/gb_card_out-ie6-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-ie6-chu130903102016.png?max_age=19830212&d=20130904150153*/;_background-position:-174px 0}
+.card_user_op .setting_op .icon_answer{background-image:url("sprite/gb_card_out-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-276px -17px;_background-image:url("sprite/gb_card_out-ie6-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-ie6-chu130903102016.png?max_age=19830212&d=20130904150153*/;_background-position:-174px -17px}
+.card_user_op .setting_op:hover .icon_access{background-image:url("sprite/gb_card_out-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-293px 0;_background-image:url("sprite/gb_card_out-ie6-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-ie6-chu130903102016.png?max_age=19830212&d=20130904150153*/;_background-position:-191px 0}
+.card_user_op .setting_op:hover .icon_forbid{background-image:url("sprite/gb_card_out-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-293px -17px;_background-image:url("sprite/gb_card_out-ie6-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-ie6-chu130903102016.png?max_age=19830212&d=20130904150153*/;_background-position:-191px -17px}
+.card_user_op .setting_op:hover .icon_answer{background-image:url("sprite/gb_card_out-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-chu130903102016.png?max_age=19830212&d=20130904150153*/;background-position:-310px 0;_background-image:url("sprite/gb_card_out-ie6-chu130903102016.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-ie6-chu130903102016.png?max_age=19830212&d=20130904150153*/;_background-position:-208px 0}
+.qzone_cards .card_remark_show{vertical-align:middle;overflow:hidden;padding:5px 5px 5px 0;line-height:20px}
+.qzone_cards .card_remark_show span{float:left;height:24px;line-height:24px;font-size:12px;font-family:inherit}
+.qzone_cards .card_remark_show input{color:#666;margin:0 5px;border:1px solid #ccc;float:left;width:60px;height:18px;font-size:12px;line-height:18px;padding:2px 6px;_padding:4px 6px 0}
+.qzone_cards .card_remark_show button{width:36px;_width:30px;line-height:22px;display:inline-block;height:24px;*zoom:1;padding:0 2px;border:1px solid #B4B4B4;background-color:#F3F3F3;color:#666}
+.clearfix:before,.clearfix:after{content:".";display:block;height:0;visibility:hidden}
+.clearfix:after{clear:both}
+.clearfix{zoom:1}
+.none{display:none!important}
+.left{float:left}
+.right{float:right}
+@media only screen and (-webkit-min-device-pixel-ratio:1.25),(min-resolution:120dpi){.qzone_cards .card_main .btn_xiaoyou{background-image:url("sprite/gb_card_out-chu130903102016@2x.png-max_age=19830212&d=20130904150153.png")/*tpa=https://qzonestyle.gtimg.cn/qzone_v6/sprite/gb_card_out-chu130903102016@2x.png?max_age=19830212&d=20130904150153*/;background-size:16px 16px;background-position:0 0}}
+#CssGaga{content:"130904150153,chu,288"}/*  |xGv00|8247dd38de3f7fdfc01ba252959c90e6 */

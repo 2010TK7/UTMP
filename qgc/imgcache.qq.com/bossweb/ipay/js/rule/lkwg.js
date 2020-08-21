@@ -1,0 +1,1 @@
+;(function(ABTest,IPAY,LIB,$){ABTest.after(IPAY,'selectChannel',function(){var wenxin='';IPAY.current_channel=='qdqb'?wenxin='<li>系统将根据账户余额，自动调整开通时长。（如：您选择开3个月，但余额仅够支付2个月，则开通2个月。）</li>':'';wenxin+="<li>亲爱的小洛克，开通VIP先要征得爸爸妈妈的同意喔！</li>";$("#warm_tips_content").html(wenxin);$("#warm_tips_wrapper").show();});})(ABTest,IPAY,LIB,jQuery);/*  |xGv00|c2930e91aea8d924eeb1bdcf73408174 */

@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>storage helper</title>
+	</head>
+	<body onload="init();">
+		<script type="text/javascript">
+			try {
+				document.domain = location.href.indexOf('http://qzs.qq.com/ac/qzfl/release/widget/qq.com')==-1?'http://qzs.qq.com/ac/qzfl/release/widget/pengyou.com':'http://qzs.qq.com/ac/qzfl/release/widget/qq.com';
+			} catch (err) {
+				throw new Error("For qq.com domain only!");
+			}
+			//创建数据库
+			function create(dbname, type){
+				if(type == "localStorage"){
+					return window.localStorage;
+				}
+				try {
+					/*
+					var el = document.createElement("div");
+					el.id = dbname+"_userData";
+					el.style.display = "none";
+					el.addBehavior("#default#userdata");
+					document.body.appendChild(el);
+					*/
+					var el = document.body; 
+					el.addBehavior("#default#userdata");
+					el.load(dbname);
+					return el;
+				} 
+				catch (ign) {
+					return false;
+				}
+			}
+			
+			function init(){
+				if(parent.QZFL.Storage) {
+					parent.QZFL.Storage.ifrCallback();
+				}
+			}
+		</script>
+	</body>
+</html>
+<!--[if !IE]>|xGv00|eba0ef96cbf72c2505f5192c1f779fa2<![endif]-->

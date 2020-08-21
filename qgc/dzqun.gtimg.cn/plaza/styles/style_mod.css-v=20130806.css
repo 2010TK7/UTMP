@@ -1,0 +1,48 @@
+/* 编辑器图片工具栏样式修正 */
+.pic_function .current {background:#FFF; border:none; padding:0px;}
+.pic_function .title {background:#FFF; margin:0px; border:none; color:#000; border-radius: 0px; box-shadow:0px 0px 0px #FFF;}
+
+.thread_crumbs .crumbs {width:699px;}
+.vrrmessage {resize:none; border:1px solid #ccc; width: 495px;border-radius: 3px;line-height: 15px;box-shadow: inset 0 2px 4px 0 rgba(0,0,0,.04);margin-top: 5px;padding:6px;height:60px;}
+.op_item_floor {display:none; }
+.replayitem:hover .op_item_floor {display:inline-block;}
+.op_item_floor a.ban, .op_item_floor a.report, .op_item_floor a.clear, a.deleteFloor{color: #6daa6c;}
+
+#fix_postbox{width: 980px;margin:10px auto;}
+#fix_postbox table{width: 699px;}
+/* 回复框固定在最底部 */
+.thread_status {_position:absolute; _bottom:auto; _top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)));}
+#scrolltop{_position:absolute; _bottom:auto; _top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)) - 300);}
+
+#upMore img, #downMore img {display: block;margin: 0 auto;}
+#my_ftpost{margin:5px auto;}
+/* 防止内容错位出帖子内容区域 */
+.pctmessage {position:relative; overflow:hidden;}
+
+.drop_menu {display:none; z-index:9999; border:1px solid #648F63; padding:0 10px 10px 10px; position:absolute; top:0;left:0; background:#fff;box-shadow:2px 2px 2px #B3BA9E}
+#mdfl {margin:0 48px;}
+
+#online, #typing {_float: left;_padding-top: 10px;}
+#online em {+padding-top: 3px;}
+#online em i, #typing em i {width:8px;height:10px; display:inline-block; background: url("../images/number.png")/*tpa=https://dzqun.gtimg.cn/plaza/images/number.png*/ no-repeat; background-position:0 0; }
+
+*html{background-image:url(about:blank);background-attachment:fixed;}
+#sidebar {width:250px;}
+.ie6sidebar { width:250px; _position:absolute; _bottom:auto; _top:expression(eval(document.documentElement.scrollTop + 10));}
+
+.pctmessage ol li {list-style: decimal inside;}
+.pctmessage ul li {margin-left:19px; list-style: disc;}
+#pageModSet {float:right;padding: 0px;}
+    #pageModSet a {margin-right: 0px;}
+.DynarchCalendar table {margin: auto;}
+
+/* 入驻管理-审核 */
+.mnginttable .audit .cw {padding:0 10px; text-align:left}
+.mngjointab .operate {float:left;margin-top:25px;padding-left:10px}
+.mngjointab .operate check{margin-left:10px}
+.mngjointab .operate button{margin-right:10px}
+.mngjointab .pagegreeen {clear:none}
+
+/* 邀请入驻 */
+.j-station-box .applyJoin {height:150px}
+.j-station-box .invite {height:300px}
