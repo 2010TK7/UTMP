@@ -1,11 +1,14 @@
 {
 	"base": {
-		"web": ["https://ut.zblog.fun/"],
+		"web": [
+			"https://ut.jht3.top:8003/download-guide.html",
+			"https://ut.zblog.fun/"
+		],
 		"json": [
 			"https://github.com/2010TK7/UTMP/raw/master/readme.json",
 			"https://storage.live.com/items/8C3AB972E7E69B18!261:/readme.json?authkey=!ABUvGb11LmBPPS0"
 		],
-		"date": "2020/08/21 13:13 UTC+8",
+		"date": "2020/08/28 06:30 UTC+8",
 		"help": {
 			"gamemakerserver": {
 				"register": "https://gamemakerserver.com/en/register/",
@@ -21,6 +24,12 @@
 			]
 		},
 		"history": [
+			{
+				"game": "MV",
+				"date": 202008280630,
+				"prev": "0.3.13",
+				"curr": "0.3.14"
+			},
 			{
 				"game": "MV",
 				"date": 202008202123,
@@ -98,7 +107,7 @@
 			"size": 67204778,
 			"url": {
 				"gamejolt": "https://gamejolt.com/games/dontforget/150752/download/soundtrack",
-				"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!256:/soundtrack-5e92842385d9b.zip?authkey=!AGScTYj0W9SUD6w"
+				"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!256:/soundtrack-5f3b17f4b8454.zip?authkey=!AGScTYj0W9SUD6w"
 			},
 			"hash": {
 				"md5": "d314a8432f7c92d5e8ff596003db7b5c",
@@ -177,34 +186,34 @@
 		"gamejolt": "https://gamejolt.com/games/undertalemultiverse/423051",
 		"download": {
 			"Undertale: Multiverse": {
-				"version": "0.3.13",
-				"date": "Aug 20, 2020 8:42:48 PM",
-				"filename": "utmvv0.3.13-protected.exe",
-				"size": 36779008,
+				"version": "0.3.14",
+				"date": "Aug 27, 2020 10:20:26 PM",
+				"filename": "utmv-v0.3.14protected.exe",
+				"size": 36850176,
 				"url": {
-					"gamejolt": "https://gamejolt.com/games/undertalemultiverse/423051/download/build/888496",
-					"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!281:/utmvv0.3.13-protected.exe?authkey=!AFTvbmAc5kLa1Ng"
+					"gamejolt": "https://gamejolt.com/games/undertalemultiverse/423051/download/build/891993",
+					"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!281:/utmv-v0.3.14protected.exe?authkey=!AFTvbmAc5kLa1Ng"
 				},
 				"hash": {
-					"md5": "590abd24c7001503358ab45bf8d97fcf",
-					"sha1": "9d2d20d16397b3ba3c7ca72261dafacba4578a1e"
+					"md5": "fc94a03ee7bcbbdc691b16001248beba",
+					"sha1": "de86fadb42dd4d8069732e68db200058fd500a8f"
 				}
 			},
 			"Undertale: Multiverse Mobile": {
-				"version": "0.3.13",
-				"date": "Aug 20, 2020 8:43:23 PM",
-				"filename": "utmv-mobile-v0.3.13-patched-2.apk",
-				"size": 41539574,
+				"version": "0.3.14",
+				"date": "Aug 27, 2020 10:48:56 PM",
+				"filename": "utmv-mobile-v0.3.14-patched-5.apk",
+				"size": 41592636,
 				"url": {
-					"gamejolt": "https://gamejolt.com/games/undertalemultiverse/423051/download/build/888494",
-					"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!282:/utmv-mobile-v0.3.13-patched-2.apk?authkey=!AIeuLj_xT3cNQYQ"
+					"gamejolt": "https://gamejolt.com/games/undertalemultiverse/423051/download/build/892002",
+					"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!282:/utmv-mobile-v0.3.14-patched-5.apk?authkey=!AIeuLj_xT3cNQYQ"
 				},
 				"hash": {
-					"md5": "574ea7f26f283ec9430498e3046e2983",
-					"sha1": "e26e11100610147ac1196540166adff538025f51"
+					"md5": "beb576b33b856e31e1389948f55675fc",
+					"sha1": "610855c9ed8a56bdf64aeabe7c90926d121ff4ea"
 				}
 			}
-		},
+		},	
 		"soundtrack": {
 			"songs": 5,
 			"filename": "soundtrack-5ef08605f1aa6.zip",
