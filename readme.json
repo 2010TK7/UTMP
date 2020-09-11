@@ -8,7 +8,7 @@
 			"https://storage.live.com/items/8C3AB972E7E69B18!261:/readme.json?authkey=!ABUvGb11LmBPPS0",
 			"https://github.com/2010TK7/UTMP/raw/master/readme.json"
 		],
-		"date": "2020/08/28 11:13 UTC+8",
+		"date": "2020/09/12 07:11 UTC+8",
 		"help": {
 			"gamemakerserver": {
 				"register": "https://gamemakerserver.com/en/register/",
@@ -25,7 +25,19 @@
 		},
 		"history": [
 			{
-				"game": "MV_apk",
+				"game": "MV",
+				"date": 202009120711,
+				"prev": "0.3.17",
+				"curr": "0.3.20"
+			},
+			{
+				"game": "MV",
+				"date": 202009102053,
+				"prev": "0.3.15",
+				"curr": "0.3.17"
+			},
+			{
+				"game": "MV",
 				"date": 202008281034,
 				"prev": "0.3.14",
 				"curr": "0.3.15"
@@ -192,31 +204,31 @@
 		"gamejolt": "https://gamejolt.com/games/undertalemultiverse/423051",
 		"download": {
 			"Undertale: Multiverse": {
-				"version": "0.3.14",
-				"date": "Aug 27, 2020 10:20:26 PM",
-				"filename": "utmv-v0.3.14protected.exe",
-				"size": 36850176,
+				"version": "0.3.20",
+				"date": "Sep 11, 2020 3:04:57 PM",
+				"filename": "utmv-v0.3.20.exe",
+				"size": 36920832,
 				"url": {
-					"gamejolt": "https://gamejolt.com/games/undertalemultiverse/423051/download/build/891993",
-					"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!281:/utmv-v0.3.14protected.exe?authkey=!AFTvbmAc5kLa1Ng"
+					"gamejolt": "https://gamejolt.com/games/undertalemultiverse/423051/download/build/899284",
+					"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!281:/utmv-v0.3.20.exe?authkey=!AFTvbmAc5kLa1Ng"
 				},
 				"hash": {
-					"md5": "fc94a03ee7bcbbdc691b16001248beba",
-					"sha1": "de86fadb42dd4d8069732e68db200058fd500a8f"
+					"md5": "557daab9c5eebfbd822533c704bc6417",
+					"sha1": "32fc8184324a52739f2404edee231c27213f1ecd"
 				}
 			},
 			"Undertale: Multiverse Mobile": {
-				"version": "0.3.15",
-				"date": "Aug 28, 2020 9:28:09 AM",
-				"filename": "utmv-mobile-v0.3.15.apk",
-				"size": 41591944,
+				"version": "0.3.20",
+				"date": "Sep 11, 2020 3:05:01 PM",
+				"filename": "utmv-mobile-v0.3.20.apk",
+				"size": 41666626,
 				"url": {
-					"gamejolt": "https://gamejolt.com/games/undertalemultiverse/423051/download/build/892254",
-					"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!282:/utmv-mobile-v0.3.15.apk?authkey=!AIeuLj_xT3cNQYQ"
+					"gamejolt": "https://gamejolt.com/games/undertalemultiverse/423051/download/build/899290",
+					"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!282:/utmv-mobile-v0.3.20.apk?authkey=!AIeuLj_xT3cNQYQ"
 				},
 				"hash": {
-					"md5": "7d08e3eef62d3721ccee4c6b9053c1a0",
-					"sha1": "950a3a21583968517e2001b63111d4c9c42a9ba5"
+					"md5": "f49fe624adb9b143bee9c88b1c839902",
+					"sha1": "e1c8f2f44a22e00c649136e4e9a794506ec4f42d"
 				}
 			}
 		},	
