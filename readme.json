@@ -8,7 +8,7 @@
 			"https://storage.live.com/items/8C3AB972E7E69B18!261:/readme.json?authkey=!ABUvGb11LmBPPS0",
 			"https://github.com/2010TK7/UTMP/raw/master/readme.json"
 		],
-		"date": "2020/09/13 13:00 UTC+8",
+		"date": "2020/09/17 10:00 UTC+8",
 		"help": {
 			"gamemakerserver": {
 				"register": "https://gamemakerserver.com/en/register/",
@@ -71,7 +71,7 @@
 		"jq": ["https://jq.qq.com/?_wv=1027&k=5SP5eTI"]
 	},
 	"DF": {
-		"name": "Undertale: Don't Forget",
+		"name": "DONTFORGET (Deltarune + Undertale Fan-Project)",
 		"author": "RickyG",
 		"gamemakerserver": [
 			"https://gamemakerserver.com/en/games/4113/",
@@ -79,10 +79,10 @@
 		],
 		"gamejolt": "https://gamejolt.com/games/dontforget/150752",
 		"download": {
-			"Don't Forget v2.4.3b": {
+			"DF CONNECTED v2.4.3b": {
 				"version": "2.4.4",
 				"date": "Aug 18, 2020 9:34:59 PM",
-				"description": "This is the official release of v2.4.3b for PC! This version focuses specifically on the Multiplayer mode, as it has been completely redone! Story Mode is not available in this version any more, but it WILL return once it is fully complete. There's plenty of content to explore in Multiplayer, so I hope you enjoy it!",
+				"description": "This is the official release of DFC v2.4.3b for PC! DFC is the DF Project's online-multiplayer Undertale fangame! Explore areas from Undertale and Deltarune with players from around the world! DF Story Mode is currently in development, and will be seperated from this project as its own thing!",
 				"filename": "dontforget-v2.4.3b-windows.zip",
 				"size": 171875137,
 				"url": {
@@ -94,10 +94,10 @@
 					"sha1": "fbd1742fc83d38084914a7251dae06b3547153ce"
 				}
 			},
-			"Don't Forget v2.4.3b (Android)": {
+			"DF CONNECTED (for Android) v2.4.3b": {
 				"version": "2.4.4",
 				"date": "Aug 18, 2020 9:35:45 PM",
-				"description": "This is the Android port of DF v2.4.3b! It's an APK file, so just install it directly onto your Android phone/tablet and start playing!",
+				"description": "This is the Android port of DFC v2.4.3b! It's an APK file, so just install it directly onto your Android phone/tablet and start playing!",
 				"filename": "dontforget-v2.4.3b-android.apk",
 				"size": 196829307,
 				"url": {
@@ -109,10 +109,10 @@
 					"sha1": "5f2fe358ab9ec0fede283fc67e813ae1d6d98d7c"
 				}
 			},
-			"Don't Forget: Classic": {
+			"DF CLASSIC (Legacy Version of DFC)": {
 				"version": "15.1.0",
 				"date": "Dec 2, 2019 7:29:13 AM",
-				"description": "This is the official classic version of DF Multiplayer! It is no longer being updated or supported, but it's still playable!",
+				"description": "This is the classic version of DFC that was released and updated between 2016 up to 2019. It is no longer being updated or supported, but it's still playable!",
 				"filename": "don-t-forget-classic-multiplayer.exe",
 				"size": 107438080,
 				"url": {
@@ -140,7 +140,7 @@
 		}
 	},
 	"MST": {
-		"name": "MYSTERYTALE Online",
+		"name": "MYSTERYTALE Online (Multiplayer Undertale Fan-Game)",
 		"author": "afanguy",
 		"gamemakerserver": ["https://gamemakerserver.com/en/games/5863/"],
 		"gamejolt": "https://gamejolt.com/games/mysterytale-online/242286",
@@ -204,7 +204,7 @@
 		}
 	},
 	"MV": {
-		"name": "Undertale: Multiverse Online",
+		"name": "Undertale: Multiverse Online(Beta)",
 		"author": "WolfCoderz",
 		"gamemakerserver": ["https://gamemakerserver.com/en/games/5889/"],
 		"gamejolt": "https://gamejolt.com/games/undertalemultiverse/423051",
