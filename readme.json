@@ -8,7 +8,7 @@
 			"https://storage.live.com/items/8C3AB972E7E69B18!261:/readme.json?authkey=!ABUvGb11LmBPPS0",
 			"https://github.com/2010TK7/UTMP/raw/master/readme.json"
 		],
-		"date": "2020/09/17 10:41 UTC+8",
+		"date": "2020/09/18 10:14 UTC+8",
 		"help": {
 			"gamemakerserver": {
 				"register": "https://gamemakerserver.com/en/register/",
@@ -29,53 +29,32 @@
 		"jq": ["https://jq.qq.com/?_wv=1027&k=5SP5eTI"],
 		"history": [
 			{
-				"game": "MV",
+				"name": "MV",
+				"game": true,
 				"date": 202009131300,
 				"prev": "0.3.20",
 				"curr": "0.3.21"
 			},
 			{
-				"game": "MV",
+				"name": "MV",
+				"game": true,
 				"date": 202009120711,
 				"prev": "0.3.17",
 				"curr": "0.3.20"
 			},
 			{
-				"game": "MV",
+				"name": "MV",
+				"game": true,
 				"date": 202009102053,
 				"prev": "0.3.15",
 				"curr": "0.3.17"
-			},
-			{
-				"game": "MV",
-				"date": 202008281034,
-				"prev": "0.3.14",
-				"curr": "0.3.15"
-			},
-			{
-				"game": "MV",
-				"date": 202008280630,
-				"prev": "0.3.13",
-				"curr": "0.3.14"
-			},
-			{
-				"game": "MV",
-				"date": 202008202123,
-				"prev": "0.3.12",
-				"curr": "0.3.13"
-			},
-			{
-				"game": "DF",
-				"date": 202008190125,
-				"prev": "2.4.3",
-				"curr": "2.4.3b"
 			}
 		],
 		"abbr": {
 			"DF": "DF",
 			"DFC": "DF",
-			"MST": "MTO",
-			"MTO": "MTO",
+			"MST": "MST",
+			"MTO": "MST",
 			"MV": "MV",
 			"UC": "UC"
 		}
@@ -149,7 +128,7 @@
 			}
 		}
 	},
-	"MTO": {
+	"MST": {
 		"name": "MYSTERYTALE Online (Multiplayer Undertale Fan-Game)",
 		"author": "afanguy",
 		"gamemakerserver": ["https://gamemakerserver.com/en/games/5863/"],
