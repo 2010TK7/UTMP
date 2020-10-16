@@ -8,7 +8,10 @@
 			"https://storage.live.com/items/8C3AB972E7E69B18!261:/readme.json?authkey=!ABUvGb11LmBPPS0",
 			"https://github.com/2010TK7/UTMP/raw/master/readme.json"
 		],
-		"date": "2020/10/02 15:21 UTC+8",
+		"date": {
+			"datetime": "2020/10/16 9:25",
+			"UTC": "+8"
+		},
 		"help": {
 			"gamemakerserver": {
 				"register": "https://gamemakerserver.com/en/register/",
@@ -34,20 +37,6 @@
 				"date": 202010021521,
 				"prev": "0.3.21",
 				"curr": "0.3.22"
-			},
-			{
-				"name": "MV",
-				"game": true,
-				"date": 202009131300,
-				"prev": "0.3.20",
-				"curr": "0.3.21"
-			},
-			{
-				"name": "MV",
-				"game": true,
-				"date": 202009120711,
-				"prev": "0.3.17",
-				"curr": "0.3.20"
 			}
 		],
 		"abbr": {
