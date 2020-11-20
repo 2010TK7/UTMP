@@ -9,7 +9,7 @@
 			"https://github.com/2010TK7/UTMP/raw/master/readme.json"
 		],
 		"date": {
-			"datetime": "2020/10/16 9:25",
+			"datetime": "2020/11/21 7:24",
 			"UTC": "+8"
 		},
 		"help": {
@@ -32,11 +32,8 @@
 		"jq": ["https://jq.qq.com/?_wv=1027&k=5SP5eTI"],
 		"history": [
 			{
-				"name": "MV",
-				"game": true,
-				"date": 202010021521,
-				"prev": "0.3.21",
-				"curr": "0.3.22"
+				"date": 202011210724,
+				"changelog": "DF FORGOTTEN COLLECTION 1.0.0, new update. DF CONNECTED is still 2.4.3b."
 			}
 		],
 		"abbr": {
@@ -49,7 +46,7 @@
 		}
 	},
 	"DF": {
-		"name": "DONTFORGET (Deltarune + Undertale Fan-Project)",
+		"name": "DONTFORGET (Undertale/Deltarune Fan-Project)",
 		"author": "RickyG",
 		"gamemakerserver": [
 			"https://gamemakerserver.com/en/games/4113/",
@@ -64,7 +61,7 @@
 				"filename": "dontforget-v2.4.3b-windows.zip",
 				"size": 171875137,
 				"url": {
-					"gamejolt": "https://gamejolt.com/games/dontforget/150752/download/build/887539",
+					"gamejolt": "https://gamejolt.com/get/build?game=150752&build=887539",
 					"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!258:/dontforget-v2.4.3b-windows.zip?authkey=!AJSw-5Wl5lpdCeI"
 				},
 				"hash": {
@@ -79,7 +76,7 @@
 				"filename": "dontforget-v2.4.3b-android.apk",
 				"size": 196829307,
 				"url": {
-					"gamejolt": "https://gamejolt.com/games/dontforget/150752/download/build/887536",
+					"gamejolt": "https://gamejolt.com/get/build?game=150752&build=887536",
 					"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!259:/dontforget-v2.4.3b-android.apk?authkey=!AGKGmCosJoC-dP4"
 				},
 				"hash": {
@@ -94,12 +91,27 @@
 				"filename": "don-t-forget-classic-multiplayer.exe",
 				"size": 107438080,
 				"url": {
-					"gamejolt": "https://gamejolt.com/games/dontforget/150752/download/build/766068",
+					"gamejolt": "https://gamejolt.com/get/build?game=150752&build=766068",
 					"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!257:/don-t-forget-classic-multiplayer.exe?authkey=!AE_2kFfrjqJfUSc"
 				},
 				"hash": {
 					"md5": "82e8a086e1a1f01e13699f77371e9edc",
 					"sha1": "5aecfda2f60bff403b4440b9f5a430685e169203"
+				}
+			},
+			"DF FORGOTTEN COLLECTION": {
+				"version": "1.0.0",
+				"date": "Nov 21, 2020 5:01:13 AM",
+				"description": "A package containing three of the most-requested older versions of DF, now reuploaded for your gaming pleasure! Includes the 2016 Old Beta, the 2018 Demo, and DF Chapter 1.",
+				"filename": "df-forgotten-collection.zip",
+				"size": 327354344,
+				"url": {
+					"gamejolt": "https://gamejolt.com/get/build?game=150752&build=932777",
+					"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!308:/df-forgotten-collection.zip?authkey=!AObZgI6Hc1bMBpE"
+				},
+				"hash": {
+					"md5": "cab09b0cdc132ac3ecccd4e96d07aa8a",
+					"sha1": "f531c8bd317b3546f1a18faa313c105a122c3fce"
 				}
 			}
 		},
@@ -108,7 +120,7 @@
 			"filename": "soundtrack-5f3b17f4b8454.zip",
 			"size": 67204778,
 			"url": {
-				"gamejolt": "https://gamejolt.com/games/dontforget/150752/download/soundtrack",
+				"gamejolt": "https://gamejolt.com/get/soundtrack?game=150752",
 				"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!256:/soundtrack-5f3b17f4b8454.zip?authkey=!AGScTYj0W9SUD6w"
 			},
 			"hash": {
@@ -129,7 +141,7 @@
 				"filename": "mysterytale-online-0.12.1.exe",
 				"size": 87319552,
 				"url": {
-					"gamejolt": "https://gamejolt.com/games/mysterytale-online/242286/download/build/833687",
+					"gamejolt": "https://gamejolt.com/get/build?game=242286&build=833687",
 					"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!254:/mysterytale-online-0.12.1.exe?authkey=!ALc6TjS31oSjeZY"
 				},
 				"hash": {
@@ -143,7 +155,7 @@
 				"filename": "mysterytale-online-3d.exe",
 				"size": 31703040,
 				"url": {
-					"gamejolt": "https://gamejolt.com/games/mysterytale-online/242286/download/build/812320",
+					"gamejolt": "https://gamejolt.com/get/build?game=242286&build=812320",
 					"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!260:/mysterytale-online-3d.exe?authkey=!ALjObUMyZrSar8Y"
 				},
 				"hash": {
@@ -158,7 +170,7 @@
 				"filename": "mysterytale-online-demo-1.exe",
 				"size": 6845440,
 				"url": {
-					"gamejolt": "https://gamejolt.com/games/mysterytale-online/242286/download/build/561317",
+					"gamejolt": "https://gamejolt.com/get/build?game=242286&build=561317",
 					"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!253:/mysterytale-online-demo-1.exe?authkey=!AB3Oxf-OcbMTV0Q"
 				},
 				"hash": {
@@ -172,7 +184,7 @@
 			"filename": "soundtrack-5b4b568462ff1.zip",
 			"size": 28756197,
 			"url": {
-				"gamejolt": "https://gamejolt.com/games/mysterytale-online/242286/download/soundtrack",
+				"gamejolt": "https://gamejolt.com/get/soundtrack?game=242286",
 				"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!255:/soundtrack-5b4b568462ff1.zip?authkey=!AF6wdi-VE6Xr9n4"
 			},
 			"hash": {
@@ -193,7 +205,7 @@
 				"filename": "utmv-v0.3.22-release.exe",
 				"size": 36972032,
 				"url": {
-					"gamejolt": "https://gamejolt.com/games/undertalemultiverse/423051/download/build/907765",
+					"gamejolt": "https://gamejolt.com/get/build?game=423051&build=907765",
 					"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!281:/utmv-v0.3.22-release.exe?authkey=!AFTvbmAc5kLa1Ng"
 				},
 				"hash": {
@@ -207,7 +219,7 @@
 				"filename": "utmv-mobile-v0.3.22-release.apk",
 				"size": 41704354,
 				"url": {
-					"gamejolt": "https://gamejolt.com/games/undertalemultiverse/423051/download/build/907773",
+					"gamejolt": "https://gamejolt.com/get/build?game=423051&build=907773",
 					"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!282:/utmv-mobile-v0.3.22-release.apk?authkey=!AIeuLj_xT3cNQYQ"
 				},
 				"hash": {
@@ -221,7 +233,7 @@
 			"filename": "soundtrack-5ef08605f1aa6.zip",
 			"size": 10726222,
 			"url": {
-				"gamejolt": "https://gamejolt.com/games/undertalemultiverse/423051/download/soundtrack",
+				"gamejolt": "https://gamejolt.com/get/soundtrack?game=423051",
 				"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!280:/soundtrack-5ef08605f1aa6.zip?authkey=!ABSs4cvK39DFZ2U"
 			},
 			"hash": {
