@@ -9,7 +9,7 @@
 			"https://github.com/2010TK7/UTMP/raw/master/readme.json"
 		],
 		"date": {
-			"datetime": "2020/12/06 10:50",
+			"datetime": "2020/12/06 12:20",
 			"UTC": "+8"
 		},
 		"help": {
@@ -31,6 +31,10 @@
 		"qqgroup": [432227027],
 		"jq": ["https://jq.qq.com/?_wv=1027&k=5SP5eTI"],
 		"history": [
+			{
+				"date": 202012061220,
+				"changelog": "MV update from 0.4.1 to 0.4.2."
+			},
 			{
 				"date": 202012061050,
 				"changelog": "MV update from 0.3.22 to 0.4.1."
@@ -204,31 +208,31 @@
 		"gamejolt": "https://gamejolt.com/games/undertalemultiverse/423051",
 		"download": {
 			"Undertale: Multiverse": {
-				"version": "0.4.1",
-				"date": "Dec 6, 2020 9:40:33 AM",
-				"filename": "utmv-0.4.1.zip",
-				"size": 40826670,
+				"version": "0.4.2",
+				"date": "Dec 6, 2020 10:51:31 AM",
+				"filename": "utmv-0.4.2.zip",
+				"size": 40825354,
 				"url": {
-					"gamejolt": "https://gamejolt.com/get/build?game=423051&build=940831",
-					"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!281:/utmv-0.4.1.zip?authkey=!AFTvbmAc5kLa1Ng"
+					"gamejolt": "https://gamejolt.com/get/build?game=423051&build=940859",
+					"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!281:/utmv-0.4.2.zip?authkey=!AFTvbmAc5kLa1Ng"
 				},
 				"hash": {
-					"md5": "31e9701d7c81d93485f78e50752868b4",
-					"sha1": "8a001ea8155213b2de44e8b3b02a00d6f805b175"
+					"md5": "abc97da2cd31eefb76e5c1c3e62118e9",
+					"sha1": "2475b8ea155c39448be6279bd43233a71ab08934"
 				}
 			},
 			"Undertale: Multiverse Mobile": {
-				"version": "0.4.1",
-				"date": "Dec 6, 2020 9:40:30 AM",
-				"filename": "utmv-0.4.1.apk",
-				"size": 44565089,
+				"version": "0.4.2",
+				"date": "Dec 6, 2020 10:51:23 AM",
+				"filename": "utmv-0.4.2.apk",
+				"size": 44564677,
 				"url": {
-					"gamejolt": "https://gamejolt.com/get/build?game=423051&build=940828",
-					"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!282:/utmv-0.4.1.apk?authkey=!AIeuLj_xT3cNQYQ"
+					"gamejolt": "https://gamejolt.com/get/build?game=423051&build=940860",
+					"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!282:/utmv-0.4.2.apk?authkey=!AIeuLj_xT3cNQYQ"
 				},
 				"hash": {
-					"md5": "7d240201c25bc2a2f02c74f934c70889",
-					"sha1": "00695d11ec4f81ec923a1a4ec36a3c32a93d9fa0"
+					"md5": "549aa58670751213decf925dccee62da",
+					"sha1": "721d68d886574c64e7715b09f56c7591c3d1a220"
 				}
 			}
 		},
