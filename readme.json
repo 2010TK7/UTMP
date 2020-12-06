@@ -9,7 +9,7 @@
 			"https://github.com/2010TK7/UTMP/raw/master/readme.json"
 		],
 		"date": {
-			"datetime": "2020/11/21 7:24",
+			"datetime": "2020/12/06 10:50",
 			"UTC": "+8"
 		},
 		"help": {
@@ -31,6 +31,10 @@
 		"qqgroup": [432227027],
 		"jq": ["https://jq.qq.com/?_wv=1027&k=5SP5eTI"],
 		"history": [
+			{
+				"date": 202012061050,
+				"changelog": "MV update from 0.3.22 to 0.4.1."
+			},
 			{
 				"date": 202011210724,
 				"changelog": "DF FORGOTTEN COLLECTION 1.0.0, new update. DF CONNECTED is still 2.4.3b."
@@ -200,34 +204,34 @@
 		"gamejolt": "https://gamejolt.com/games/undertalemultiverse/423051",
 		"download": {
 			"Undertale: Multiverse": {
-				"version": "0.3.22",
-				"date": "Oct 1, 2020 6:45:05 PM",
-				"filename": "utmv-v0.3.22-release.exe",
-				"size": 36972032,
+				"version": "0.4.1",
+				"date": "Dec 6, 2020 9:40:33 AM",
+				"filename": "utmv-0.4.1.zip",
+				"size": 40826670,
 				"url": {
-					"gamejolt": "https://gamejolt.com/get/build?game=423051&build=907765",
-					"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!281:/utmv-v0.3.22-release.exe?authkey=!AFTvbmAc5kLa1Ng"
+					"gamejolt": "https://gamejolt.com/get/build?game=423051&build=940831",
+					"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!281:/utmv-0.4.1.zip?authkey=!AFTvbmAc5kLa1Ng"
 				},
 				"hash": {
-					"md5": "4567c192e7599887eb74aae1ffbb4288",
-					"sha1": "2565ecbe8ac204edd4fa0f2f8ca23fd9e267153a"
+					"md5": "31e9701d7c81d93485f78e50752868b4",
+					"sha1": "8a001ea8155213b2de44e8b3b02a00d6f805b175"
 				}
 			},
 			"Undertale: Multiverse Mobile": {
-				"version": "0.3.22",
-				"date": "Oct 1, 2020 7:15:32 PM",
-				"filename": "utmv-mobile-v0.3.22-release.apk",
-				"size": 41704354,
+				"version": "0.4.1",
+				"date": "Dec 6, 2020 9:40:30 AM",
+				"filename": "utmv-0.4.1.apk",
+				"size": 44565089,
 				"url": {
-					"gamejolt": "https://gamejolt.com/get/build?game=423051&build=907773",
-					"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!282:/utmv-mobile-v0.3.22-release.apk?authkey=!AIeuLj_xT3cNQYQ"
+					"gamejolt": "https://gamejolt.com/get/build?game=423051&build=940828",
+					"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!282:/utmv-0.4.1.apk?authkey=!AIeuLj_xT3cNQYQ"
 				},
 				"hash": {
-					"md5": "e8078b8cb9e956e20fa01a879a67546f",
-					"sha1": "43e72514e38a76bd5f594150850a3f1ee03f29a1"
+					"md5": "7d240201c25bc2a2f02c74f934c70889",
+					"sha1": "00695d11ec4f81ec923a1a4ec36a3c32a93d9fa0"
 				}
 			}
-		},	
+		},
 		"soundtrack": {
 			"songs": 5,
 			"filename": "soundtrack-5ef08605f1aa6.zip",
