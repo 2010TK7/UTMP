@@ -9,7 +9,7 @@
 			"https://github.com/2010TK7/UTMP/raw/master/readme.json"
 		],
 		"date": {
-			"datetime": "2021/02/19 08:37",
+			"datetime": "2021/02/25 15:00",
 			"UTC": "+8"
 		},
 		"help": {
@@ -31,6 +31,10 @@
 		"qqgroup": [432227027],
 		"jq": ["https://jq.qq.com/?_wv=1027&k=5SP5eTI"],
 		"history": [
+			{
+				"date": 202102251500,
+				"changelog": "DF FORGOTTEN COLLECTION update from 1.0.0 to 1.1.0, ost songs from 31 to 25."
+			},
 			{
 				"date": 202102190837,
 				"changelog": "MV update from 0.4.2 to 0.4.3, and changed the website."
@@ -96,48 +100,33 @@
 					"sha1": "5f2fe358ab9ec0fede283fc67e813ae1d6d98d7c"
 				}
 			},
-			"DF CLASSIC (Legacy Version of DFC)": {
-				"version": "15.1.0",
-				"date": "Dec 2, 2019 7:29:13 AM",
-				"description": "This is the classic version of DFC that was released and updated between 2016 up to 2019. It is no longer being updated or supported, but it's still playable!",
-				"filename": "don-t-forget-classic-multiplayer.exe",
-				"size": 107438080,
-				"url": {
-					"gamejolt": "https://gamejolt.com/get/build?game=150752&build=766068",
-					"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!257:/don-t-forget-classic-multiplayer.exe?authkey=!AE_2kFfrjqJfUSc"
-				},
-				"hash": {
-					"md5": "82e8a086e1a1f01e13699f77371e9edc",
-					"sha1": "5aecfda2f60bff403b4440b9f5a430685e169203"
-				}
-			},
 			"DF FORGOTTEN COLLECTION": {
-				"version": "1.0.0",
-				"date": "Nov 21, 2020 5:01:13 AM",
-				"description": "A package containing three of the most-requested older versions of DF, now reuploaded for your gaming pleasure! Includes the 2016 Old Beta, the 2018 Demo, and DF Chapter 1.",
-				"filename": "df-forgotten-collection.zip",
-				"size": 327354344,
+				"version": "1.1.0",
+				"date": "Feb 21, 2021 11:04:19 PM",
+				"description": "This package includes five classic versions of the game: the 2016 Old Beta, the original DF Multiplayer, the 2018 Demo, the 2019 April Fools game, and the no-longer-canon DF Chapter 1.",
+				"filename": "df-forgotten-collection-v2.zip",
+				"size": 449568906,
 				"url": {
-					"gamejolt": "https://gamejolt.com/get/build?game=150752&build=932777",
-					"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!308:/df-forgotten-collection.zip?authkey=!AObZgI6Hc1bMBpE"
+					"gamejolt": "https://gamejolt.com/get/build?game=150752&build=982904",
+					"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!308:/df-forgotten-collection-v2.zip?authkey=!AObZgI6Hc1bMBpE"
 				},
 				"hash": {
-					"md5": "cab09b0cdc132ac3ecccd4e96d07aa8a",
-					"sha1": "f531c8bd317b3546f1a18faa313c105a122c3fce"
+					"md5": "15bdf1c280c0b4bbb988f07bfa6e4960",
+					"sha1": "a319d8d8408d4414431a2d811ea081ada9f61081"
 				}
 			}
 		},
 		"soundtrack": {
-			"songs": 31,
-			"filename": "soundtrack-5f3b17f4b8454.zip",
-			"size": 67204778,
+			"songs": 25,
+			"filename": "soundtrack-60339153e8568.zip",
+			"size": 52078752,
 			"url": {
 				"gamejolt": "https://gamejolt.com/get/soundtrack?game=150752",
-				"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!256:/soundtrack-5f3b17f4b8454.zip?authkey=!AGScTYj0W9SUD6w"
+				"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!256:/soundtrack-60339153e8568.zip?authkey=!AGScTYj0W9SUD6w"
 			},
 			"hash": {
-				"md5": "d314a8432f7c92d5e8ff596003db7b5c",
-				"sha1": "9ee680c4e450e2138e093417aa38c623f0a389b9"
+				"md5": "1e193756040b8be3763314132df176fa",
+				"sha1": "dbc996995ec3233e8bf0a941d023c8abd574fc31"
 			}
 		}
 	},
