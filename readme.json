@@ -9,7 +9,7 @@
 			"https://github.com/2010TK7/UTMP/raw/master/readme.json"
 		],
 		"date": {
-			"datetime": "2021/02/25 15:00",
+			"datetime": "2021/03/29 10:55",
 			"UTC": "+8"
 		},
 		"help": {
@@ -32,24 +32,16 @@
 		"jq": ["https://jq.qq.com/?_wv=1027&k=5SP5eTI"],
 		"history": [
 			{
+				"date": 202103291055,
+				"changelog": "game not updated, just changed this json."
+			},
+			{
 				"date": 202102251500,
 				"changelog": "DF FORGOTTEN COLLECTION update from 1.0.0 to 1.1.0, ost songs from 31 to 25."
 			},
 			{
 				"date": 202102190837,
 				"changelog": "MV update from 0.4.2 to 0.4.3, and changed the website."
-			},
-			{
-				"date": 202012061220,
-				"changelog": "MV update from 0.4.1 to 0.4.2."
-			},
-			{
-				"date": 202012061050,
-				"changelog": "MV update from 0.3.22 to 0.4.1."
-			},
-			{
-				"date": 202011210724,
-				"changelog": "DF FORGOTTEN COLLECTION 1.0.0, new update. DF CONNECTED is still 2.4.3b."
 			}
 		],
 		"abbr": {
@@ -69,50 +61,62 @@
 			"https://gamemakerserver.com/en/games/3149/"
 		],
 		"gamejolt": "https://gamejolt.com/games/dontforget/150752",
-		"download": {
+		"releases": {
 			"DF CONNECTED (DF Online for Windows)": {
 				"version": "2.4.4",
 				"date": "Aug 18, 2020 9:34:59 PM",
 				"description": "This is the official release of DFC v2.4.3b for Windows! DFC is a fan-made Undertale MMORPG, which allows you to play as over 50 characters and explore locations from Undertale and Deltarune with players from around the world!",
-				"filename": "dontforget-v2.4.3b-windows.zip",
-				"size": 171875137,
-				"url": {
-					"gamejolt": "https://gamejolt.com/get/build?game=150752&build=887539",
-					"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!258:/dontforget-v2.4.3b-windows.zip?authkey=!AJSw-5Wl5lpdCeI"
-				},
-				"hash": {
-					"md5": "e235430141afd46fbf53643ad27eca1b",
-					"sha1": "fbd1742fc83d38084914a7251dae06b3547153ce"
+				"download": {
+					"windows": {
+						"filename": "dontforget-v2.4.3b-windows.zip",
+						"size": 171875137,
+						"url": {
+							"gamejolt": "https://gamejolt.com/get/build?game=150752&build=887539",
+							"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!258:/dontforget-v2.4.3b-windows.zip?authkey=!AJSw-5Wl5lpdCeI"
+						},
+						"hash": {
+							"md5": "e235430141afd46fbf53643ad27eca1b",
+							"sha1": "fbd1742fc83d38084914a7251dae06b3547153ce"
+						}
+					}
 				}
 			},
 			"DF CONNECTED (DF Online for Android)": {
 				"version": "2.4.4",
 				"date": "Aug 18, 2020 9:35:45 PM",
 				"description": "This is the Android port of DFC v2.4.3b! It's an APK file, so just install it directly onto your Android phone/tablet and start playing!",
-				"filename": "dontforget-v2.4.3b-android.apk",
-				"size": 196829307,
-				"url": {
-					"gamejolt": "https://gamejolt.com/get/build?game=150752&build=887536",
-					"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!259:/dontforget-v2.4.3b-android.apk?authkey=!AGKGmCosJoC-dP4"
-				},
-				"hash": {
-					"md5": "a5d56ca26c038c53d95c63767ffaefbe",
-					"sha1": "5f2fe358ab9ec0fede283fc67e813ae1d6d98d7c"
+				"download": {
+					"other-os": {
+						"filename": "dontforget-v2.4.3b-android.apk",
+						"size": 196829307,
+						"url": {
+							"gamejolt": "https://gamejolt.com/get/build?game=150752&build=887536",
+							"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!259:/dontforget-v2.4.3b-android.apk?authkey=!AGKGmCosJoC-dP4"
+						},
+						"hash": {
+							"md5": "a5d56ca26c038c53d95c63767ffaefbe",
+							"sha1": "5f2fe358ab9ec0fede283fc67e813ae1d6d98d7c"
+						}
+					}
 				}
 			},
 			"DF FORGOTTEN COLLECTION": {
 				"version": "1.1.0",
 				"date": "Feb 21, 2021 11:04:19 PM",
 				"description": "This package includes five classic versions of the game: the 2016 Old Beta, the original DF Multiplayer, the 2018 Demo, the 2019 April Fools game, and the no-longer-canon DF Chapter 1.",
-				"filename": "df-forgotten-collection-v2.zip",
-				"size": 449568906,
-				"url": {
-					"gamejolt": "https://gamejolt.com/get/build?game=150752&build=982904",
-					"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!308:/df-forgotten-collection-v2.zip?authkey=!AObZgI6Hc1bMBpE"
-				},
-				"hash": {
-					"md5": "15bdf1c280c0b4bbb988f07bfa6e4960",
-					"sha1": "a319d8d8408d4414431a2d811ea081ada9f61081"
+				"download": {
+					"other-os": {
+						"filename": "df-forgotten-collection-v2.zip",
+						"size": 449568906,
+						"url": {
+							"gamejolt": "https://gamejolt.com/get/build?game=150752&build=982904",
+							"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!308:/df-forgotten-collection-v2.zip?authkey=!AObZgI6Hc1bMBpE"
+						},
+						"hash": {
+							"md5": "15bdf1c280c0b4bbb988f07bfa6e4960",
+							"sha1": "a319d8d8408d4414431a2d811ea081ada9f61081"
+						}
+					}
 				}
 			}
 		},
@@ -135,48 +139,60 @@
 		"author": "afanguy",
 		"gamemakerserver": ["https://gamemakerserver.com/en/games/5863/"],
 		"gamejolt": "https://gamejolt.com/games/mysterytale-online/242286",
-		"download": {
+		"releases": {
 			"MYSTERYTALE Online": {
 				"version": "0.12.1",
 				"date": "May 7, 2020 4:34:45 AM",
-				"filename": "mysterytale-online-0.12.1.exe",
-				"size": 87319552,
-				"url": {
-					"gamejolt": "https://gamejolt.com/get/build?game=242286&build=833687",
-					"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!254:/mysterytale-online-0.12.1.exe?authkey=!ALc6TjS31oSjeZY"
-				},
-				"hash": {
-					"md5": "6db1b4062a0b8654d2e2afc98a3d2d01",
-					"sha1": "f55cc6d82b116efaf880844c13aa7f37e4bd7c30"
+				"download": {
+					"windows": {
+						"filename": "mysterytale-online-0.12.1.exe",
+						"size": 87319552,
+						"url": {
+							"gamejolt": "https://gamejolt.com/get/build?game=242286&build=833687",
+							"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!254:/mysterytale-online-0.12.1.exe?authkey=!ALc6TjS31oSjeZY"
+						},
+						"hash": {
+							"md5": "6db1b4062a0b8654d2e2afc98a3d2d01",
+							"sha1": "f55cc6d82b116efaf880844c13aa7f37e4bd7c30"
+						}
+					}
 				}
 			},
 			"Woodmantale Online 3D (April Fools 2020)": {
 				"version": "0.0.0",
 				"date": "Apr 2, 2020 2:51:44 AM",
-				"filename": "mysterytale-online-3d.exe",
-				"size": 31703040,
-				"url": {
-					"gamejolt": "https://gamejolt.com/get/build?game=242286&build=812320",
-					"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!260:/mysterytale-online-3d.exe?authkey=!ALjObUMyZrSar8Y"
-				},
-				"hash": {
-					"md5": "997652a9476ca6b3f28cbaf18c6d2ea2",
-					"sha1": "9a5961f45eaf4e9e79a8e253992f9576bdcb822d"
+				"download": {
+					"windows": {
+						"filename": "mysterytale-online-3d.exe",
+						"size": 31703040,
+						"url": {
+							"gamejolt": "https://gamejolt.com/get/build?game=242286&build=812320",
+							"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!260:/mysterytale-online-3d.exe?authkey=!ALjObUMyZrSar8Y"
+						},
+						"hash": {
+							"md5": "997652a9476ca6b3f28cbaf18c6d2ea2",
+							"sha1": "9a5961f45eaf4e9e79a8e253992f9576bdcb822d"
+						}
+					}
 				}
 			},
 			"WoodmanTale Online (April Fools 2018)": {
 				"version": "7.7.7",
 				"date": "Apr 1, 2018 7:47:44 AM",
 				"description": "nice >:]",
-				"filename": "mysterytale-online-demo-1.exe",
-				"size": 6845440,
-				"url": {
-					"gamejolt": "https://gamejolt.com/get/build?game=242286&build=561317",
-					"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!253:/mysterytale-online-demo-1.exe?authkey=!AB3Oxf-OcbMTV0Q"
-				},
-				"hash": {
-					"md5": "e9373843d10f9423bb13b37813007d19",
-					"sha1": "86568965a404ecffe5c51f475dfcacc1e2a7b0f0"
+				"download": {
+					"windows": {
+						"filename": "mysterytale-online-demo-1.exe",
+						"size": 6845440,
+						"url": {
+							"gamejolt": "https://gamejolt.com/get/build?game=242286&build=561317",
+							"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!253:/mysterytale-online-demo-1.exe?authkey=!AB3Oxf-OcbMTV0Q"
+						},
+						"hash": {
+							"md5": "e9373843d10f9423bb13b37813007d19",
+							"sha1": "86568965a404ecffe5c51f475dfcacc1e2a7b0f0"
+						}
+					}
 				}
 			}
 		},
@@ -199,35 +215,43 @@
 		"author": "UTMVTeam",
 		"gamemakerserver": [],
 		"gamejolt": "https://gamejolt.com/games/utmv/565158",
-		"download": {
+		"releases": {
 			"Undertale: Multiverse Legacy Version": {
 				"version": "0.4.3",
 				"date": "Feb 10, 2021 6:08:46 AM",
 				"description": "This is the legacy version of the game",
-				"filename": "utmv-legacy-version.zip",
-				"size": 46755420,
-				"url": {
-					"gamejolt": "https://gamejolt.com/get/build?game=565158&build=976518",
-					"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!281:/utmv-legacy-version.zip?authkey=!AFTvbmAc5kLa1Ng"
-				},
-				"hash": {
-					"md5": "cb36b7488764e99aa77eecfa1b3cd481",
-					"sha1": "763033b161e3e15d251455db7bfafaa7e6c53379"
+				"download": {
+					"windows": {
+						"filename": "utmv-legacy-version.zip",
+						"size": 46755420,
+						"url": {
+							"gamejolt": "https://gamejolt.com/get/build?game=565158&build=976518",
+							"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!281:/utmv-legacy-version.zip?authkey=!AFTvbmAc5kLa1Ng"
+						},
+						"hash": {
+							"md5": "cb36b7488764e99aa77eecfa1b3cd481",
+							"sha1": "763033b161e3e15d251455db7bfafaa7e6c53379"
+						}
+					}
 				}
 			},
 			"Undertale: Multiverse Legacy Mobile": {
 				"version": "0.4.3",
 				"date": "Feb 11, 2021 3:53:37 AM",
 				"description": "Mobile version of UTMV: Legacy",
-				"filename": "multiverse.apk",
-				"size": 45191562,
-				"url": {
-					"gamejolt": "https://gamejolt.com/get/build?game=565158&build=977265",
-					"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!282:/multiverse.apk?authkey=!AIeuLj_xT3cNQYQ"
-				},
-				"hash": {
-					"md5": "5971693d5e3d0565ed0aaedf06bf8dda",
-					"sha1": "ba254ebbba194a49a18264955bc7fbd6bcace6f2"
+				"download": {
+					"other-os": {
+						"filename": "multiverse.apk",
+						"size": 45191562,
+						"url": {
+							"gamejolt": "https://gamejolt.com/get/build?game=565158&build=977265",
+							"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!282:/multiverse.apk?authkey=!AIeuLj_xT3cNQYQ"
+						},
+						"hash": {
+							"md5": "5971693d5e3d0565ed0aaedf06bf8dda",
+							"sha1": "ba254ebbba194a49a18264955bc7fbd6bcace6f2"
+						}
+					}
 				}
 			}
 		},
