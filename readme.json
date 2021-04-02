@@ -9,7 +9,7 @@
 			"https://github.com/2010TK7/UTMP/raw/master/readme.json"
 		],
 		"date": {
-			"datetime": "2021/03/29 10:55",
+			"datetime": "2021/04/02 08:30",
 			"UTC": "+8"
 		},
 		"help": {
@@ -31,6 +31,10 @@
 		"qqgroup": [432227027],
 		"jq": ["https://jq.qq.com/?_wv=1027&k=5SP5eTI"],
 		"history": [
+			{
+				"date": 202104020830,
+				"changelog": "DF April Fool."
+			},
 			{
 				"date": 202103291055,
 				"changelog": "game not updated, just changed this json."
@@ -62,6 +66,25 @@
 		],
 		"gamejolt": "https://gamejolt.com/games/dontforget/150752",
 		"releases": {
+			"DONTFORGET 3 (April Fools 2021)": {
+				"version": "3.0.0",
+				"date": "Apr 1, 2021 11:34:10 PM",
+				"description": "Here's the latest entry in the DONTFORGET series: \"DONTFORGET 3\"! (This is actually a recreation of the first fangame I ever made back in 2014, \"FNaFGME\", now with UT/DF characters!)",
+				"download": {
+					"windows": {
+						"filename": "dontforget-3.exe",
+						"size": 21548032,
+						"url": {
+							"gamejolt": "https://gamejolt.com/get/build?game=150752&build=1004743",
+							"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!331:/dontforget-3.exe?authkey=!AJWaE88K5vT7N_U"
+						},
+						"hash": {
+							"md5": "0c17bc174c9c8f65d2872c6d6275601b",
+							"sha1": "e92f1069edfb84b6b1e144c6523556fe950da7ab"
+						}
+					}
+				}
+			},
 			"DF CONNECTED (DF Online for Windows)": {
 				"version": "2.4.4",
 				"date": "Aug 18, 2020 9:34:59 PM",
