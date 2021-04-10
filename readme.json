@@ -9,7 +9,7 @@
 			"https://github.com/2010TK7/UTMP/raw/master/readme.json"
 		],
 		"date": {
-			"datetime": "2021/04/07 13:33",
+			"datetime": "2021/04/11 06:04",
 			"UTC": "+8"
 		},
 		"help": {
@@ -31,6 +31,10 @@
 		"qqgroup": [432227027],
 		"jq": ["https://jq.qq.com/?_wv=1027&k=5SP5eTI"],
 		"history": [
+			{
+				"date": 202104110604,
+				"changelog": "DF update from 2.4.3b to 2.5.0."
+			},
 			{
 				"date": 202104071333,
 				"changelog": "game not updated."
@@ -58,21 +62,21 @@
 		],
 		"gamejolt": "https://gamejolt.com/games/dontforget/150752",
 		"releases": {
-			"DF CONNECTED (DF Online for Windows)": {
-				"version": "2.4.4",
-				"date": "Aug 18, 2020 9:34:59 PM",
-				"description": "This is the official release of DFC v2.4.3b for Windows! DFC is a fan-made Undertale MMORPG, which allows you to play as over 50 characters and explore locations from Undertale and Deltarune with players from around the world!",
+			"DF CONNECTED v2.5.0 (Windows)": {
+				"version": "2.5.0",
+				"date": "Apr 11, 2021 1:30:05 AM",
+				"description": "This is the official release of DFC v2.5.0 for Windows! DFC is a fan-made Undertale MMORPG, which allows you to play as over 50 characters and explore locations from Undertale and Deltarune with players from around the world!",
 				"download": {
 					"windows": {
-						"filename": "dontforget-v2.4.3b-windows.zip",
-						"size": 171875137,
+						"filename": "df-connected-v2.5.0.zip",
+						"size": 178752386,
 						"url": {
-							"gamejolt": "https://gamejolt.com/get/build?game=150752&build=887539",
+							"gamejolt": "https://gamejolt.com/get/build?game=150752&build=1010067",
 							"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!258:/dontforget-v2.4.3b-windows.zip?authkey=!AJSw-5Wl5lpdCeI"
 						},
 						"hash": {
-							"md5": "e235430141afd46fbf53643ad27eca1b",
-							"sha1": "fbd1742fc83d38084914a7251dae06b3547153ce"
+							"md5": "f50fc30760226bf90c0c72fead86d06e",
+							"sha1": "d652343517e81b47c7d7526f75355a61fa978377"
 						}
 					}
 				}
