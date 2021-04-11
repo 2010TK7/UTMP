@@ -9,7 +9,7 @@
 			"https://github.com/2010TK7/UTMP/raw/master/readme.json"
 		],
 		"date": {
-			"datetime": "2021/04/11 06:04",
+			"datetime": "2021/04/11 20:10",
 			"UTC": "+8"
 		},
 		"help": {
@@ -31,6 +31,10 @@
 		"qqgroup": [432227027],
 		"jq": ["https://jq.qq.com/?_wv=1027&k=5SP5eTI"],
 		"history": [
+			{
+				"date": 202104112010,
+				"changelog": "DF update from 2.5.0 to 2.5.1."
+			},
 			{
 				"date": 202104110604,
 				"changelog": "DF update from 2.4.3b to 2.5.0."
@@ -62,40 +66,40 @@
 		],
 		"gamejolt": "https://gamejolt.com/games/dontforget/150752",
 		"releases": {
-			"DF CONNECTED v2.5.0 (Windows)": {
-				"version": "2.5.0",
-				"date": "Apr 11, 2021 1:30:05 AM",
-				"description": "This is the official release of DFC v2.5.0 for Windows! DFC is a fan-made Undertale MMORPG, which allows you to play as over 50 characters and explore locations from Undertale and Deltarune with players from around the world!",
+			"DF CONNECTED v2.5.1 (Windows)": {
+				"version": "2.5.1",
+				"date": "Apr 11, 2021 7:23:04 PM",
+				"description": "This is the official release of DFC v2.5.1 for Windows! DFC is a fan-made Undertale MMORPG, which allows you to play as over 50 characters and explore locations from Undertale and Deltarune with players from around the world!",
 				"download": {
 					"windows": {
-						"filename": "df-connected-v2.5.0.zip",
-						"size": 178752386,
+						"filename": "df-connected-v2.5.1.zip",
+						"size": 179248751,
 						"url": {
-							"gamejolt": "https://gamejolt.com/get/build?game=150752&build=1010067",
+							"gamejolt": "https://gamejolt.com/get/build?game=150752&build=1010494",
 							"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!258:/dontforget-v2.4.3b-windows.zip?authkey=!AJSw-5Wl5lpdCeI"
 						},
 						"hash": {
-							"md5": "f50fc30760226bf90c0c72fead86d06e",
-							"sha1": "d652343517e81b47c7d7526f75355a61fa978377"
+							"md5": "0e80520a110df6254c83212ac9dce088",
+							"sha1": "7949235b67356a37f6398caa81af3b36d6e42a90"
 						}
 					}
 				}
 			},
-			"DF CONNECTED (DF Online for Android)": {
-				"version": "2.4.4",
-				"date": "Aug 18, 2020 9:35:45 PM",
-				"description": "This is the Android port of DFC v2.4.3b! It's an APK file, so just install it directly onto your Android phone/tablet and start playing!",
+			"DF CONNECTED v2.5.1 (Android)": {
+				"version": "2.5.1",
+				"date": "Apr 11, 2021 7:23:20 PM",
+				"description": "This is the Android port of DFC v2.5.1! It's an APK file, so just install it directly onto your Android phone/tablet and start playing!",
 				"download": {
 					"other-os": {
-						"filename": "dontforget-v2.4.3b-android.apk",
-						"size": 196829307,
+						"filename": "df-connected-v2.5.1-android.apk",
+						"size": 332002725,
 						"url": {
-							"gamejolt": "https://gamejolt.com/get/build?game=150752&build=887536",
+							"gamejolt": "https://gamejolt.com/get/build?game=150752&build=1010481",
 							"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!259:/dontforget-v2.4.3b-android.apk?authkey=!AGKGmCosJoC-dP4"
 						},
 						"hash": {
-							"md5": "a5d56ca26c038c53d95c63767ffaefbe",
-							"sha1": "5f2fe358ab9ec0fede283fc67e813ae1d6d98d7c"
+							"md5": "b99e2742a29ce6dbfc658b95bca11b1b",
+							"sha1": "16b0b99e18679ae5aca099aea131b7d61fd1f2d7"
 						}
 					}
 				}
