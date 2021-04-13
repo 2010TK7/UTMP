@@ -9,7 +9,7 @@
 			"https://github.com/2010TK7/UTMP/raw/master/readme.json"
 		],
 		"date": {
-			"datetime": "2021/04/11 20:10",
+			"datetime": "2021/04/13 09:17",
 			"UTC": "+8"
 		},
 		"help": {
@@ -32,20 +32,16 @@
 		"jq": ["https://jq.qq.com/?_wv=1027&k=5SP5eTI"],
 		"history": [
 			{
+				"date": 202104130917,
+				"changelog": "DF update from 2.5.1 to 2.5.3."
+			},
+			{
 				"date": 202104112010,
 				"changelog": "DF update from 2.5.0 to 2.5.1."
 			},
 			{
 				"date": 202104110604,
 				"changelog": "DF update from 2.4.3b to 2.5.0."
-			},
-			{
-				"date": 202104071333,
-				"changelog": "game not updated."
-			},
-			{
-				"date": 202104020830,
-				"changelog": "DF April Fool."
 			}
 		],
 		"abbr": {
@@ -58,7 +54,7 @@
 		}
 	},
 	"DF": {
-		"name": "DONTFORGET + DF Online [Undertale & Deltarune]",
+		"name": "DONTFORGET (Undertale/Deltarune Project)",
 		"author": "RickyG",
 		"gamemakerserver": [
 			"https://gamemakerserver.com/en/games/4113/",
@@ -66,40 +62,40 @@
 		],
 		"gamejolt": "https://gamejolt.com/games/dontforget/150752",
 		"releases": {
-			"DF CONNECTED v2.5.1 (Windows)": {
-				"version": "2.5.1",
-				"date": "Apr 11, 2021 7:23:04 PM",
-				"description": "This is the official release of DFC v2.5.1 for Windows! DFC is a fan-made Undertale MMORPG, which allows you to play as over 50 characters and explore locations from Undertale and Deltarune with players from around the world!",
+			"DF CONNECTED v2.5.3 (Windows)": {
+				"version": "2.5.3",
+				"date": "Apr 13, 2021 7:17:48 AM",
+				"description": "This is the official release of DFC v2.5.3 for Windows! DFC is a fan-made Undertale MMORPG, which allows you to play as over 50 characters and explore locations from Undertale and Deltarune with players from around the world!",
 				"download": {
 					"windows": {
-						"filename": "df-connected-v2.5.1.zip",
-						"size": 179248751,
+						"filename": "df-connected-v2.5.3.zip",
+						"size": 178989234,
 						"url": {
-							"gamejolt": "https://gamejolt.com/get/build?game=150752&build=1010494",
-							"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!258:/dontforget-v2.4.3b-windows.zip?authkey=!AJSw-5Wl5lpdCeI"
+							"gamejolt": "https://gamejolt.com/get/build?game=150752&build=1011432",
+							"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!258:/df-connected-v2.5.3.zip?authkey=!AJSw-5Wl5lpdCeI"
 						},
 						"hash": {
-							"md5": "0e80520a110df6254c83212ac9dce088",
-							"sha1": "7949235b67356a37f6398caa81af3b36d6e42a90"
+							"md5": "e22fbb60e9840abcee40e94d187b20ca",
+							"sha1": "a6e1d216d7d8f1d652f420e36ddc5397459ac0d6"
 						}
 					}
 				}
 			},
-			"DF CONNECTED v2.5.1 (Android)": {
-				"version": "2.5.1",
-				"date": "Apr 11, 2021 7:23:20 PM",
-				"description": "This is the Android port of DFC v2.5.1! It's an APK file, so just install it directly onto your Android phone/tablet and start playing!",
+			"DF CONNECTED v2.5.3 (Android)": {
+				"version": "2.5.3",
+				"date": "Apr 13, 2021 7:18:10 AM",
+				"description": "This is the Android port of DFC v2.5.3! It's an APK file, so just install it directly onto your Android phone/tablet and start playing!",
 				"download": {
 					"other-os": {
-						"filename": "df-connected-v2.5.1-android.apk",
-						"size": 332002725,
+						"filename": "df-connected-v2.5.3-android.apk",
+						"size": 332202865,
 						"url": {
-							"gamejolt": "https://gamejolt.com/get/build?game=150752&build=1010481",
-							"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!259:/dontforget-v2.4.3b-android.apk?authkey=!AGKGmCosJoC-dP4"
+							"gamejolt": "https://gamejolt.com/get/build?game=150752&build=1011441",
+							"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!259:/df-connected-v2.5.3-android.apk?authkey=!AGKGmCosJoC-dP4"
 						},
 						"hash": {
-							"md5": "b99e2742a29ce6dbfc658b95bca11b1b",
-							"sha1": "16b0b99e18679ae5aca099aea131b7d61fd1f2d7"
+							"md5": "edb7635c80cf7face5e0f7513f6881b6",
+							"sha1": "46ed58666cb90af290c293a86dc833ca697c4c44"
 						}
 					}
 				}
@@ -107,7 +103,7 @@
 			"DONTFORGET 3 (April Fools 2021)": {
 				"version": "3.0.0",
 				"date": "Apr 1, 2021 11:34:10 PM",
-				"description": "Here's the latest entry in the DONTFORGET series: \"DONTFORGET 3\"! (This is actually a recreation of the first fangame I ever made back in 2014, \"FNaFGME\", now with UT/DF characters!)",
+				"description": "Here's the latest entry in the DONTFORGET series: \"DONTFORGET 3\"! (This is actually a recreation of one of my earliest fangames from 2014, \"FNaFGME\", now with UT/DF characters!)",
 				"download": {
 					"windows": {
 						"filename": "dontforget-3.exe",
