@@ -1,295 +1,325 @@
 {
-	"base": {
-		"web": [
-			"https://ut.jht3.top:8003/download-guide.html",
-			"https://ut.zblog.fun/"
-		],
-		"json": [
-			"https://storage.live.com/items/8C3AB972E7E69B18!261:/readme.json?authkey=!ABUvGb11LmBPPS0",
-			"https://github.com/2010TK7/UTMP/raw/master/readme.json"
-		],
-		"date": {
-			"datetime": "2021/04/13 09:17",
-			"UTC": "+8"
-		},
-		"help": {
-			"gamemakerserver": {
-				"register": "https://gamemakerserver.com/en/register/",
-				"recovery": "https://gamemakerserver.com/en/accountrecovery/",
-				"friends": "https://gamemakerserver.com/en/account/friends/"
+	"v1.0": {
+		"base": {
+			"web": [
+				"https://ut.jht3.top:8003/download-guide.html",
+				"https://ut.zblog.fun/"
+			],
+			"json": [
+				"https://storage.live.com/items/8C3AB972E7E69B18!261:/readme.json?authkey=!ABUvGb11LmBPPS0",
+				"https://github.com/2010TK7/UTMP/raw/master/readme.json"
+			],
+			"help": {
+				"gamemakerserver": {
+					"register": "https://gamemakerserver.com/en/register/",
+					"recovery": "https://gamemakerserver.com/en/accountrecovery/",
+					"friends": "https://gamemakerserver.com/en/account/friends/"
+				},
+				"DF": {
+					"Classic": [
+						"https://github.com/jht3QAQ/DF-",
+						"https://2010tk7.github.io/UTMP/",
+						"https://steamcommunity.com/sharedfiles/filedetails/?id=1225865780",
+						"https://steamcommunity.com/sharedfiles/filedetails/?id=1227166765",
+						"https://jht3.gitbook.io/"
+					]
+				}
 			},
-			"DF": {
-				"Classic": [
-					"https://github.com/jht3QAQ/DF-",
-					"https://2010tk7.github.io/UTMP/",
-					"https://steamcommunity.com/sharedfiles/filedetails/?id=1225865780",
-					"https://steamcommunity.com/sharedfiles/filedetails/?id=1227166765",
-					"https://jht3.gitbook.io/"
+			"qqgroup": {
+				"groupid": [
+					432227027
+				],
+				"invitelink": [
+					"https://jq.qq.com/?_wv=1027&k=5SP5eTI"
 				]
+			},
+			"status": {
+				"date": "2021/07/10",
+				"history": {
+					"2021/07/10": [
+						{
+							"pull": 23,
+							"changelog": "Just tidy it, game not updated so don't worry."
+						}
+					],
+					"2021/04/13": [
+						{
+							"pull": 22,
+							"changelog": "DF update from 2.5.1 to 2.5.3."
+						}
+					]
+				}
+			},
+			"UTC": 8,
+			"abbr": {
+				"DF": "DF",
+				"DFC": "DF",
+				"DONTFORGET": "DF",
+				"MST": "MST",
+				"MTO": "MST",
+				"MYSTERY": "MST",
+				"MYSTERYTALE": "MST",
+				"MV": "MV",
+				"MULTIVERSE": "MV",
+				"UC": "UC",
+				"UNDERCARDS": "UC"
 			}
 		},
-		"qqgroup": [432227027],
-		"jq": ["https://jq.qq.com/?_wv=1027&k=5SP5eTI"],
-		"history": [
-			{
-				"date": 202104130917,
-				"changelog": "DF update from 2.5.1 to 2.5.3."
-			},
-			{
-				"date": 202104112010,
-				"changelog": "DF update from 2.5.0 to 2.5.1."
-			},
-			{
-				"date": 202104110604,
-				"changelog": "DF update from 2.4.3b to 2.5.0."
-			}
-		],
-		"abbr": {
-			"DF": "DF",
-			"DFC": "DF",
-			"MST": "MST",
-			"MTO": "MST",
-			"MV": "MV",
-			"UC": "UC"
-		}
-	},
-	"DF": {
-		"name": "DONTFORGET (Undertale/Deltarune Project)",
-		"author": "RickyG",
-		"gamemakerserver": [
-			"https://gamemakerserver.com/en/games/4113/",
-			"https://gamemakerserver.com/en/games/3149/"
-		],
-		"gamejolt": "https://gamejolt.com/games/dontforget/150752",
-		"releases": {
-			"DF CONNECTED v2.5.3 (Windows)": {
-				"version": "2.5.3",
-				"date": "Apr 13, 2021 7:17:48 AM",
-				"description": "This is the official release of DFC v2.5.3 for Windows! DFC is a fan-made Undertale MMORPG, which allows you to play as over 50 characters and explore locations from Undertale and Deltarune with players from around the world!",
-				"download": {
-					"windows": {
-						"filename": "df-connected-v2.5.3.zip",
-						"size": 178989234,
-						"url": {
-							"gamejolt": "https://gamejolt.com/get/build?game=150752&build=1011432",
-							"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!258:/df-connected-v2.5.3.zip?authkey=!AJSw-5Wl5lpdCeI"
-						},
-						"hash": {
-							"md5": "e22fbb60e9840abcee40e94d187b20ca",
-							"sha1": "a6e1d216d7d8f1d652f420e36ddc5397459ac0d6"
+		"DF": {
+			"name": "DONTFORGET (Undertale/Deltarune Fangame Project)",
+			"author": "RickyG",
+			"gamemakerserver": [
+				"https://gamemakerserver.com/en/games/4113/",
+				"https://gamemakerserver.com/en/games/3149/"
+			],
+			"gamejolt": "https://gamejolt.com/games/dontforget/150752",
+			"releases": {
+				"DF CONNECTED v2.5.3 (Windows)": {
+					"version": "2.5.3",
+					"date": "Apr 13, 2021 7:17:48 AM",
+					"description": "This is the official release of DFC v2.5.3 for Windows! DFC is a fan-made Undertale MMORPG, which allows you to play as over 50 characters and explore locations from Undertale and Deltarune with players from around the world!",
+					"download": {
+						"windows": {
+							"filename": "df-connected-v2.5.3.zip",
+							"size": 178989234,
+							"url": {
+								"gamejolt": "https://gamejolt.com/get/build?game=150752&build=1011432",
+								"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!258:/df-connected-v2.5.3.zip?authkey=!AJSw-5Wl5lpdCeI"
+							},
+							"hash": {
+								"md5": "e22fbb60e9840abcee40e94d187b20ca",
+								"sha1": "a6e1d216d7d8f1d652f420e36ddc5397459ac0d6"
+							}
+						}
+					}
+				},
+				"DF CONNECTED v2.5.3 (Android)": {
+					"version": "2.5.3",
+					"date": "Apr 13, 2021 7:18:10 AM",
+					"description": "This is the Android port of DFC v2.5.3! It's an APK file, so just install it directly onto your Android phone/tablet and start playing!",
+					"download": {
+						"other-os": {
+							"filename": "df-connected-v2.5.3-android.apk",
+							"size": 332202865,
+							"url": {
+								"gamejolt": "https://gamejolt.com/get/build?game=150752&build=1011441",
+								"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!259:/df-connected-v2.5.3-android.apk?authkey=!AGKGmCosJoC-dP4"
+							},
+							"hash": {
+								"md5": "edb7635c80cf7face5e0f7513f6881b6",
+								"sha1": "46ed58666cb90af290c293a86dc833ca697c4c44"
+							}
+						}
+					}
+				},
+				"DONTFORGET 3 (April Fools 2021)": {
+					"version": "3.0.0",
+					"date": "Apr 1, 2021 11:34:10 PM",
+					"description": "Here's the latest entry in the DONTFORGET series: \"DONTFORGET 3\"! (This is actually a recreation of one of my earliest fangames from 2014, \"FNaFGME\", now with UT/DF characters!)",
+					"download": {
+						"windows": {
+							"filename": "dontforget-3.exe",
+							"size": 21548032,
+							"url": {
+								"gamejolt": "https://gamejolt.com/get/build?game=150752&build=1004743",
+								"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!331:/dontforget-3.exe?authkey=!AJWaE88K5vT7N_U"
+							},
+							"hash": {
+								"md5": "0c17bc174c9c8f65d2872c6d6275601b",
+								"sha1": "e92f1069edfb84b6b1e144c6523556fe950da7ab"
+							}
+						}
+					}
+				},
+				"DF FORGOTTEN COLLECTION": {
+					"version": "1.1.0",
+					"date": "Feb 21, 2021 11:04:19 PM",
+					"description": "This package includes five classic versions of the game: the 2016 Old Beta, the original DF Multiplayer, the 2018 Demo, the 2019 April Fools game, and the no-longer-canon DF Chapter 1.",
+					"download": {
+						"other-os": {
+							"filename": "df-forgotten-collection-v2.zip",
+							"size": 449568906,
+							"url": {
+								"gamejolt": "https://gamejolt.com/get/build?game=150752&build=982904",
+								"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!308:/df-forgotten-collection-v2.zip?authkey=!AObZgI6Hc1bMBpE"
+							},
+							"hash": {
+								"md5": "15bdf1c280c0b4bbb988f07bfa6e4960",
+								"sha1": "a319d8d8408d4414431a2d811ea081ada9f61081"
+							}
 						}
 					}
 				}
 			},
-			"DF CONNECTED v2.5.3 (Android)": {
-				"version": "2.5.3",
-				"date": "Apr 13, 2021 7:18:10 AM",
-				"description": "This is the Android port of DFC v2.5.3! It's an APK file, so just install it directly onto your Android phone/tablet and start playing!",
+			"soundtrack": {
+				"songs": 25,
 				"download": {
-					"other-os": {
-						"filename": "df-connected-v2.5.3-android.apk",
-						"size": 332202865,
-						"url": {
-							"gamejolt": "https://gamejolt.com/get/build?game=150752&build=1011441",
-							"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!259:/df-connected-v2.5.3-android.apk?authkey=!AGKGmCosJoC-dP4"
-						},
-						"hash": {
-							"md5": "edb7635c80cf7face5e0f7513f6881b6",
-							"sha1": "46ed58666cb90af290c293a86dc833ca697c4c44"
-						}
-					}
-				}
-			},
-			"DONTFORGET 3 (April Fools 2021)": {
-				"version": "3.0.0",
-				"date": "Apr 1, 2021 11:34:10 PM",
-				"description": "Here's the latest entry in the DONTFORGET series: \"DONTFORGET 3\"! (This is actually a recreation of one of my earliest fangames from 2014, \"FNaFGME\", now with UT/DF characters!)",
-				"download": {
-					"windows": {
-						"filename": "dontforget-3.exe",
-						"size": 21548032,
-						"url": {
-							"gamejolt": "https://gamejolt.com/get/build?game=150752&build=1004743",
-							"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!331:/dontforget-3.exe?authkey=!AJWaE88K5vT7N_U"
-						},
-						"hash": {
-							"md5": "0c17bc174c9c8f65d2872c6d6275601b",
-							"sha1": "e92f1069edfb84b6b1e144c6523556fe950da7ab"
-						}
-					}
-				}
-			},
-			"DF FORGOTTEN COLLECTION": {
-				"version": "1.1.0",
-				"date": "Feb 21, 2021 11:04:19 PM",
-				"description": "This package includes five classic versions of the game: the 2016 Old Beta, the original DF Multiplayer, the 2018 Demo, the 2019 April Fools game, and the no-longer-canon DF Chapter 1.",
-				"download": {
-					"other-os": {
-						"filename": "df-forgotten-collection-v2.zip",
-						"size": 449568906,
-						"url": {
-							"gamejolt": "https://gamejolt.com/get/build?game=150752&build=982904",
-							"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!308:/df-forgotten-collection-v2.zip?authkey=!AObZgI6Hc1bMBpE"
-						},
-						"hash": {
-							"md5": "15bdf1c280c0b4bbb988f07bfa6e4960",
-							"sha1": "a319d8d8408d4414431a2d811ea081ada9f61081"
-						}
-					}
-				}
-			}
-		},
-		"soundtrack": {
-			"songs": 25,
-			"filename": "soundtrack-60339153e8568.zip",
-			"size": 52078752,
-			"url": {
-				"gamejolt": "https://gamejolt.com/get/soundtrack?game=150752",
-				"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!256:/soundtrack-60339153e8568.zip?authkey=!AGScTYj0W9SUD6w"
-			},
-			"hash": {
-				"md5": "1e193756040b8be3763314132df176fa",
-				"sha1": "dbc996995ec3233e8bf0a941d023c8abd574fc31"
-			}
-		}
-	},
-	"MST": {
-		"name": "MYSTERYTALE Online (Multiplayer Undertale Fan-Game)",
-		"author": "afanguy",
-		"gamemakerserver": ["https://gamemakerserver.com/en/games/5863/"],
-		"gamejolt": "https://gamejolt.com/games/mysterytale-online/242286",
-		"releases": {
-			"MYSTERYTALE Online": {
-				"version": "0.12.1",
-				"date": "May 7, 2020 4:34:45 AM",
-				"download": {
-					"windows": {
-						"filename": "mysterytale-online-0.12.1.exe",
-						"size": 87319552,
-						"url": {
-							"gamejolt": "https://gamejolt.com/get/build?game=242286&build=833687",
-							"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!254:/mysterytale-online-0.12.1.exe?authkey=!ALc6TjS31oSjeZY"
-						},
-						"hash": {
-							"md5": "6db1b4062a0b8654d2e2afc98a3d2d01",
-							"sha1": "f55cc6d82b116efaf880844c13aa7f37e4bd7c30"
-						}
-					}
-				}
-			},
-			"Woodmantale Online 3D (April Fools 2020)": {
-				"version": "0.0.0",
-				"date": "Apr 2, 2020 2:51:44 AM",
-				"download": {
-					"windows": {
-						"filename": "mysterytale-online-3d.exe",
-						"size": 31703040,
-						"url": {
-							"gamejolt": "https://gamejolt.com/get/build?game=242286&build=812320",
-							"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!260:/mysterytale-online-3d.exe?authkey=!ALjObUMyZrSar8Y"
-						},
-						"hash": {
-							"md5": "997652a9476ca6b3f28cbaf18c6d2ea2",
-							"sha1": "9a5961f45eaf4e9e79a8e253992f9576bdcb822d"
-						}
-					}
-				}
-			},
-			"WoodmanTale Online (April Fools 2018)": {
-				"version": "7.7.7",
-				"date": "Apr 1, 2018 7:47:44 AM",
-				"description": "nice >:]",
-				"download": {
-					"windows": {
-						"filename": "mysterytale-online-demo-1.exe",
-						"size": 6845440,
-						"url": {
-							"gamejolt": "https://gamejolt.com/get/build?game=242286&build=561317",
-							"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!253:/mysterytale-online-demo-1.exe?authkey=!AB3Oxf-OcbMTV0Q"
-						},
-						"hash": {
-							"md5": "e9373843d10f9423bb13b37813007d19",
-							"sha1": "86568965a404ecffe5c51f475dfcacc1e2a7b0f0"
-						}
+					"filename": "soundtrack-60339153e8568.zip",
+					"size": 52078752,
+					"url": {
+						"gamejolt": "https://gamejolt.com/get/soundtrack?game=150752",
+						"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!256:/soundtrack-60339153e8568.zip?authkey=!AGScTYj0W9SUD6w"
+					},
+					"hash": {
+						"md5": "1e193756040b8be3763314132df176fa",
+						"sha1": "dbc996995ec3233e8bf0a941d023c8abd574fc31"
 					}
 				}
 			}
 		},
-		"soundtrack": {
-			"songs": 16,
-			"filename": "soundtrack-5b4b568462ff1.zip",
-			"size": 28756197,
-			"url": {
-				"gamejolt": "https://gamejolt.com/get/soundtrack?game=242286",
-				"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!255:/soundtrack-5b4b568462ff1.zip?authkey=!AF6wdi-VE6Xr9n4"
-			},
-			"hash": {
-				"md5": "727bb2fe3188db9c210a7db50e913af5",
-				"sha1": "c5cbc9bfe75b0538654c80cf55108d81ba2cdcbd"
-			}
-		}
-	},
-	"MV": {
-		"name": "UNDERTALE: Multiverse (Online) Official",
-		"author": "UTMVTeam",
-		"gamemakerserver": [],
-		"gamejolt": "https://gamejolt.com/games/utmv/565158",
-		"releases": {
-			"Undertale: Multiverse Legacy Version": {
-				"version": "0.4.3",
-				"date": "Feb 10, 2021 6:08:46 AM",
-				"description": "This is the legacy version of the game",
-				"download": {
-					"windows": {
-						"filename": "utmv-legacy-version.zip",
-						"size": 46755420,
-						"url": {
-							"gamejolt": "https://gamejolt.com/get/build?game=565158&build=976518",
-							"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!281:/utmv-legacy-version.zip?authkey=!AFTvbmAc5kLa1Ng"
-						},
-						"hash": {
-							"md5": "cb36b7488764e99aa77eecfa1b3cd481",
-							"sha1": "763033b161e3e15d251455db7bfafaa7e6c53379"
+		"MST": {
+			"name": "MYSTERYTALE Online (Multiplayer Undertale Fan-Game)",
+			"author": "afanguy",
+			"gamemakerserver": [
+				"https://gamemakerserver.com/en/games/5863/"
+			],
+			"gamejolt": "https://gamejolt.com/games/mysterytale-online/242286",
+			"releases": {
+				"MYSTERYTALE Online": {
+					"version": "0.12.1",
+					"date": "May 7, 2020 4:34:45 AM",
+					"download": {
+						"windows": {
+							"filename": "mysterytale-online-0.12.1.exe",
+							"size": 87319552,
+							"url": {
+								"gamejolt": "https://gamejolt.com/get/build?game=242286&build=833687",
+								"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!254:/mysterytale-online-0.12.1.exe?authkey=!ALc6TjS31oSjeZY"
+							},
+							"hash": {
+								"md5": "6db1b4062a0b8654d2e2afc98a3d2d01",
+								"sha1": "f55cc6d82b116efaf880844c13aa7f37e4bd7c30"
+							}
+						}
+					}
+				},
+				"Woodmantale Online 3D (April Fools 2020)": {
+					"version": "0.0.0",
+					"date": "Apr 2, 2020 2:51:44 AM",
+					"download": {
+						"windows": {
+							"filename": "mysterytale-online-3d.exe",
+							"size": 31703040,
+							"url": {
+								"gamejolt": "https://gamejolt.com/get/build?game=242286&build=812320",
+								"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!260:/mysterytale-online-3d.exe?authkey=!ALjObUMyZrSar8Y"
+							},
+							"hash": {
+								"md5": "997652a9476ca6b3f28cbaf18c6d2ea2",
+								"sha1": "9a5961f45eaf4e9e79a8e253992f9576bdcb822d"
+							}
+						}
+					}
+				},
+				"WoodmanTale Online (April Fools 2018)": {
+					"version": "7.7.7",
+					"date": "Apr 1, 2018 7:47:44 AM",
+					"description": "nice >:]",
+					"download": {
+						"windows": {
+							"filename": "mysterytale-online-demo-1.exe",
+							"size": 6845440,
+							"url": {
+								"gamejolt": "https://gamejolt.com/get/build?game=242286&build=561317",
+								"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!253:/mysterytale-online-demo-1.exe?authkey=!AB3Oxf-OcbMTV0Q"
+							},
+							"hash": {
+								"md5": "e9373843d10f9423bb13b37813007d19",
+								"sha1": "86568965a404ecffe5c51f475dfcacc1e2a7b0f0"
+							}
 						}
 					}
 				}
 			},
-			"Undertale: Multiverse Legacy Mobile": {
-				"version": "0.4.3",
-				"date": "Feb 11, 2021 3:53:37 AM",
-				"description": "Mobile version of UTMV: Legacy",
+			"soundtrack": {
+				"songs": 16,
 				"download": {
-					"other-os": {
-						"filename": "multiverse.apk",
-						"size": 45191562,
-						"url": {
-							"gamejolt": "https://gamejolt.com/get/build?game=565158&build=977265",
-							"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!282:/multiverse.apk?authkey=!AIeuLj_xT3cNQYQ"
-						},
-						"hash": {
-							"md5": "5971693d5e3d0565ed0aaedf06bf8dda",
-							"sha1": "ba254ebbba194a49a18264955bc7fbd6bcace6f2"
-						}
+					"filename": "soundtrack-5b4b568462ff1.zip",
+					"size": 28756197,
+					"url": {
+						"gamejolt": "https://gamejolt.com/get/soundtrack?game=242286",
+						"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!255:/soundtrack-5b4b568462ff1.zip?authkey=!AF6wdi-VE6Xr9n4"
+					},
+					"hash": {
+						"md5": "727bb2fe3188db9c210a7db50e913af5",
+						"sha1": "c5cbc9bfe75b0538654c80cf55108d81ba2cdcbd"
 					}
 				}
 			}
 		},
-		"soundtrack": {
-			"songs": 15,
-			"filename": "soundtrack-5fda1551dd0c1.zip",
-			"size": 14087434,
-			"url": {
-				"gamejolt": "https://gamejolt.com/get/soundtrack?game=565158",
-				"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!280:/soundtrack-5fda1551dd0c1.zip?authkey=!ABSs4cvK39DFZ2U"
+		"MV": {
+			"name": "UNDERTALE: Multiverse (Online) Official",
+			"author": "UTMVTeam",
+			"gamemakerserver": [],
+			"gamejolt": "https://gamejolt.com/games/utmv/565158",
+			"releases": {
+				"Undertale: Multiverse Legacy Version": {
+					"version": "0.4.3",
+					"date": "Feb 10, 2021 6:08:46 AM",
+					"description": "This is the legacy version of the game",
+					"download": {
+						"windows": {
+							"filename": "utmv-legacy-version.zip",
+							"size": 46755420,
+							"url": {
+								"gamejolt": "https://gamejolt.com/get/build?game=565158&build=976518",
+								"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!281:/utmv-legacy-version.zip?authkey=!AFTvbmAc5kLa1Ng"
+							},
+							"hash": {
+								"md5": "cb36b7488764e99aa77eecfa1b3cd481",
+								"sha1": "763033b161e3e15d251455db7bfafaa7e6c53379"
+							}
+						}
+					}
+				},
+				"Undertale: Multiverse Legacy Mobile": {
+					"version": "0.4.3",
+					"date": "Feb 11, 2021 3:53:37 AM",
+					"description": "Mobile version of UTMV: Legacy",
+					"download": {
+						"other-os": {
+							"filename": "multiverse.apk",
+							"size": 45191562,
+							"url": {
+								"gamejolt": "https://gamejolt.com/get/build?game=565158&build=977265",
+								"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!282:/multiverse.apk?authkey=!AIeuLj_xT3cNQYQ"
+							},
+							"hash": {
+								"md5": "5971693d5e3d0565ed0aaedf06bf8dda",
+								"sha1": "ba254ebbba194a49a18264955bc7fbd6bcace6f2"
+							}
+						}
+					}
+				}
 			},
-			"hash": {
-				"md5": "8a0afadfbc99a7a12286ea9ff017a0a3",
-				"sha1": "76811cab6f09f37b7d528ca40bc9ac3d53bb1754"
+			"soundtrack": {
+				"songs": 15,
+				"download": {
+					"filename": "soundtrack-5fda1551dd0c1.zip",
+					"size": 14087434,
+					"url": {
+						"gamejolt": "https://gamejolt.com/get/soundtrack?game=565158",
+						"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!280:/soundtrack-5fda1551dd0c1.zip?authkey=!ABSs4cvK39DFZ2U"
+					},
+					"hash": {
+						"md5": "8a0afadfbc99a7a12286ea9ff017a0a3",
+						"sha1": "76811cab6f09f37b7d528ca40bc9ac3d53bb1754"
+					}
+				}
 			}
+		},
+		"UC": {
+			"name": "Undercards",
+			"web": "https://undercards.net/"
 		}
 	},
-	"UC": {
-		"name": "Undercards",
-		"web": "https://undercards.net/"
+	"status": {
+		"version": "v1.0",
+		"history": {
+			"v1.0": {
+				"date": "2021/07/10",
+				"changelog": "just created."
+			}
+		}
 	}
 }
