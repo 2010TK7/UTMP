@@ -34,8 +34,14 @@
 				]
 			},
 			"status": {
-				"date": "2021/07/10",
+				"date": "2021/07/20",
 				"history": {
+					"2021/07/20": [
+						{
+							"pull": 24,
+							"changelog": "MV update from 0.4.3 to 0.5.0, soundtrack updated, too."
+						}
+					],
 					"2021/07/10": [
 						{
 							"pull": 23,
@@ -254,39 +260,39 @@
 			"gamejolt": "https://gamejolt.com/games/utmv/565158",
 			"releases": {
 				"Undertale: Multiverse Legacy Version": {
-					"version": "0.4.3",
-					"date": "Feb 10, 2021 6:08:46 AM",
+					"version": "0.5.0",
+					"date": "Jul 20, 2021 3:00:06 AM",
 					"description": "This is the legacy version of the game",
 					"download": {
 						"windows": {
-							"filename": "utmv-legacy-version.zip",
-							"size": 46755420,
+							"filename": "utmv-0.5.zip",
+							"size": 47868800,
 							"url": {
-								"gamejolt": "https://gamejolt.com/get/build?game=565158&build=976518",
-								"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!281:/utmv-legacy-version.zip?authkey=!AFTvbmAc5kLa1Ng"
+								"gamejolt": "https://gamejolt.com/get/build?game=565158&build=1060669",
+								"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!281:/utmv-0.5.zip?authkey=!AFTvbmAc5kLa1Ng"
 							},
 							"hash": {
-								"md5": "cb36b7488764e99aa77eecfa1b3cd481",
-								"sha1": "763033b161e3e15d251455db7bfafaa7e6c53379"
+								"md5": "85dffb0456f772ea5a496a2818ff8531",
+								"sha1": "052e02a0fbe5c3099688368ff0459b6d46eb0049"
 							}
 						}
 					}
 				},
 				"Undertale: Multiverse Legacy Mobile": {
-					"version": "0.4.3",
-					"date": "Feb 11, 2021 3:53:37 AM",
+					"version": "0.5.0",
+					"date": "Jul 20, 2021 3:00:06 AM",
 					"description": "Mobile version of UTMV: Legacy",
 					"download": {
 						"other-os": {
-							"filename": "multiverse.apk",
-							"size": 45191562,
+							"filename": "utmv-0.5.apk",
+							"size": 54096372,
 							"url": {
-								"gamejolt": "https://gamejolt.com/get/build?game=565158&build=977265",
-								"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!282:/multiverse.apk?authkey=!AIeuLj_xT3cNQYQ"
+								"gamejolt": "https://gamejolt.com/get/build?game=565158&build=1060676",
+								"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!282:/utmv-0.5.apk?authkey=!AIeuLj_xT3cNQYQ"
 							},
 							"hash": {
-								"md5": "5971693d5e3d0565ed0aaedf06bf8dda",
-								"sha1": "ba254ebbba194a49a18264955bc7fbd6bcace6f2"
+								"md5": "fa3b0838d6d6bae99e01ecd7d11fad9a",
+								"sha1": "04a730706389901795c0b24b2285e693fdbb25d0"
 							}
 						}
 					}
@@ -295,15 +301,15 @@
 			"soundtrack": {
 				"songs": 15,
 				"download": {
-					"filename": "soundtrack-5fda1551dd0c1.zip",
-					"size": 14087434,
+					"filename": "soundtrack-60f5c55f01fbb.zip",
+					"size": 15426691,
 					"url": {
 						"gamejolt": "https://gamejolt.com/get/soundtrack?game=565158",
-						"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!280:/soundtrack-5fda1551dd0c1.zip?authkey=!ABSs4cvK39DFZ2U"
+						"onedrive": "https://storage.live.com/items/8C3AB972E7E69B18!280:/soundtrack-60f5c55f01fbb.zip?authkey=!ABSs4cvK39DFZ2U"
 					},
 					"hash": {
-						"md5": "8a0afadfbc99a7a12286ea9ff017a0a3",
-						"sha1": "76811cab6f09f37b7d528ca40bc9ac3d53bb1754"
+						"md5": "a2f59c47e806f275ba8bfde707805cb7",
+						"sha1": "4e5997e9b641462925f4f8b844509993ff931a27"
 					}
 				}
 			}
